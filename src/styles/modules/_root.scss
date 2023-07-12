@@ -1,0 +1,7 @@
+html{
+    background-color: var($main-color);
+}
+
+html[ui-theme='dark']{
+    background-color: var($red-color);
+}

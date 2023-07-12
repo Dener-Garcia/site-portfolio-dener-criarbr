@@ -1,5 +1,6 @@
-import teste from "./src/components/quadrado.mjs"
+import teste from "./src/components/quadrado.mjs";
 
+<<<<<<< HEAD
 var checkbox = document.querySelector('#switch');
 
 const changeThemeLg = () => {
@@ -44,3 +45,11 @@ const changeThemeDk = () => {
 //     changeThemeDark();
 //   }
 // });
+=======
+const mudaTema = document.querySelector("#darkmode")
+  mudaTema.addEventListener("change", function (event) {
+    document.documentElement.setAttribute('ui-theme', 'dark');
+  });
+
+console.log(teste());
+>>>>>>> 474c02aff3e9499e7af0b6eac6c494f7bf754b70
