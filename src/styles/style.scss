@@ -1,35 +1,6 @@
 
-
-<<<<<<< HEAD
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  html {
-    min-height: 100dvh;
-  }
-  
-  body {
-    font-family: "Roboto", sans-serif;
-  }
-  
-  li{
-    list-style: none;
-  }
-  
-  a{
-    text-decoration: none;
-  }
-  
-  button{
-    border: none;
-  }
-
-@import 'modules/teste';
+@import 'modules/shadows';
+@import 'modules/colors';
 @import 'modules/buttons';
-=======
-@import 'modules/color';
->>>>>>> 474c02aff3e9499e7af0b6eac6c494f7bf754b70
+
 
