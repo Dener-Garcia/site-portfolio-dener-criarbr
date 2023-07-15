@@ -1,3 +1,20 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 72rem;
+  width: 100%;
+  height: auto;
+  padding: 5rem 1.5rem;
+}
+
 .btn-primary-x {
   border: none;
   border-radius: 8px;
