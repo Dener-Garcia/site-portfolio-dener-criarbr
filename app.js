@@ -1,14 +1,24 @@
 import teste from "./src/components/quadrado.mjs";
 
-var checkbox = document.querySelector('#switch');
+import Animation from "./src/components/animation-hero/animation.mjs";
 
-const changeThemeLg = () => {
-    document.documentElement.setAttribute("ui-theme", "light");
+const criar = () =>{
+  var minhaDiv = document.querySelector(".svgJS").innerHTML
+  minhaDiv.document.innerHTML(Animation);
 }
 
-const changeThemeDk = () => {
-    document.documentElement.setAttribute("ui-theme", "dark");
-}
+document.querySelector('.svgJS').innerHTML = Animation;
+
+
+// var checkbox = document.querySelector('#switch');
+
+// const changeThemeLg = () => {
+//     document.documentElement.setAttribute("ui-theme", "light");
+// }
+
+// const changeThemeDk = () => {
+//     document.documentElement.setAttribute("ui-theme", "dark");
+// }
 
 // checkbox.addEventListener('change', function() {
 //     if(this.checked) {

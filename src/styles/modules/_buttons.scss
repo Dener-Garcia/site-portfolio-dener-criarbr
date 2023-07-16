@@ -1,21 +1,21 @@
 
 
-  .btn-primary-x{
-    border: none;
-    border-radius: 8px;
-    background-color: $bg-primary-light;
-    padding: 0.75rem 1.5rem;
-    color:  #fff;
-    box-shadow: $effect-shadow-light-default;
-  }
-
   .btn-primary {
-    font-size: var(--type-body-16);
+    margin: auto;
     border: none;
-    border-radius: var(--container-rounded-8);
-    background-color: var(--color-primary);
+    border-radius: 0.5rem;
     padding: 0.75rem 1.5rem;
-    color: var(--color-contrast-dark);
-    box-shadow: var(--effect-shadow-light-default);
+    font-size: $fs-18;
+    background-color: $bg-primary-light;
+    color: $bg-contrast-dark;
+    box-shadow: $effect-shadow-default;
     cursor: pointer;
+
+      &:hover{
+        box-shadow: $effect-shadow-hover;
+      }
+
+      &:focus{
+        box-shadow: $effect-shadow-active;
+      }
   }
