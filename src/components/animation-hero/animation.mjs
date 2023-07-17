@@ -1,12 +1,25 @@
+class Mysvg extends HTMLElement{
+  constructor(){
+      super()
+      console.log("criei um webcomponente")
 
- 
-function Animation() {
+      // o attachShadow mode open diz que posso receber alteracoes de fora da shadow dom, se fosse closed nao aceitaria
+      this.attachShadow({mode: 'open'})
 
-    var h1 = document.createElement('h1');
-    h1.innerHTML = "testando";
-
-    return h1
+      //montando meu componente
+      this.shadowRoot.innerHTML = `
+      
+      <style>
+      .meuCss{
+      background-color: green;
+      padding: 10px;
+      border: none;
+    }
+      </style>
+      <svg class="meuCss" width="400" height="100">
+      <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+    </svg>`
+  }
 }
 
-
-export default Animation
+export default Mysvg

@@ -1,13 +1,13 @@
 import teste from "./src/components/quadrado.mjs";
 
-import Animation from "./src/components/animation-hero/animation.mjs";
 
-const criar = () =>{
-  var minhaDiv = document.querySelector(".svgJS").innerHTML
-  minhaDiv.document.innerHTML(Animation);
-}
+import  Mysvg  from "./src/components/animation-hero/animation.mjs";
 
-document.querySelector('.svgJS').innerHTML = Animation;
+import MyBtn from "./src/components/web-components/btn-big.mjs";
+
+window.customElements.define('my-svg', Mysvg)
+
+window.customElements.define('my-btn', MyBtn)
 
 
 // var checkbox = document.querySelector('#switch');
@@ -55,9 +55,9 @@ document.querySelector('.svgJS').innerHTML = Animation;
 //   }
 // });
 
-const mudaTema = document.querySelector("#darkmode")
-  mudaTema.addEventListener("change", function (event) {
-    document.documentElement.setAttribute('ui-theme', 'dark');
-  });
+// const mudaTema = document.querySelector("#darkmode")
+//   mudaTema.addEventListener("change", function (event) {
+//     document.documentElement.setAttribute('ui-theme', 'dark');
+//   });
 
-console.log(teste());
+// console.log(teste());
