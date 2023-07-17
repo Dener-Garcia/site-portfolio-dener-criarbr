@@ -1,27 +1,53 @@
-nav{
-    display: flex;
-    gap: $sp-16;
-  }
+nav {
+  display: flex;
+  gap: $sp-16;
+}
 
-header{
-    width: 100%;
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $sp-8 $sp-24;
+  height: auto;
+
+  .settings-ui {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: $sp-8 $sp-24;
-    height: auto;
+    gap: $sp-8;
 
-      .settings-ui{
+
+    .ui-options {
+      position: absolute;
+      top: $sp-24;
+      left: -33%;
+      width: 14rem;
+
+      gap: $sp-8;
+      padding: $sp-16;
+      border-radius: $sp-8;
+      background-color: $bg-primary-light;
+      box-shadow: $effect-shadow-default;
+
+      .option {
         display: flex;
-        align-items: center;
-        gap: $sp-8;
+        justify-content: space-between;
+
+        i {
+          font-size: $fs-20;
+        }
       }
+    }
+  }
 
 }
 
-.container{
-    max-width: 72rem;
-    width: 100%;
-    height: auto;
-    padding: 5rem 1.5rem;
-};
+.container {
+  max-width: 72rem;
+  width: 100%;
+  height: auto;
+  padding: 5rem 1.5rem;
+}
+
+;

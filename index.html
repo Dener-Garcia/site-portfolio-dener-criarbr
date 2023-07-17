@@ -57,16 +57,20 @@
         <div class="settings-ui">
             <i class="ph ph-person-arms-spread"></i>
             <button>Acessibilidade</button>
-            <div class="ui-options" style="display: none;">
-                <i class="ph ph-sun-dim"></i>
-                <label for="light-theme">Tema Claro</label>
-                <input type="radio" id="light-theme" name="ui-theme">
-                <i class="ph ph-moon-stars"></i>
-                <label for="dark-theme">Tema Escuro</label>
-                <input type="radio" id="dark-theme" name="ui-theme">
-                <i class="ph-fill ph-circle-half-tilt"></i>
-                <label for="high-contrast">Alto Contraste</label>
-                <input type="radio" id="high-contrast" name="ui-theme">
+            <div class="ui-options d-none">
+
+                <div class="option">
+                    <label for="light_theme"><i class="ph ph-sun-dim"> </i>Tema Claro</label>
+                    <input type="radio" id="light_theme" name="ui-theme">
+                </div>
+                <div class="option">
+                    <label for="dark_theme"> <i class="ph ph-moon-stars"> </i>Tema Escuro</label>
+                    <input type="radio" id="dark_theme" name="ui-theme">
+                </div>
+                <div class="option">
+                    <label for="high_contrast"><i class="ph-fill ph-circle-half-tilt"> </i>Alto Contraste</label>
+                    <input type="radio" id="high_contrast" name="ui-theme">
+                </div>
             </div>
         </div>
         <nav>
@@ -77,16 +81,13 @@
         </nav>
     </header>
     <main>
-        <my-svg></my-svg>
-        <my-btn>teste</my-btn>
-        <my-btn>teste2</my-btn>
         <section class="container hero-section">
             <h1>Dener Garcia</h1>
             <div class="svgJS"></div>
             <p>Um designer de UX/UI que escreve códigos, quero te ajudar a criar produtos que as pessoas queiram usar!
             </p>
             <a class="btn-primary" href="">Ver projetos</a>
-            <div class="svg-container"></div>
+            <div class="svg-container"><my-svg></my-svg></div>
         </section>
 
         <section class="container pipeline-section">

@@ -1,3 +1,4 @@
+@import 'modules/class-by-js.css';
 nav {
   display: flex;
   gap: 1rem;
@@ -12,9 +13,28 @@ header {
   height: auto;
 }
 header .settings-ui {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+header .settings-ui .ui-options {
+  position: absolute;
+  top: 3.25rem;
+  left: -33%;
+  width: 14rem;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #EEF0F4;
+  box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
+}
+header .settings-ui .ui-options .option {
+  display: flex;
+  justify-content: space-between;
+}
+header .settings-ui .ui-options .option i {
+  font-size: 1.25rem;
 }
 
 .container {
@@ -31,7 +51,7 @@ header .settings-ui {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   background-color: #EEF0F4;
-  color: #141414;
+  color: #0F0F0F;
   box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
   cursor: pointer;
 }
