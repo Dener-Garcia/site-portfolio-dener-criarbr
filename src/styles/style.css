@@ -1,4 +1,38 @@
-@import 'modules/class-by-js.css';
+html {
+  --bg-primary: #EEF0F4 ;
+}
+
+html[ui-theme=dark] {
+  --bg-primary: #141414 ;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-primary);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-grid {
+  display: grid;
+}
+
 nav {
   display: flex;
   gap: 1rem;
@@ -109,19 +143,4 @@ header i {
 }
 .btn-primary:focus {
   box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
-}
-
-* {
-  border: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #EEF0F4;
 }/*# sourceMappingURL=style.css.map */

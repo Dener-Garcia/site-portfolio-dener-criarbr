@@ -63,6 +63,10 @@ window.customElements.define('my-svg', Mysvg)
 // console.log(teste());
 
 
-import Acessibility from "./src/functions/acessibility-menu/acessibility-meu.mjs";
+import Acessibility from "./src/functions/acessibility-menu/acessibility-menu.mjs";
 
 Acessibility()
+
+import ChangeTheme from "./src/functions/change-ui-theme/change-theme.mjs";
+
+ChangeTheme()

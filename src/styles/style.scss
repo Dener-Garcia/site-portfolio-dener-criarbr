@@ -1,25 +1,13 @@
-@import 'modules/class-by-js.css';
-
 @import 'modules/typography';
 @import 'modules/colors';
 @import 'modules/shadows';
+
+@import 'modules/root';
+
+@import 'modules/rules';
+@import 'modules/class-by-js';
 
 @import 'modules/spaces';
 @import 'modules/sections';
 
 @import 'modules/buttons';
-
-*{
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a{
-    text-decoration: none;
-}
-
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: $bg-primary-light;
-}

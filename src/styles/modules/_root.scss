@@ -1,7 +1,7 @@
 html{
-    background-color: var($main-color);
+    --bg-primary: #{$bg-primary-light}
 }
 
 html[ui-theme='dark']{
-    background-color: var($red-color);
+    --bg-primary: #{$bg-primary-dark}
 }
