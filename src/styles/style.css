@@ -16,9 +16,33 @@ header .settings-ui {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
 }
-header .settings-ui .ui-options {
+header .settings-ui button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+header .settings-ui button::after {
+  content: "";
+  position: absolute;
+  right: -20%;
+  bottom: 33%;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: block;
+  margin: auto;
+  padding: 4px;
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+header .settings-ui button:hover::after {
+  bottom: 0%;
+  transform: rotate(-135deg);
+}
+header .ui-options {
   position: absolute;
   top: 3.25rem;
   left: -33%;
@@ -29,11 +53,36 @@ header .settings-ui .ui-options {
   background-color: #EEF0F4;
   box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
 }
-header .settings-ui .ui-options .option {
+header .ui-options .option {
   display: flex;
   justify-content: space-between;
 }
-header .settings-ui .ui-options .option i {
+header .ui-options .option label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+header .ui-options .option input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+header .ui-options .option input::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #EEF0F4;
+  box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
+}
+header .ui-options .option input:checked::after {
+  box-shadow: 8px 8px 14px #c2cad6, inset -8px -8px 14px #c2cad6;
+}
+header i {
   font-size: 1.25rem;
 }
 
