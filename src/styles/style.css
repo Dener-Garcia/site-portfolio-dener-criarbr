@@ -6,6 +6,10 @@ html[ui-theme=dark] {
   --bg-primary: #141414 ;
 }
 
+html[ui-theme=high-contrast] {
+  --bg-primary: #eb1010 ;
+}
+
 * {
   margin: 0;
   border: 0;
@@ -16,6 +20,14 @@ html[ui-theme=dark] {
 
 a {
   text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+li {
+  list-style: none;
 }
 
 body {
@@ -72,7 +84,7 @@ header .settings-ui button::after {
   transform: rotate(45deg);
   transition: 0.3s;
 }
-header .settings-ui button:hover::after {
+header .settings-ui button:focus::after {
   bottom: 0%;
   transform: rotate(-135deg);
 }
@@ -92,6 +104,8 @@ header .ui-options .option {
   justify-content: space-between;
 }
 header .ui-options .option label {
+  width: 100%;
+  height: 2rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;

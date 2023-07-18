@@ -21,12 +21,15 @@ function setTheme(themeName, nrInput) {
         let nrInput = null;
 
       switch (option.value) {
+
         case "light-theme":
           setTheme((themeName = "light"), (nrInput = 0));
           break;
+
         case "dark-theme":
           setTheme((themeName = "dark"), (nrInput = 1));
           break;
+          
         case "high-contrast":
           setTheme((themeName = "high-contrast"), (nrInput = 2));
           break;

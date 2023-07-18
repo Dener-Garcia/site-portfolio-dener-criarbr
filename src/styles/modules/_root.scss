@@ -1,7 +1,12 @@
 html{
     --bg-primary: #{$bg-primary-light}
-}
+};
 
 html[ui-theme='dark']{
     --bg-primary: #{$bg-primary-dark}
+};
+
+
+html[ui-theme='high-contrast']{
+    --bg-primary: #{$bg-primary-high-contrast}
 }

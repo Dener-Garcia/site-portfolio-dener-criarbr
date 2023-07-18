@@ -17,15 +17,15 @@ header {
     align-items: center;
     justify-content: center;
     gap: $sp-8;
-    
-    button{
+
+    button {
       position: relative;
       display: flex;
       align-items: center;
       font-size: $fs-16;
     }
 
-    button::after{
+    button::after {
       content: "";
       position: absolute;
       right: -20%;
@@ -39,60 +39,64 @@ header {
       transition: 0.3s
     }
 
-    button:hover::after{
+    button:focus::after {
       bottom: -0%;
       transform: rotate(-135deg);
     }
 
-    }
-    .ui-options {
-      position: absolute;
-      top: $sp-24;
-      left: -33%;
-      width: 14rem;
-      gap: $sp-8;
-      padding: $sp-16;
-      border-radius: $sp-8;
-      background-color: $bg-primary-light;
-      box-shadow: $effect-shadow-default;
+  }
 
-      .option {
+  .ui-options {
+    position: absolute;
+    top: $sp-24;
+    left: -33%;
+    width: 14rem;
+    gap: $sp-8;
+    padding: $sp-16;
+    border-radius: $sp-8;
+    background-color: $bg-primary-light;
+    box-shadow: $effect-shadow-default;
+
+    .option {
+      display: flex;
+      justify-content: space-between;
+
+      label {
+        width: 100%;
+        height: $fs-32;
         display: flex;
-        justify-content: space-between;
-      
-        label{
-          display: flex;
-          align-items: center;
-          gap: $sp-8;
-        }
+        align-items: center;
+        gap: $sp-8;
+      }
 
-        input{
-          
-          position: relative;
-          display: flex;
-            align-items: center;
-            border: none;
-            outline: none;
+      input {
 
-        }
-          input::after{
-            content: "";
-            position: absolute;
-            right: 0;
-            width: $fs-24;
-            height: $fs-24;
-            border-radius: 50%;
-            background-color: $bg-primary-light;
-            box-shadow: $effect-shadow-active; 
-          }
-
-          input:checked::after{
-            box-shadow: $effect-shadow-hover;
-          }
-        
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: none;
+        outline: none;
 
       }
-    
+
+      input::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: $fs-24;
+        height: $fs-24;
+        border-radius: 50%;
+        background-color: $bg-primary-light;
+        box-shadow: $effect-shadow-active;
+      }
+
+      input:checked::after {
+        box-shadow: $effect-shadow-hover;
+      }
+
+
+    }
+
   }
 
   i {
