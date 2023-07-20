@@ -1,0 +1,37 @@
+@keyframes fontes {
+    0% {
+        stroke-dasharray: 1 50;
+        stroke-width: 4;
+        opacity: 0.5;
+        stroke: #f00;
+    }
+
+    100% {
+        stroke-dasharray: 150 0;
+        stroke-width: 8;
+        opacity: 1;
+        stroke: #f0f;
+    }
+}
+
+.animacao {
+    animation: fontes 3s linear 0s forwards;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.01);
+
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: scale 1s linear 0s forwards;
+}

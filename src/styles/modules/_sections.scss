@@ -30,7 +30,7 @@ header {
       position: absolute;
       right: -20%;
       bottom: 33%;
-      border: solid black;
+      border: solid var(--bg-constrast-light);
       border-width: 0 2px 2px 0;
       display: block;
       margin: auto;
@@ -54,7 +54,7 @@ header {
     gap: $sp-8;
     padding: $sp-16;
     border-radius: $sp-8;
-    background-color: $bg-primary-light;
+    background-color: var(--bg-primary);
     box-shadow: $effect-shadow-default;
 
     .option {
@@ -86,19 +86,16 @@ header {
         width: $fs-24;
         height: $fs-24;
         border-radius: 50%;
-        background-color: $bg-primary-light;
+        background-color: var(--bg-primary);
         box-shadow: $effect-shadow-active;
       }
 
       input:checked::after {
         box-shadow: $effect-shadow-hover;
       }
-
-
     }
-
   }
-
+  
   i {
     font-size: $fs-20;
   }
@@ -111,4 +108,3 @@ header {
   padding: 5rem 1.5rem;
 }
 
-;

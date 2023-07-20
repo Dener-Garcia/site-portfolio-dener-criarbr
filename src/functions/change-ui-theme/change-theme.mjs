@@ -13,6 +13,8 @@ function setTheme(themeName, nrInput) {
   localStorage.setItem("nr-input", nrInput);
 }
 
+console.log(uiTheme)
+
   for (let option of uiTheme) {
     
     option.addEventListener("click", function () {
