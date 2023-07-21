@@ -84,7 +84,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 3.25rem;
+  padding: 0.5rem 1.5rem;
   height: auto;
 }
 header .settings-ui {
@@ -119,7 +119,7 @@ header .settings-ui button:focus::after {
 }
 header .ui-options {
   position: absolute;
-  top: 3.25rem;
+  top: 1.5rem;
   left: -33%;
   width: 14rem;
   gap: 0.5rem;
@@ -170,8 +170,58 @@ header i {
   padding: 5rem 1.5rem;
 }
 
-.btn-primary {
+.hero-section {
+  display: flex;
   margin: auto;
+}
+.hero-section .intro {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+.hero-section .intro h1 {
+  font-size: 4rem;
+  color: var(--cl-black-300);
+}
+.hero-section .intro p {
+  width: 80%;
+  margin-top: 1rem;
+  color: var(--bg-constrast-light);
+}
+.hero-section .intro a {
+  width: 16rem;
+  margin-top: 2rem;
+}
+.hero-section .svg-container {
+  width: 100%;
+  background-color: rgb(27, 21, 21);
+}
+
+.pipeline-section {
+  margin: auto;
+}
+.pipeline-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--bg-constrast-light);
+}
+.pipeline-section h2::after {
+  content: "";
+  margin: 2rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--cl-black-500);
+}
+
+.btn-primary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   border-radius: 0.5rem;
   padding: 0.75rem 1.5rem;
@@ -186,36 +236,4 @@ header i {
 }
 .btn-primary:focus {
   box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
-}
-
-@keyframes fontes {
-  0% {
-    stroke-dasharray: 1 50;
-    stroke-width: 4;
-    opacity: 0.5;
-    stroke: #f00;
-  }
-  100% {
-    stroke-dasharray: 150 0;
-    stroke-width: 8;
-    opacity: 1;
-    stroke: #f0f;
-  }
-}
-.animacao {
-  animation: fontes 3s linear 0s forwards;
-}
-
-@keyframes scale {
-  0% {
-    transform: scale(0.01);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-h1 {
-  animation: scale 1s linear 0s forwards;
 }/*# sourceMappingURL=style.css.map */

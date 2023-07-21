@@ -36,7 +36,7 @@ header {
       margin: auto;
       padding: 4px;
       transform: rotate(45deg);
-      transition: 0.3s
+      transition: 0.3s;
     }
 
     button:focus::after {
@@ -70,13 +70,11 @@ header {
       }
 
       input {
-
         position: relative;
         display: flex;
         align-items: center;
         border: none;
         outline: none;
-
       }
 
       input::after {
@@ -95,7 +93,7 @@ header {
       }
     }
   }
-  
+
   i {
     font-size: $fs-20;
   }
@@ -108,3 +106,59 @@ header {
   padding: 5rem 1.5rem;
 }
 
+.hero-section {
+  display: flex;
+  margin: auto;
+
+  .intro {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: $fs-64;
+      color: var(--cl-black-300);
+    }
+
+    p {
+      width: 80%;
+      margin-top: $sp-16;
+      color: var(--bg-constrast-light);
+    }
+
+    a {
+      width: $fs-256;
+      margin-top: $sp-32;
+    }
+  }
+
+  .svg-container {
+    width: 100%;
+    background-color: rgb(27, 21, 21);
+  }
+}
+
+.pipeline-section {
+  margin: auto;
+
+  h2 {
+    text-align: center;
+    font-size: $fs-40;
+    color: var(--bg-constrast-light)
+  }
+
+  h2::after {
+    content: "";
+    margin: $sp-32 auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: $fs-8;
+    border-radius: $fs-8;
+    background-color: var(--cl-black-500);
+  }
+
+  
+
+}
