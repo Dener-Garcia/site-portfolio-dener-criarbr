@@ -1,7 +1,7 @@
 import teste from "./src/components/quadrado.mjs";
 
 
-import  Mysvg  from "./src/components/illustration-svg/illustration.mjs";
+import Mysvg from "./src/components/illustration-svg/illustration.mjs";
 
 //import MyBtn from "./src/components/web-components/btn-big.mjs";
 
@@ -23,3 +23,4 @@ ChangeTheme()
 import AnimationSvg from "./src/functions/new-folder/inde.mjs";
 
 AnimationSvg()
+

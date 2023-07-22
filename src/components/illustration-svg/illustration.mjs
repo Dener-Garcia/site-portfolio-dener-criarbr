@@ -8,7 +8,7 @@ class Mysvg extends HTMLElement{
 
       //montando meu componente
       this.shadowRoot.innerHTML = `
-      
+
       <style>
 
         @keyframes line-feat {
