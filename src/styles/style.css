@@ -216,6 +216,40 @@ header i {
   border-radius: 0.5rem;
   background-color: var(--cl-black-500);
 }
+.pipeline-section .text-box {
+  position: relative;
+  width: 40%;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  background-color: var(--bg-primary);
+  box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
+}
+.pipeline-section .text-box i {
+  position: absolute;
+  right: -20%;
+  top: 33%;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 50px;
+  background-color: var(--bg-primary);
+  color: var(--bg-constrast-light);
+  box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
+}
+.pipeline-section .text-box h3 {
+  color: var(--bg-constrast-light);
+}
+.pipeline-section .text-box p {
+  color: var(--cl-black-300);
+  margin-top: 1rem;
+}
+.pipeline-section .text-box:nth-child(3),
+.pipeline-section .text-box:nth-child(5) {
+  margin-left: 50%;
+}
+.pipeline-section .text-box:nth-child(3) i {
+  right: 105%;
+  color: blue;
+}
 
 .btn-primary {
   width: 100%;
