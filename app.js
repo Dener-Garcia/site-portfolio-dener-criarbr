@@ -24,13 +24,10 @@ import AnimationSvg from "./src/functions/new-folder/inde.mjs";
 
 AnimationSvg()
 
-const fields = document.querySelector("form input")
-const labels = document.querySelector('form label[for="fieldName"]')
+const olhos = document.querySelector("my-svg").shadowRoot.querySelector("#olho-esq-dag")
 
-console.log(fields)
+console.log(olhos, "peguei")
 
-
-fields.addEventListener("focus", () => {
-    console.log("input focada")
-    labels.classList.toggle("focusFieldJS")
+document.addEventListener("click", ()=>{
+    olhos.classList.toggle("anime")
 })

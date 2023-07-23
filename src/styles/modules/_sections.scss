@@ -4,12 +4,13 @@ nav {
 }
 
 header {
+  max-width: 72rem;
   width: 100%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: $sp-8 $sp-24;
-  height: auto;
+  padding: $sp-24 $sp-8;
 
   .settings-ui {
     position: relative;
@@ -276,3 +277,41 @@ header {
   }
 }
 
+.certificates{
+  margin: auto;
+
+  h2 {
+    text-align: center;
+    font-size: $fs-40;
+    color: var(--bg-constrast-light)
+  }
+
+  h2::after {
+    content: "";
+    margin: $sp-32 auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: $fs-8;
+    border-radius: $fs-8;
+    background-color: var(--cl-black-500);
+  }
+
+  .certificate-box{
+width: 60%;
+margin: auto;
+    display: flex;
+    align-items: center;
+    padding: $sp-24;
+    background-color: var(--bg-primary);
+    box-shadow: $effect-shadow-default;
+    margin-top: 44px;
+    gap: $sp-32;
+    border-radius: 8px;
+
+    img{
+      width: 180px;
+    }
+  }
+}

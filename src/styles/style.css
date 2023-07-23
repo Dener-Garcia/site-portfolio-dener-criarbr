@@ -4,12 +4,13 @@ nav {
 }
 
 header {
+  max-width: 72rem;
   width: 100%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1.5rem;
-  height: auto;
+  padding: 1.5rem 0.5rem;
 }
 header .settings-ui {
   position: relative;
@@ -240,6 +241,41 @@ header i {
   font-size: 1.5rem;
 }
 
+.certificates {
+  margin: auto;
+}
+.certificates h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--bg-constrast-light);
+}
+.certificates h2::after {
+  content: "";
+  margin: 2rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--cl-black-500);
+}
+.certificates .certificate-box {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--bg-primary);
+  box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
+  margin-top: 44px;
+  gap: 2rem;
+  border-radius: 8px;
+}
+.certificates .certificate-box img {
+  width: 180px;
+}
+
 html {
   --bg-primary: #EEF0F4;
   --bg-constrast-light: #0F0F0F;
@@ -316,12 +352,13 @@ body {
   display: grid;
 }
 
-.focusFieldJS {
-  margin-top: -24px;
+.anime {
+  transform: translateX(20px);
+  transform: scale(2);
 }
 
 .btn-primary {
-  min-width: 10rem;
+  min-width: 8rem;
   width: 100%;
   display: flex;
   align-items: center;
