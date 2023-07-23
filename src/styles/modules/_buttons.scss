@@ -1,6 +1,7 @@
 
 
   .btn-primary {
+    min-width: 10rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -9,6 +10,7 @@
     border-radius: 0.5rem;
     padding: 0.75rem 1.5rem;
     font-size: $fs-18;
+    font-weight: $fw-medium;
     background-color: var(--bg-primary);
     color: var(--bg-constrast-light);
     box-shadow: $effect-shadow-default;

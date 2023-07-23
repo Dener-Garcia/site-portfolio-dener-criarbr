@@ -43,6 +43,5 @@ html[ui-theme='dark']{
 html[ui-theme='high-contrast']{
 
     --bg-primary: #{$bg-primary-high-contrast};
-
-    --bg-constrast: #{$bg-contrast-high};
+    --bg-constrast-light: #{$bg-contrast-high};
 }

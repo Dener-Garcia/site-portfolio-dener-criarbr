@@ -137,6 +137,8 @@ header {
   }
 }
 
+
+
 .pipeline-section {
   margin: auto;
 
@@ -158,6 +160,99 @@ header {
     background-color: var(--cl-black-500);
   }
 
-  
+  .text-box{
+    position: relative;
+    width: 40%;
+    margin-top: $sp-40;
+    padding: $sp-16;
+    background-color: var(--bg-primary);
+    box-shadow: $effect-shadow-default;
 
+    i{
+      position: absolute;
+      right: -20%;
+      top: 33%;
+      font-size: $fs-28;
+      padding: $sp-8;
+      border-radius: 50px;
+      background-color: var(--bg-primary);
+      color: var(--bg-constrast-light);
+      box-shadow: $effect-shadow-hover;
+    }
+
+    h3{
+      font-size: $fs-20;
+      color: var(--bg-constrast-light);
+    }
+
+    p{
+      color: var(--cl-black-300);
+      margin-top: $sp-16;
+    }
+  } 
+
+  .text-box:nth-child(3),
+  .text-box:nth-child(5){
+    margin-left: 50%;
+  }
+
+  .text-box:nth-child(3) i,
+  .text-box:nth-child(5) i{
+    right: 105%;
+  }
 }
+
+.contact{
+  margin: auto;
+
+  h2 {
+    text-align: center;
+    font-size: $fs-40;
+    color: var(--bg-constrast-light)
+  }
+
+  h2::after {
+    content: "";
+    margin: $sp-32 auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: $fs-8;
+    border-radius: $fs-8;
+    background-color: var(--cl-black-500);
+  }
+
+  form{
+    width: 70%;
+    margin: $sp-40 auto;
+    display: grid;
+    padding: $sp-40;
+    background-color: var(--bg-primary);
+    box-shadow: $effect-shadow-default;
+    gap: $sp-40;
+
+    .field{
+      position: relative;
+    }
+
+    label{
+      position: absolute;
+      left: $sp-8;
+      top: 0;
+      transition: 0.5s;
+      
+    }
+
+    input,
+    textarea{
+      width: 100%;
+      padding: $sp-8;
+      border-radius: $sp-8;
+      background-color: var(--bg-primary);
+      box-shadow: $effect-shadow-active;
+    }
+
+  }
+}
+

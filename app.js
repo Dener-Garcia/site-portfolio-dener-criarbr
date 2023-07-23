@@ -24,3 +24,13 @@ import AnimationSvg from "./src/functions/new-folder/inde.mjs";
 
 AnimationSvg()
 
+const fields = document.querySelector("form input")
+const labels = document.querySelector('form label[for="fieldName"]')
+
+console.log(fields)
+
+
+fields.addEventListener("focus", () => {
+    console.log("input focada")
+    labels.classList.toggle("focusFieldJS")
+})
