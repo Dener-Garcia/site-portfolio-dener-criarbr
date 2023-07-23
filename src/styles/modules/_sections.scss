@@ -224,33 +224,53 @@ header {
   }
 
   form{
-    width: 70%;
+    width: 60%;
     margin: $sp-40 auto;
     display: grid;
     padding: $sp-40;
     background-color: var(--bg-primary);
     box-shadow: $effect-shadow-default;
-    gap: $sp-40;
+    gap: $sp-24;
 
     .field{
-      position: relative;
+
+      label{
+        font-weight: $fw-medium;
+        color: var(--bg-constrast-light);
+      }
+  
+      input,
+      textarea{
+        width: 100%;
+        margin-top: $sp-8;
+        padding:  $sp-8 $sp-16;
+        font-size: $fs-16;
+        border-radius: $sp-8;
+        color: var(--bg-constrast-light);
+        background-color: var(--bg-primary);
+        box-shadow: $effect-shadow-active;
+      }
+
+      input:focus, 
+      textarea:focus{
+        font-size: $fs-18;
+      }
+
+      ::placeholder{
+        color: var(--cl-black-500);
+        opacity: 1;
+      }
     }
 
-    label{
-      position: absolute;
-      left: $sp-8;
-      top: 0;
-      transition: 0.5s;
-      
-    }
+    button{
+      margin-top: $sp-8;
+      font-size: $fs-18;
+    font-weight: $fw-medium;
+    gap: $fs-16;
 
-    input,
-    textarea{
-      width: 100%;
-      padding: $sp-8;
-      border-radius: $sp-8;
-      background-color: var(--bg-primary);
-      box-shadow: $effect-shadow-active;
+    i{
+      font-size: $fs-24;
+    }
     }
 
   }

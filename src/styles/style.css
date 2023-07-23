@@ -195,30 +195,49 @@ header i {
   background-color: var(--cl-black-500);
 }
 .contact form {
-  width: 70%;
+  width: 60%;
   margin: 2.5rem auto;
   display: grid;
   padding: 2.5rem;
   background-color: var(--bg-primary);
   box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
-  gap: 2.5rem;
+  gap: 1.5rem;
 }
-.contact form .field {
-  position: relative;
+.contact form .field label {
+  font-weight: 500;
+  color: var(--bg-constrast-light);
 }
-.contact form label {
-  position: absolute;
-  left: 0.5rem;
-  top: 0;
-  transition: 0.5s;
-}
-.contact form input,
-.contact form textarea {
+.contact form .field input,
+.contact form .field textarea {
   width: 100%;
-  padding: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   border-radius: 0.5rem;
+  color: var(--bg-constrast-light);
   background-color: var(--bg-primary);
   box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
+}
+.contact form .field input:focus,
+.contact form .field textarea:focus {
+  font-size: 1.125rem;
+}
+.contact form .field ::-moz-placeholder {
+  color: var(--cl-black-500);
+  opacity: 1;
+}
+.contact form .field ::placeholder {
+  color: var(--cl-black-500);
+  opacity: 1;
+}
+.contact form button {
+  margin-top: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  gap: 1rem;
+}
+.contact form button i {
+  font-size: 1.5rem;
 }
 
 html {
