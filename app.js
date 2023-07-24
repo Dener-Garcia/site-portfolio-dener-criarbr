@@ -19,11 +19,6 @@ import ChangeTheme from "./src/functions/change-ui-theme/change-theme.mjs";
 
 ChangeTheme()
 
-
-import AnimationSvg from "./src/functions/new-folder/inde.mjs";
-
-AnimationSvg()
-
 const olhos = document.querySelector("my-svg").shadowRoot.querySelector("#olho-esq-dag")
 
 console.log(olhos, "peguei")
@@ -31,3 +26,18 @@ console.log(olhos, "peguei")
 document.addEventListener("click", ()=>{
     olhos.classList.toggle("anime")
 })
+
+const accordions = document.querySelectorAll(".certificate-box")
+const details = document.querySelectorAll(".certificate-box details")
+
+accordions.forEach(e => {
+    e.addEventListener("click", ()=>{
+        console.log("abriu")
+        details.setAttribute("closed", "open")
+    })
+});
+
+    //     <code>fetch(url, options)<br>
+    //     .then(response => response.json())<br>
+    // .then(json => console.log(json))</code>
+

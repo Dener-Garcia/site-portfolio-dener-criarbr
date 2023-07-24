@@ -18,12 +18,15 @@ header .settings-ui {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  color: var(--bg-constrast-light);
 }
 header .settings-ui button {
   position: relative;
   display: flex;
   align-items: center;
   font-size: 1rem;
+  background-color: var(--bg-primary);
+  color: var(--bg-constrast-light);
 }
 header .settings-ui button::after {
   content: "";
@@ -176,6 +179,32 @@ header i {
   right: 105%;
 }
 
+.projects {
+  margin: auto;
+}
+.projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--bg-constrast-light);
+}
+.projects h2::after {
+  content: "";
+  margin: 2rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--cl-black-500);
+}
+.projects p {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--cl-black-300);
+}
+
 .contact {
   margin: auto;
 }
@@ -218,6 +247,7 @@ header i {
   color: var(--bg-constrast-light);
   background-color: var(--bg-primary);
   box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
+  transition: 0.2s;
 }
 .contact form .field input:focus,
 .contact form .field textarea:focus {
@@ -263,17 +293,68 @@ header i {
 .certificates .certificate-box {
   width: 60%;
   margin: auto;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   padding: 1.5rem;
   background-color: var(--bg-primary);
   box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
-  margin-top: 44px;
   gap: 2rem;
-  border-radius: 8px;
 }
-.certificates .certificate-box img {
-  width: 180px;
+.certificates .certificate-box img,
+.certificates .certificate-box logo-voitto {
+  width: 5rem;
+  background-color: var(--bg-primary);
+  box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  fill: var(--bg-constrast-light);
+}
+.certificates .certificate-box details summary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  color: var(--bg-constrast-light);
+  cursor: pointer;
+}
+.certificates .certificate-box details h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.certificates .certificate-box details button {
+  position: relative;
+  width: 0.25rem;
+  height: 1.25rem;
+  background-color: var(--cl-feedback-info);
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+.certificates .certificate-box details button::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cl-feedback-info);
+  border-radius: 1rem;
+  transform: rotate(90deg);
+}
+.certificates .certificate-box details summary:hover button,
+.certificates .certificate-box details summary:focus button {
+  transform: rotate(45deg);
+  background-color: var(--cl-feedback-error);
+}
+.certificates .certificate-box details summary:hover button::after,
+.certificates .certificate-box details summary:focus button::after {
+  background-color: var(--cl-feedback-error);
+}
+.certificates .certificate-box details p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--cl-black-300);
 }
 
 html {
@@ -292,6 +373,11 @@ html {
   --cl-black-900: #cccccc;
   --cl-black-950: #e0e0e0;
   --cl-black-1000: #f5f5f5;
+  --cl-feedback-status: #e5f2fa;
+  --cl-feedback-info: #3498db;
+  --cl-feedback-warning: #f1c40f;
+  --cl-feedback-error: #e74c3c;
+  --cl-feedback-sucess: #07bc0c;
 }
 
 html[ui-theme=dark] {
@@ -352,7 +438,7 @@ body {
   display: grid;
 }
 
-.anime {
+.btnRotateJS {
   transform: translateX(20px);
   transform: scale(2);
 }

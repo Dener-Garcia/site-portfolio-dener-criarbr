@@ -16,6 +16,12 @@ html{
     --cl-black-900: #{$cl-black-900};
     --cl-black-950: #{$cl-black-950};
     --cl-black-1000: #{$cl-black-1000};
+
+    --cl-feedback-status: #{$cl-feedback-status};
+    --cl-feedback-info: #{$cl-feedback-info};
+    --cl-feedback-warning: #{$cl-feedback-warning};
+    --cl-feedback-error: #{$cl-feedback-error};
+    --cl-feedback-sucess: #{$cl-feedback-sucess};
 };
 
 html[ui-theme='dark']{
