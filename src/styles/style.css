@@ -204,6 +204,41 @@ header i {
   font-size: 1.25rem;
   color: var(--cl-black-300);
 }
+.projects .grid-projects {
+  display: grid;
+}
+.projects .card-project {
+  width: 300px;
+  height: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: var(--bg-primary);
+  box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
+}
+.projects .card-project img {
+  max-width: 20rem;
+  height: 10rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
+}
+.projects .card-project h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--bg-constrast-light);
+}
+.projects .card-project p {
+  margin-top: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  color: var(--cl-black-300);
+}
+.projects .card-project a {
+  margin-top: 1.5rem;
+}
 
 .contact {
   margin: auto;
@@ -301,8 +336,7 @@ header i {
   box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
   gap: 2rem;
 }
-.certificates .certificate-box img,
-.certificates .certificate-box logo-voitto {
+.certificates .certificate-box img {
   width: 5rem;
   background-color: var(--bg-primary);
   box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;

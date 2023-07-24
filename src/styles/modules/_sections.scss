@@ -233,6 +233,49 @@ header {
     font-size: $fs-20;
     color: var(--cl-black-300)
   }
+
+  .grid-projects{
+    display: grid;
+  }
+
+  .card-project{
+    width: 300px;
+    height: auto;
+    margin-top: $sp-32;
+    display: flex;
+    flex-direction: column;
+    padding: $sp-24;
+    background-color: var(--bg-primary);
+    box-shadow: $effect-shadow-default;
+  
+    img{
+      max-width: 20rem;
+      height: 10rem;
+      padding: $sp-16;
+      border-radius: $fs-8;
+      box-shadow: $effect-shadow-active;
+    }
+
+    h3{
+      margin-top: $sp-16;
+      font-size: $fs-20;
+      font-weight: $fw-medium;
+      color: var(--bg-constrast-light);
+    }
+    
+    p{
+      margin-top: $sp-16;
+      text-align: left;
+      font-size: $fs-16;
+      color: var(--cl-black-300)
+    }
+
+    a{
+      margin-top: $sp-24;
+    }
+  }
+
+  
 }
 
 .contact{
@@ -342,8 +385,7 @@ header {
     box-shadow: $effect-shadow-default;
     gap: $sp-32;
 
-    img,
-    logo-voitto{
+    img{
       width: 5rem;
       background-color: var(--bg-primary);
       box-shadow: $effect-shadow-active;
