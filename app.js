@@ -37,13 +37,28 @@ accordions.forEach(e => {
     })
 });
 
-    //     <code>fetch(url, options)<br>
-    //     .then(response => response.json())<br>
-    // .then(json => console.log(json))</code>
+const cardDiv = document.querySelectorAll(".card-project")
 
+// pegando dados de um arquivo .json tambem pode usar uma url de api
     fetch("/public/card-projects.json")
-    .then((resp)=> resp.json())
-    .then((data) =>{
-        const dados = data
-        console.log(dados)
+
+    // quando o fetch terminar a requisicao o .then entra em acao para ser executado quando tivermos nossa response que vai gerar o dado que precisamos e nos vamos convertela em .json
+
+    .then((response) => response.json())
+
+    // depois que for convertido usamos outro .then para pegar o objeto que queremos do .json ou da api por exemplo.
+    
+    .then((jsonValues) => {
+
+        // repare que antes do .map inserimos o mesmo nome do objeto que queremos do nosso .json
+
+        jsonValues.contentCard.map((cardValues)=>{
+
+        console.log(cardValues)
+        cardDiv.innerHTML += cardValues.title
+
+            // populando o card do hmtl com os dados do .json
+
+      })
     })
+    .catch((error) => console.error("Erro na requisição:", error));
