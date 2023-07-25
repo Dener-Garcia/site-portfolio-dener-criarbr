@@ -41,3 +41,9 @@ accordions.forEach(e => {
     //     .then(response => response.json())<br>
     // .then(json => console.log(json))</code>
 
+    fetch("/public/card-projects.json")
+    .then((resp)=> resp.json())
+    .then((data) =>{
+        const dados = data
+        console.log(dados)
+    })
