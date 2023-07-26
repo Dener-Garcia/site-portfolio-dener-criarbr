@@ -37,28 +37,78 @@ accordions.forEach(e => {
     })
 });
 
-const cardDiv = document.querySelectorAll(".card-project")
+// criando uma async function
+const jsonRead = async ()=>{
 
-// pegando dados de um arquivo .json tambem pode usar uma url de api
-    fetch("/public/card-projects.json")
+    // atribuindo uma promise await fetch para a variavel data
+    const data = await fetch("/public/card-projects.json")
+    console.log("resultado do fetch", data)
+    // convertendo resultado do fetch em .json, essa promisse espera o resposta da anterior
+    const dataConverted = await data.json()
+    console.log("dados ja convertidos em .json", dataConverted)
+}
 
-    // quando o fetch terminar a requisicao o .then entra em acao para ser executado quando tivermos nossa response que vai gerar o dado que precisamos e nos vamos convertela em .json
+jsonRead()
 
-    .then((response) => response.json())
+// // pegando dados de um arquivo .json local, tambem pode usar uma url de api porem com async await
+   
+// fetch("/public/card-projects.json")
 
-    // depois que for convertido usamos outro .then para pegar o objeto que queremos do .json ou da api por exemplo.
+//     // quando o fetch terminar a requisicao o .then entra em acao para ser executado quando tivermos nossa response que vai gerar o dado que precisamos e nos vamos convertela em .json
+
+//     .then((response) => response.json())
+
+//     // depois que for convertido usamos outro .then para pegar o objeto que queremos do .json ou da api.
     
-    .then((jsonValues) => {
+//     .then((jsonValues) => {
+        
+//         console.log("mostrando o que tem no .json", jsonValues)
 
-        // repare que antes do .map inserimos o mesmo nome do objeto que queremos do nosso .json
+//         const cardDiv = document.querySelector(".grid-projects")
+//         console.log(cardDiv)
 
-        jsonValues.contentCard.map((cardValues)=>{
+//         // pegando somente o objeto contentCard que esta no json
 
-        console.log(cardValues)
-        cardDiv.innerHTML += cardValues.title
+//         for (let i = 0; i < jsonValues.contentCard.length; i++) {
+//             const cardData = jsonValues.contentCard[i];      
 
-            // populando o card do hmtl com os dados do .json
+//             // criando o elemento card que sera uma div
 
-      })
-    })
-    .catch((error) => console.error("Erro na requisição:", error));
+//             const card = document.createElement("div")
+//             card.classList.add("card-project")
+     
+//             // criando a imagem
+            
+//             const img = document.createElement("img")
+//             img.src = cardData["img-link"]
+//             img.alt = "texto alternativo"
+//             card.appendChild(img);
+
+//             // criando title
+
+//             const tittle = document.createElement("h3")
+//             tittle.textContent = cardData.tittle
+//             card.appendChild(tittle)
+
+//             // criando texto
+
+//             const description = document.createElement("p")
+//             description.textContent = cardData.description;
+//             card.appendChild(description)
+
+//             // criando link
+
+//             const btnProjectLink = document.createElement("a")
+//             btnProjectLink.classList.add("btn-primary")
+//             btnProjectLink.href = cardData['btn-link']
+//             btnProjectLink.textContent = "ver projeto"
+//             card.appendChild(btnProjectLink);
+            
+
+//             // adiciona o card a div 
+//             cardDiv.appendChild(card)
+//             console.log(card)
+//         }
+
+//     })
+//     .catch((error) => console.error("Erro na requisição:", error));
