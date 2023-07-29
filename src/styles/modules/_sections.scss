@@ -236,6 +236,9 @@ header {
 
   .grid-projects{
     display: grid;
+    justify-content: center;
+    gap: $sp-32;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
   }
 
   .card-project{

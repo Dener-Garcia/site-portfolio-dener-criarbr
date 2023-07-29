@@ -27,28 +27,78 @@ document.addEventListener("click", ()=>{
     olhos.classList.toggle("anime")
 })
 
-const accordions = document.querySelectorAll(".certificate-box")
-const details = document.querySelectorAll(".certificate-box details")
+const certificateBoxes = document.querySelectorAll(".certificate-box");
 
-accordions.forEach(e => {
-    e.addEventListener("click", ()=>{
-        console.log("abriu")
-        details.setAttribute("closed", "open")
-    })
+certificateBoxes.forEach(box => {
+    box.addEventListener("click", () => {
+        const detailsElement = box.querySelector("details");
+        if (detailsElement.hasAttribute("open")) {
+            detailsElement.removeAttribute("open");
+        } else {
+            detailsElement.setAttribute("open", "");
+        }
+    });
 });
 
 // criando uma async function
 const jsonRead = async ()=>{
-
+    try{
     // atribuindo uma promise await fetch para a variavel data
     const data = await fetch("/public/card-projects.json")
-    console.log("resultado do fetch", data)
+
+    // console.log("resultado do fetch", data)
+
     // convertendo resultado do fetch em .json, essa promisse espera o resposta da anterior
     const dataConverted = await data.json()
-    console.log("dados ja convertidos em .json", dataConverted)
+
+    //console.log("dados ja convertidos em .json", dataConverted)
+
+         const gridCards = document.querySelector(".grid-projects")
+
+    // pegando o objeto contentCard do .json e fazendo um map no dataConverted o map precisa de um novo nome para cada elemento que ele ira criar que no caso sao os arrays separados veja no console.log
+    dataConverted.contentCard.map((singleValues)=>{
+   //     console.log("conteudo", conteudo)
+
+        const cardValues = singleValues
+
+         const card = document.createElement("div")
+         card.classList.add("card-project")
+
+         const imageCard = document.createElement("img")
+         imageCard.src = cardValues.imgLink
+         imageCard.alt = cardValues["alt-img"]
+         card.appendChild(imageCard)
+
+         const title = document.createElement("h3")
+        title.textContent = cardValues.title
+        card.appendChild(title)
+
+        const textProject = document.createElement("p")
+        textProject.textContent = cardValues.description
+        card.appendChild(textProject)
+         
+        const btnShowProject = document.createElement("a")
+        btnShowProject.classList.add("btn-primary")
+        btnShowProject.textContent = "Veja mais"
+        btnShowProject.href = cardValues["btn-link"]
+        card.appendChild(btnShowProject)
+
+         gridCards.appendChild(card)
+    })
+    }catch (error) {
+        console.error("Erro na requisição so lamento:", error)
+    }
 }
 
-jsonRead()
+ jsonRead()
+
+ const divCard = document.querySelector(".card-project p")
+
+ console.log(divCard)
+
+
+
+
 
 // // pegando dados de um arquivo .json local, tambem pode usar uma url de api porem com async await
    
@@ -86,9 +136,9 @@ jsonRead()
 
 //             // criando title
 
-//             const tittle = document.createElement("h3")
-//             tittle.textContent = cardData.tittle
-//             card.appendChild(tittle)
+//             const title = document.createElement("h3")
+//             title.textContent = cardData.title
+//             card.appendChild(title)
 
 //             // criando texto
 
