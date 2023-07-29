@@ -1,30 +1,18 @@
+@import 'modules/typography';
+@import 'modules/colors';
+@import 'modules/shadows';
+
+@import 'modules/spaces';
+@import 'modules/sections';
+
+@import 'modules/root';
+
+@import 'modules/rules';
+@import 'modules/class-by-js';
 
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  html {
-    min-height: 100dvh;
-  }
-  
-  body {
-    font-family: "Roboto", sans-serif;
-  }
-  
-  li{
-    list-style: none;
-  }
-  
-  a{
-    text-decoration: none;
-  }
-  
-  button{
-    border: none;
-  }
 
-@import 'modules/teste';
+@import 'modules/buttons';
+
+@import 'modules/animations';
 

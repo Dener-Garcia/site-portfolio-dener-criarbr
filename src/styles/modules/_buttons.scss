@@ -1,0 +1,26 @@
+
+
+  .btn-primary {
+    min-width: 8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: $fs-18;
+    font-weight: $fw-medium;
+    background-color: var(--bg-primary);
+    color: var(--bg-constrast-light);
+    box-shadow: $effect-shadow-default;
+    cursor: pointer;
+
+      &:hover{
+        box-shadow: $effect-shadow-hover;
+      }
+
+      &:focus{
+        box-shadow: $effect-shadow-active;
+      }
+  }

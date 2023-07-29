@@ -1,0 +1,53 @@
+html{
+
+    --bg-primary: #{$bg-primary-light};
+    --bg-constrast-light: #{$bg-contrast-light};
+    --bg-contrast-dark: #($bg-contrast-dark);
+
+    --cl-black-100: #{$cl-black-100};
+    --cl-black-200: #{$cl-black-200};
+    --cl-black-300: #{$cl-black-300};
+    --cl-black-400: #{$cl-black-400};
+    --cl-black-500: #{$cl-black-500};
+    --cl-black-600: #{$cl-black-600};
+    --cl-black-700: #{$cl-black-700};
+    --cl-black-800: #{$cl-black-800};
+    --cl-black-850: #{$cl-black-850};
+    --cl-black-900: #{$cl-black-900};
+    --cl-black-950: #{$cl-black-950};
+    --cl-black-1000: #{$cl-black-1000};
+
+    --cl-feedback-status: #{$cl-feedback-status};
+    --cl-feedback-info: #{$cl-feedback-info};
+    --cl-feedback-warning: #{$cl-feedback-warning};
+    --cl-feedback-error: #{$cl-feedback-error};
+    --cl-feedback-sucess: #{$cl-feedback-sucess};
+};
+
+html[ui-theme='dark']{
+
+    --bg-primary: #{$bg-primary-dark};
+
+    --bg-constrast-light: #{$bg-contrast-dark};
+    --bg-contrast-dark: #($bg-contrast-light);
+
+    --cl-black-100: #{$cl-black-1000};
+    --cl-black-200: #{$cl-black-950};
+    --cl-black-300: #{$cl-black-900};
+    --cl-black-400: #{$cl-black-850};
+    --cl-black-500: #{$cl-black-800};
+    --cl-black-600: #{$cl-black-700};
+    --cl-black-700: #{$cl-black-600};
+    --cl-black-800: #{$cl-black-500};
+    --cl-black-850: #{$cl-black-400};
+    --cl-black-900: #{$cl-black-300};
+    --cl-black-950: #{$cl-black-200};
+    --cl-black-1000: #{$cl-black-100};
+};
+
+
+html[ui-theme='high-contrast']{
+
+    --bg-primary: #{$bg-primary-high-contrast};
+    --bg-constrast-light: #{$bg-contrast-high};
+}
