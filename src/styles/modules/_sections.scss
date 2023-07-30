@@ -331,10 +331,6 @@ header {
         transition: 0.2s;
       }
 
-      input:valid{
-       outline: solid $fs-2 var(--cl-feedback-sucess);
-      }
-
       input:focus, 
       textarea:focus{
         font-size: $fs-18;
@@ -349,8 +345,12 @@ header {
     button{
       margin-top: $sp-8;
       font-size: $fs-18;
-    font-weight: $fw-medium;
-    gap: $fs-16;
+      font-weight: $fw-medium;
+      gap: $fs-16;
+
+      button:disabled{
+        background-color: red;
+      }
 
     i{
       font-size: $fs-24;

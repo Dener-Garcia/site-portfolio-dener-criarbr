@@ -11,6 +11,10 @@
     transform: scale(2);
 }
 
-.inputIalid{
+.inputInvalidJS{
     outline: solid $fs-2 var(--cl-feedback-error);
+   }
+
+   .inputValidJS{
+    outline: solid $fs-2 var(--cl-feedback-sucess);
    }

@@ -50,33 +50,68 @@ function mostraAlerta(nameInput){
     alert("O campo" + " " + nameInput + " " + "esta vazio")
 }
 
-form.addEventListener("submit", (e)=>{
-    e.preventDefault()
-
-
-
-    if (fieldName.value === ""){
-        mostraAlerta(fieldName.placeholder)
-        return
-    }
-
-    if (!validMail(fieldMail.value)){
-        alert("email invalido insira corretamente")
-    }
-
-    function validMail(mailField){
-        const regxMail = new RegExp(
-            // pattern: user.123@host12.com.br
-            /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/
-        )
-
-        if (regxMail.test(mailField)){
-            return true
+const sendForm= ()=>{
+    form.addEventListener("submit", (e)=>{
+        e.preventDefault()
+    
+    checkInput(fieldName)
+    
+      
+    
+        if (!validMail(fieldMail.value)){
+            console.log("email vazio")
+            return
         }
-        return false
+    
+        function validMail(mailField){
+            const regxMail = new RegExp(
+                // pattern: user.123@host12.com.br
+                /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/
+            )
+    
+            if (regxMail.test(mailField)){
+                return true
+            }
+            return false
+        }
+    
+        checkForm()
+        alert("fom enviado")
+        btnSendForm.innerHTML = "Mensagem enviada"
+    })
+}
+
+
+function checkInput(input){
+    if(input.value === ""){
+        showError(fieldName, "Ops, esqueceu de preencher esse campo")
+    }else{
+        showError(fieldName, "")
+        fieldName.classList.remove("inputInvalidJS")
+        fieldName.classList.add("inputValidJS")
     }
-    btnSendForm.innerHTML = "Mensagem enviada"
-})
+}
+
+
+btnSendForm.addEventListener("click",)
+function checkForm(){
+    const formItens = document.querySelectorAll("form input")
+
+    if (formItens.classList.contains("inputInvalidJS"))
+    btnSendForm.setAttribute("type", "button")
+    alert("fom enviado")
+    
+}
+
+
+function showError(input, message){
+    const formItem = input.parentElement
+    const textMessage = formItem.querySelector("legend")
+    
+    textMessage.textContent = message
+    input.classList.remove("inputValidJS")
+    input.classList.add("inputInvalidJS")
+}
 
 
 

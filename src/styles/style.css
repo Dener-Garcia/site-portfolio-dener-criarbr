@@ -287,9 +287,6 @@ header i {
   box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
   transition: 0.2s;
 }
-.contact form .field input:valid {
-  outline: solid 0.125rem var(--cl-feedback-sucess);
-}
 .contact form .field input:focus,
 .contact form .field textarea:focus {
   font-size: 1.125rem;
@@ -307,6 +304,9 @@ header i {
   font-size: 1.125rem;
   font-weight: 500;
   gap: 1rem;
+}
+.contact form button button:disabled {
+  background-color: red;
 }
 .contact form button i {
   font-size: 1.5rem;
@@ -484,8 +484,12 @@ body {
   transform: scale(2);
 }
 
-.inputIalid {
+.inputInvalidJS {
   outline: solid 0.125rem var(--cl-feedback-error);
+}
+
+.inputValidJS {
+  outline: solid 0.125rem var(--cl-feedback-sucess);
 }
 
 .btn-primary {
