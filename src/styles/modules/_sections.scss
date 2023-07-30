@@ -331,6 +331,10 @@ header {
         transition: 0.2s;
       }
 
+      input:valid{
+       outline: solid $fs-2 var(--cl-feedback-sucess);
+      }
+
       input:focus, 
       textarea:focus{
         font-size: $fs-18;
@@ -387,6 +391,7 @@ header {
     background-color: var(--bg-primary);
     box-shadow: $effect-shadow-default;
     gap: $sp-32;
+    cursor: pointer;
 
     img{
       width: 5rem;
@@ -406,7 +411,6 @@ header {
         gap: $sp-24;
         list-style: none;
         color: var(--bg-constrast-light);
-        cursor: pointer;
       }
       
       h4{
@@ -421,6 +425,7 @@ header {
         background-color: var(--cl-feedback-info);
         border-radius: 1rem;
         transition: 0.2s;
+        cursor: pointer;
       }
 
       button::after{

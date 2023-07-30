@@ -10,3 +10,7 @@
     transform: translateX(20px);
     transform: scale(2);
 }
+
+.inputIalid{
+    outline: solid $fs-2 var(--cl-feedback-error);
+   }

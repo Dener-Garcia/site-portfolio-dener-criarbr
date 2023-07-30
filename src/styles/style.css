@@ -287,6 +287,9 @@ header i {
   box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
   transition: 0.2s;
 }
+.contact form .field input:valid {
+  outline: solid 0.125rem var(--cl-feedback-sucess);
+}
 .contact form .field input:focus,
 .contact form .field textarea:focus {
   font-size: 1.125rem;
@@ -338,6 +341,7 @@ header i {
   background-color: var(--bg-primary);
   box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
   gap: 2rem;
+  cursor: pointer;
 }
 .certificates .certificate-box img {
   width: 5rem;
@@ -354,7 +358,6 @@ header i {
   gap: 1.5rem;
   list-style: none;
   color: var(--bg-constrast-light);
-  cursor: pointer;
 }
 .certificates .certificate-box details h4 {
   font-size: 1.25rem;
@@ -367,6 +370,7 @@ header i {
   background-color: var(--cl-feedback-info);
   border-radius: 1rem;
   transition: 0.2s;
+  cursor: pointer;
 }
 .certificates .certificate-box details button::after {
   content: "";
@@ -478,6 +482,10 @@ body {
 .btnRotateJS {
   transform: translateX(20px);
   transform: scale(2);
+}
+
+.inputIalid {
+  outline: solid 0.125rem var(--cl-feedback-error);
 }
 
 .btn-primary {

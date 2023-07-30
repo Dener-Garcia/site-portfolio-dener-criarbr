@@ -30,7 +30,7 @@ document.addEventListener("click", ()=>{
 const certificateBoxes = document.querySelectorAll(".certificate-box");
 
 certificateBoxes.forEach(box => {
-    box.addEventListener("click", () => {
+    box.addEventListener("mouseenter", () => {
         const detailsElement = box.querySelector("details");
         if (detailsElement.hasAttribute("open")) {
             detailsElement.removeAttribute("open");
@@ -39,6 +39,58 @@ certificateBoxes.forEach(box => {
         }
     });
 });
+
+const form = document.querySelector("form")
+const fieldName = document.querySelector("#fieldName")
+const fieldMail = document.querySelector("#fieldMail")
+const btnSendForm = document.querySelector("form button")
+console.log(btnSendForm)
+
+function mostraAlerta(nameInput){
+    alert("O campo" + " " + nameInput + " " + "esta vazio")
+}
+
+form.addEventListener("submit", (e)=>{
+    e.preventDefault()
+
+
+
+    if (fieldName.value === ""){
+        mostraAlerta(fieldName.placeholder)
+        return
+    }
+
+    if (!validMail(fieldMail.value)){
+        alert("email invalido insira corretamente")
+    }
+
+    function validMail(mailField){
+        const regxMail = new RegExp(
+            // pattern: user.123@host12.com.br
+            /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/
+        )
+
+        if (regxMail.test(mailField)){
+            return true
+        }
+        return false
+    }
+    btnSendForm.innerHTML = "Mensagem enviada"
+})
+
+
+
+
+
+
+
+
+
+// oninvalid="this.setCustomValidity('Opa, você esqueceu de preencher aqui.')"
+// onchange="try{setCustomValidity('')}catch(e){}"
+
+
+
 
 // criando uma async function
 const jsonRead = async ()=>{
