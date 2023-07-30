@@ -299,14 +299,16 @@ header i {
   color: var(--cl-black-500);
   opacity: 1;
 }
+.contact form .field legend {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--cl-feedback-error);
+}
 .contact form button {
   margin-top: 0.5rem;
   font-size: 1.125rem;
   font-weight: 500;
   gap: 1rem;
-}
-.contact form button button:disabled {
-  background-color: red;
 }
 .contact form button i {
   font-size: 1.5rem;

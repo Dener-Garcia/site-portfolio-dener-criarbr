@@ -340,6 +340,12 @@ header {
         color: var(--cl-black-500);
         opacity: 1;
       }
+
+      legend{
+        margin-top: $sp-8;
+        font-size: $fs-14;
+        color: var(--cl-feedback-error);
+      }
     }
 
     button{
@@ -347,10 +353,6 @@ header {
       font-size: $fs-18;
       font-weight: $fw-medium;
       gap: $fs-16;
-
-      button:disabled{
-        background-color: red;
-      }
 
     i{
       font-size: $fs-24;
