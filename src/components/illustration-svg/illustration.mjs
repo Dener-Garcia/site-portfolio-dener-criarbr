@@ -188,20 +188,29 @@ class Mysvg extends HTMLElement{
           animation: scale-big 0.5s linear 0s forwards;
         }
 
-        @keyframes blinks {
+        @keyframes blinkEyes {
           0%{
             opacity: 1;
-          }
-          50%{
-            opacity: 0;
-          }  
+          } 
+          80%{
+              opacity: 1;
+            }
+          82%{
+              opacity: 0.5;
+            }
+          90%{
+              opacity: 0;
+            }  
+          92%{
+              opacity: 0.5;
+            }  
           100%{
             opacity: 1;
           }
         } 
-
-        .blink{
-          animation: blinks 0.3s linear 4s forwards;
+      
+        .blinkEye{
+          animation: blinkEyes 3s ease-in 4s infinite;
         }
 
         .color-stroke{
@@ -314,9 +323,9 @@ class Mysvg extends HTMLElement{
 
       <path id="hair" class="color-stroke color-fill" d="M399.222 64.7368C398.862 72.396 401.496 81.9112 404.149 85.9523L406.802 85.6155V67.0099C408.344 61.8323 413.322 51.3256 420.899 50.7194C430.371 49.9617 431.507 54.129 439.084 54.8867C446.661 55.6444 453.48 56.0233 464.846 52.2348C476.211 48.4463 484.21 53.3714 487.577 61.706C490.27 68.3737 490.943 79.5259 490.943 84.2685L494.733 85.9523C497.134 71.2474 499.736 41.8376 490.943 41.8376C479.952 41.8376 481.519 30.6826 473.559 24.9578C465.6 19.233 460.678 13.9712 460.678 13.9712C460.678 13.9712 462.837 30.0512 458.727 31.3982C454.617 32.7452 448.176 15.8654 448.176 15.8654L444.388 4.5L437.948 10.9404C433.902 18.6951 439.086 21.5061 434.159 27.2309C429.232 32.9557 425.824 16.6231 425.824 16.6231C423.045 23.8072 414.234 38.3353 408.776 41.8376C401.954 46.2153 399.684 54.8867 399.222 64.7368Z" fill="#0F0F0F" stroke="#0F0F0F" stroke-width="4"/>
 
-      <ellipse id="olho-dir-dag" class="color-fill" cx="465.604" cy="84.8157" rx="3.40963" ry="3.40963" fill="#0F0F0F"/>
+      <ellipse id="olho-dir-dag" class="color-fill blinkEye" cx="465.604" cy="84.8157" rx="3.40963" ry="3.40963" fill="#0F0F0F"/>
 
-      <ellipse id="olho-esq-dag" class="blink color-fill" cx="432.265" cy="84.8157" rx="3.40963" ry="3.40963" fill="#0F0F0F"/>
+      <ellipse id="olho-esq-dag" class="color-fill blinkEye" cx="432.265" cy="84.8157" rx="3.40963" ry="3.40963" fill="#0F0F0F"/>
 
       <g id="Oculos">
       <rect id="oculosLeft" class="color-stroke" x="417.475" y="74.5714" width="23.5193" height="20.4886" stroke="#0F0F0F" stroke-width="3"/>

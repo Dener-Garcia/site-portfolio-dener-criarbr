@@ -374,6 +374,10 @@ header i {
   transition: 0.2s;
   cursor: pointer;
 }
+.certificates .certificate-box details button:focus {
+  outline: none;
+  scale: 1.3;
+}
 .certificates .certificate-box details button::after {
   content: "";
   top: 0;
@@ -515,4 +519,25 @@ body {
 }
 .btn-primary:focus {
   box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
+}
+
+@keyframes blinkEyes {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.blinkEye {
+  animation: blinkEyes 4s ease 6s infinite;
 }/*# sourceMappingURL=style.css.map */
