@@ -14,21 +14,48 @@ const myForm = () => {
         checkInput(fieldMail)
         checkInput(fieldMessage)
 
+        if (!checkInput(fieldName)){
+            return
+        }
+
         if (!validMail(fieldMail.value)) {
             showError(fieldMail, "Ops! E-mail incorreto. Tente algo como: seu_email@email.com.br")
             return
         }
+       
+        if (!checkInput(fieldMessage)){
+            return
+        }
+
+
+        fetch("https://formsubmit.co/denerag91@gmail.com"", {
+            method: "POST",
+            body: JSON.stringify({
+              userId: 1,
+              title: "Fix my bugs",
+              completed: false
+            }),
+            headers: {
+              "Content-type": "application/json; charset=UTF-8"
+            }
+          });
+          
+       
+
 
         clearForm([fieldName, fieldMail, fieldMessage])
+
     })
 
     function checkInput(input) {
         if (input.value === "") {
             showError(input, "Ops! Você esqueceu de preencher esse campo")
+            return false
         } else {
             showError(input, "")
             input.classList.remove("inputInvalidJS")
             input.classList.add("inputValidJS")
+            return true
         }
     }
 
@@ -64,7 +91,7 @@ const myForm = () => {
             btnSendForm.classList.add("inputValidJS")
             const icon = document.createElement("i")
             icon.classList.add("ph")
-            icon.classList.add("ph-check")
+            icon.classList.add("ph-check-fat")
             btnSendForm.appendChild(icon)
 
         }, 1500);

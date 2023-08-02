@@ -20,25 +20,16 @@ import myForm from "./src/functions/form/custom-form.mjs";
 
 myForm()
 
+import ShowBoxes from "./src/functions/certificate-boxes/show-boxes.mjs";
+
+ShowBoxes()
+
+
+
+
 const olhos2 = document.querySelector("my-svg").shadowRoot.querySelector("#olho-esq-dag")
 
 console.log(olhos2, "pe")
-
-
-
-const certificateBoxes = document.querySelectorAll(".certificate-box");
-
-certificateBoxes.forEach(box => {
-    box.addEventListener("mouseenter", () => {
-        const detailsElement = box.querySelector("details");
-        if (detailsElement.hasAttribute("open")) {
-            detailsElement.removeAttribute("open");
-        } else {
-            detailsElement.setAttribute("open", "");
-        }
-    });
-});
-
 
 
 

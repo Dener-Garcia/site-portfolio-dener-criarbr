@@ -399,7 +399,7 @@ header {
       width: 5rem;
       background-color: var(--bg-primary);
       box-shadow: $effect-shadow-active;
-      padding: $sp-16;
+      padding: $sp-8;
       border-radius: $fs-8;
       fill: var(--bg-constrast-light);
     }
@@ -461,8 +461,29 @@ header {
       
       p{
         margin-top: $sp-16;
+        margin-bottom: $sp-24;
         font-size: $fs-16;
         color: var(--cl-black-300)
+      }
+
+      a{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        font-size: $fs-16;
+        font-weight: $fw-medium;
+        color: var(--bg-constrast-light);
+        
+
+        i{
+          margin-left: $sp-8;
+          font-size: $fs-24;
+          transition: 0.3s;
+        }
+      }
+      a:hover i{
+        transform: scale(1.2);
+        color: var(--cl-feedback-info)
       }
     }
   }

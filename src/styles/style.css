@@ -349,7 +349,7 @@ header i {
   width: 5rem;
   background-color: var(--bg-primary);
   box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
   fill: var(--bg-constrast-light);
 }
@@ -400,8 +400,26 @@ header i {
 }
 .certificates .certificate-box details p {
   margin-top: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1rem;
   color: var(--cl-black-300);
+}
+.certificates .certificate-box details a {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--bg-constrast-light);
+}
+.certificates .certificate-box details a i {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.certificates .certificate-box details a:hover i {
+  transform: scale(1.2);
+  color: var(--cl-feedback-info);
 }
 
 html {
