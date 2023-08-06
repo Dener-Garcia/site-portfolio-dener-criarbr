@@ -14,7 +14,7 @@ const myForm = () => {
         checkInput(fieldMail)
         checkInput(fieldMessage)
 
-        if (!checkInput(fieldName)){
+        if (!checkInput(fieldName)) {
             return
         }
 
@@ -22,39 +22,36 @@ const myForm = () => {
             showError(fieldMail, "Ops! E-mail incorreto. Tente algo como: seu_email@email.com.br")
             return
         }
-       
-        if (!checkInput(fieldMessage)){
+
+        if (!checkInput(fieldMessage)) {
             return
-        } 
+        }
 
-  // Crie um objeto FormData e adicione os campos do formulário
-  const formData = {
-    name: fieldName.value,
-    mail: fieldMail.value,
-    message: fieldMessage.value
-  }
+        // Crie um objeto FormData e adicione os campos do formulário
+        const formData = {
+            name: fieldName.value,
+            mail: fieldMail.value,
+            message: fieldMessage.value
+        }
 
-  console.log(formData)
-
-      fetch('http://localhost:3000/enviar-email', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json', // Indica que os dados são enviados em formato JSON
-          },
-        body: JSON.stringify(formData)
-      })
-      .then(response => response.json())
-      .then(data => {
-        console.log(data.message);
-        // Aqui você pode mostrar uma mensagem de sucesso ou fazer outras ações após enviar o formulário.
-      })
-      .catch(error => {
-        console.error('Erro ao enviar dados do formulário:', error);
-        // Aqui você pode mostrar uma mensagem de erro ou fazer outras ações caso ocorra um erro no envio do formulário.
-      });
-
-
-        clearForm([fieldName, fieldMail, fieldMessage])
+        fetch('http://localhost:3000/enviar-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json', // Indica que os dados são enviados em formato JSON
+            },
+            body: JSON.stringify(formData)
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data.message);
+                clearForm([fieldName, fieldMail, fieldMessage]) 
+               
+            })
+            .catch(error => {
+                console.error('Erro ao enviar dados do formulário:', error);
+                // Aqui você pode mostrar uma mensagem de erro ou fazer outras ações caso ocorra um erro no envio do formulário.
+                feedbackSend("Falha no envio, tente novamente", "ph", "ph-warning-diamond", "inputInvalidJS")
+            });
 
     })
 
@@ -98,14 +95,19 @@ const myForm = () => {
                 e.classList.remove("inputValidJS")
                 e.value = ""
             })
-            btnSendForm.textContent = "Mensagem enviada"
-            btnSendForm.classList.add("inputValidJS")
-            const icon = document.createElement("i")
-            icon.classList.add("ph")
-            icon.classList.add("ph-check-fat")
-            btnSendForm.appendChild(icon)
+
+            feedbackSend("Mensagem enviada", "ph", "ph-check-fat", "inputValidJS")
 
         }, 1500);
+    }
+
+    function feedbackSend(message, iconStart, iconName, classFeedback){
+        btnSendForm.textContent = message
+        btnSendForm.classList.add(classFeedback)
+        const icon = document.createElement("i")
+        icon.classList.add(iconStart)
+        icon.classList.add(iconName)
+        btnSendForm.appendChild(icon)
     }
 }
 
