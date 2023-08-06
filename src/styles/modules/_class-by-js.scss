@@ -1,20 +1,30 @@
-.d-none{
+.d-none {
     display: none;
 }
 
-.d-grid{
+.d-grid {
     display: grid;
 }
 
-.btnRotateJS{
-    transform: translateX(20px);
-    transform: scale(2);
+.menuMobileActive{
+    opacity: 1;
+    transform: translateX(0);
+    
 }
 
-.inputInvalidJS{
-    outline: solid $fs-2 var(--cl-feedback-error);
-   }
+.btnRotateClosedJS {
+    background-color: var(--cl-feedback-info);
+}
 
-   .inputValidJS{
+.btnRotateOpenJS {
+    transform: rotate(45deg);
+    background-color: var(--cl-feedback-error);
+}
+
+.inputInvalidJS {
+    outline: solid $fs-2 var(--cl-feedback-error);
+}
+
+.inputValidJS {
     outline: solid $fs-2 var(--cl-feedback-sucess);
-   }
+}

@@ -25,22 +25,33 @@ const myForm = () => {
        
         if (!checkInput(fieldMessage)){
             return
-        }
+        } 
 
+  // Crie um objeto FormData e adicione os campos do formulário
+  const formData = {
+    name: fieldName.value,
+    mail: fieldMail.value,
+    message: fieldMessage.value
+  }
 
-        fetch("https://formsubmit.co/denerag91@gmail.com"", {
-            method: "POST",
-            body: JSON.stringify({
-              userId: 1,
-              title: "Fix my bugs",
-              completed: false
-            }),
-            headers: {
-              "Content-type": "application/json; charset=UTF-8"
-            }
-          });
-          
-       
+  console.log(formData)
+
+      fetch('http://localhost:3000/enviar-email', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json', // Indica que os dados são enviados em formato JSON
+          },
+        body: JSON.stringify(formData)
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data.message);
+        // Aqui você pode mostrar uma mensagem de sucesso ou fazer outras ações após enviar o formulário.
+      })
+      .catch(error => {
+        console.error('Erro ao enviar dados do formulário:', error);
+        // Aqui você pode mostrar uma mensagem de erro ou fazer outras ações caso ocorra um erro no envio do formulário.
+      });
 
 
         clearForm([fieldName, fieldMail, fieldMessage])

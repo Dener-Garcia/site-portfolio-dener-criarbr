@@ -25,14 +25,20 @@ import ShowBoxes from "./src/functions/certificate-boxes/show-boxes.mjs";
 ShowBoxes()
 
 
-
-
 const olhos2 = document.querySelector("my-svg").shadowRoot.querySelector("#olho-esq-dag")
 
 console.log(olhos2, "pe")
 
 
+const btnShowMobile = document.querySelector(".show-menu-mobile")
 
+btnShowMobile.addEventListener("click", ()=>{
+
+    const menuMobile = document.querySelector(".menu-mobile")
+    menuMobile.classList.toggle("menuMobileActive")
+})
+
+console.log(btnShowMobile)
 
 // criando uma async function
 const jsonRead = async ()=>{

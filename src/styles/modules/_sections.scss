@@ -1,7 +1,105 @@
-nav {
-  display: flex;
-  gap: $sp-16;
+.show-menu-mobile{
+  position: fixed;
+  z-index: 10;
+  right: $fs-16;
+  top: $fs-16;
+  width: $fs-40;
+  height: $fs-40;
+  border-radius: $fs-8;
+  background-color: var(--bg-primary);
+  box-shadow: $effect-shadow-default;
+  color: var(--bg-constrast-light);
+
+
+    span{
+      position: absolute;
+      width: 20px;
+      height: 4px;
+      left: 10px;
+      top: 8px;
+      background-color: var(--bg-constrast-light);
+      background-color: blue;
+      
+    }
+
+    span:nth-child(2){
+      position: absolute;
+      width: 20px;
+      height: 4px;
+      left: 10px;
+      top: 28px;
+      background-color: var(--bg-constrast-light);
+      
+    }
 }
+
+aside {
+  display: none;
+
+  @media screen and (max-width: 959px) {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--bg-primary);
+    opacity: 0.3;
+    transform: translateX(100%);
+    transition: 1s;
+
+    nav {
+      margin-top: 56px;
+      padding: 0 $sp-32;
+
+      a {
+        margin-top: $sp-24;
+      }
+    }
+
+    .network {
+      margin-top: $sp-40;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 $sp-32;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $fs-28;
+        padding: $sp-8;
+        border-radius: 50px;
+        background-color: var(--bg-primary);
+        color: var(--bg-constrast-light);
+        box-shadow: $effect-shadow-default;
+
+        &:focus {
+          box-shadow: $effect-shadow-active;
+        }
+      }
+    }
+
+    blockquote {
+      width: 70%;
+      height: $fs-128;
+      margin: $sp-40 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 $sp-40;
+      background-color: var(--bg-primary);
+      box-shadow: $effect-shadow-default;
+
+      q {
+        text-align: center;
+        font-style: italic;
+        font-weight: $fw-light;
+        font-size: $fs-18;
+      }
+    }
+  }
+}
+
 
 header {
   max-width: 72rem;
@@ -12,6 +110,22 @@ header {
   justify-content: space-between;
   padding: $sp-24 $sp-8;
 
+  a {
+    font-family: 'Audiowide', sans-serif;
+    font-size: $fs-20;
+    color: var(--bg-constrast-light);
+  }
+
+  nav {
+    display: flex;
+    gap: $sp-16;
+
+
+    a {
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+
   .settings-ui {
     position: relative;
     display: flex;
@@ -20,6 +134,7 @@ header {
     gap: $sp-8;
     color: var(--bg-constrast-light);
 
+
     button {
       position: relative;
       display: flex;
@@ -27,6 +142,7 @@ header {
       font-size: $fs-16;
       background-color: var(--bg-primary);
       color: var(--bg-constrast-light);
+      cursor: pointer;
     }
 
     button::after {
@@ -164,7 +280,7 @@ header {
     background-color: var(--cl-black-500);
   }
 
-  .text-box{
+  .text-box {
     position: relative;
     width: 40%;
     margin-top: $sp-40;
@@ -172,7 +288,7 @@ header {
     background-color: var(--bg-primary);
     box-shadow: $effect-shadow-default;
 
-    i{
+    i {
       position: absolute;
       right: -20%;
       top: 33%;
@@ -184,29 +300,29 @@ header {
       box-shadow: $effect-shadow-hover;
     }
 
-    h3{
+    h3 {
       font-size: $fs-20;
       color: var(--bg-constrast-light);
     }
 
-    p{
+    p {
       color: var(--cl-black-300);
       margin-top: $sp-16;
     }
-  } 
+  }
 
   .text-box:nth-child(3),
-  .text-box:nth-child(5){
+  .text-box:nth-child(5) {
     margin-left: 50%;
   }
 
   .text-box:nth-child(3) i,
-  .text-box:nth-child(5) i{
+  .text-box:nth-child(5) i {
     right: 105%;
   }
 }
 
-.projects{
+.projects {
   margin: auto;
 
   h2 {
@@ -227,21 +343,21 @@ header {
     background-color: var(--cl-black-500);
   }
 
-  p{
+  p {
     margin-top: $sp-32;
     text-align: center;
     font-size: $fs-20;
     color: var(--cl-black-300)
   }
 
-  .grid-projects{
+  .grid-projects {
     display: grid;
     justify-content: center;
     gap: $sp-32;
-    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   }
 
-  .card-project{
+  .card-project {
     width: 300px;
     height: auto;
     margin-top: $sp-32;
@@ -250,8 +366,8 @@ header {
     padding: $sp-24;
     background-color: var(--bg-primary);
     box-shadow: $effect-shadow-default;
-  
-    img{
+
+    img {
       max-width: 20rem;
       height: 10rem;
       padding: $sp-16;
@@ -259,29 +375,29 @@ header {
       box-shadow: $effect-shadow-active;
     }
 
-    h3{
+    h3 {
       margin-top: $sp-16;
       font-size: $fs-20;
       font-weight: $fw-medium;
       color: var(--bg-constrast-light);
     }
-    
-    p{
+
+    p {
       margin-top: $sp-16;
       text-align: left;
       font-size: $fs-16;
       color: var(--cl-black-300)
     }
 
-    a{
+    a {
       margin-top: $sp-24;
     }
   }
 
-  
+
 }
 
-.contact{
+.contact {
   margin: auto;
 
   h2 {
@@ -302,7 +418,7 @@ header {
     background-color: var(--cl-black-500);
   }
 
-  form{
+  form {
     width: 60%;
     margin: $sp-40 auto;
     display: grid;
@@ -311,18 +427,18 @@ header {
     box-shadow: $effect-shadow-default;
     gap: $sp-24;
 
-    .field{
+    .field {
 
-      label{
+      label {
         font-weight: $fw-medium;
         color: var(--bg-constrast-light);
       }
-  
+
       input,
-      textarea{
+      textarea {
         width: 100%;
         margin-top: $sp-8;
-        padding:  $sp-8 $sp-16;
+        padding: $sp-8 $sp-16;
         font-size: $fs-16;
         border-radius: $sp-8;
         color: var(--bg-constrast-light);
@@ -331,38 +447,38 @@ header {
         transition: 0.2s;
       }
 
-      input:focus, 
-      textarea:focus{
+      input:focus,
+      textarea:focus {
         font-size: $fs-18;
       }
 
-      ::placeholder{
+      ::placeholder {
         color: var(--cl-black-500);
         opacity: 1;
       }
 
-      legend{
+      legend {
         margin-top: $sp-8;
         font-size: $fs-14;
         color: var(--cl-feedback-error);
       }
     }
 
-    button{
+    button {
       margin-top: $sp-8;
       font-size: $fs-18;
       font-weight: $fw-medium;
       gap: $fs-16;
 
-    i{
-      font-size: $fs-24;
-    }
+      i {
+        font-size: $fs-24;
+      }
     }
 
   }
 }
 
-.certificates{
+.certificates {
   margin: auto;
 
   h2 {
@@ -383,7 +499,7 @@ header {
     background-color: var(--cl-black-500);
   }
 
-  .certificate-box{
+  .certificate-box {
     width: 60%;
     margin: auto;
     margin-top: $sp-32;
@@ -395,7 +511,7 @@ header {
     gap: $sp-32;
     cursor: pointer;
 
-    img{
+    img {
       width: 5rem;
       background-color: var(--bg-primary);
       box-shadow: $effect-shadow-active;
@@ -404,84 +520,39 @@ header {
       fill: var(--bg-constrast-light);
     }
 
-    details{
+    details {
 
-      summary{
+      summary {
         width: 100%;
-        display: flex;
-        align-items: center;
-        gap: $sp-24;
-        list-style: none;
-        color: var(--bg-constrast-light);
-      }
-      
-      h4{
         font-size: $fs-20;
         font-weight: $fw-normal;
+        color: var(--bg-constrast-light);
       }
 
-      button{
-        position: relative;
-        width: $fs-4;
-        height: $fs-20;
-        background-color: var(--cl-feedback-info);
-        border-radius: 1rem;
-        transition: 0.2s;
-        cursor: pointer;
-
-        &:focus{
-          outline: none;
-          scale: (1.3);
-        }
-      }
-
-
-      button::after{
-        content: "";
-        top: 0;
-        left: 0;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: var(--cl-feedback-info);
-        border-radius: 1rem;
-        transform: rotate(90deg); 
-      }
-
-      summary:hover button,
-      summary:focus button{
-        transform: rotate(45deg);
-        background-color: var(--cl-feedback-error);
-      }
-
-      summary:hover button::after,
-      summary:focus button::after{
-        background-color: var(--cl-feedback-error);
-      }
-      
-      p{
+      p {
         margin-top: $sp-16;
         margin-bottom: $sp-24;
         font-size: $fs-16;
         color: var(--cl-black-300)
       }
 
-      a{
+      a {
         display: flex;
         align-items: center;
         justify-content: end;
         font-size: $fs-16;
         font-weight: $fw-medium;
         color: var(--bg-constrast-light);
-        
 
-        i{
+
+        i {
           margin-left: $sp-8;
           font-size: $fs-24;
-          transition: 0.3s;
+          transition: 0.2s;
         }
       }
-      a:hover i{
+
+      a:hover i {
         transform: scale(1.2);
         color: var(--cl-feedback-info)
       }

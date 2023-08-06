@@ -21,7 +21,8 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap&family=Audiowide&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="/src/styles/style.css" />
 
@@ -32,28 +33,30 @@
 </head>
 
 <body>
-    <aside class="menu-mobile" style="display: none;">
 
-        </div>
-        <a>Home Link menu mobile</a>
-        <div class="settings-ui">
-            <i class="ph ph-sun-dim"></i>
-            <label for="light-theme">Tema Claro</label>
-            <input type="radio" id="light-theme" name="ui-theme">
-            <i class="ph ph-moon-stars"></i>
-            <label for="dark-theme">Tema Escuro</label>
-            <input type="radio" id="dark-theme" name="ui-theme">
-            <i class="ph-fill ph-circle-half-tilt"></i>
-            <label for="high-contrast">Alto Contraste</label>
-            <input type="radio" id="high-contrast" name="ui-theme">
-        </div>
+    <button class="show-menu-mobile"><span>1</span>
+        <span>2</span><span>3</span></button>
+    <aside class="menu-mobile">
         <nav>
-            <input id="darkmode" type="checkbox"> <label for="darkmode">Dark Mode</label>
+            <a class="btn-primary" href="#home">Inicio</a>
+            <a class="btn-primary" href="#projects">Projetos</a>
+            <a class="btn-primary" href="#contact">Contato</a>
+            <a class="btn-primary" href="/src/pages/blog.html">Blog</a>
         </nav>
+        <div class="network">
+            <a href="#" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#" target="_blank"> <i class="ph ph-github-logo"></i></a>
+            <a href="#" target="_blank"> <i class="ph ph-envelope-simple"></i></a>
+            <a href="#" target="_blank"><i class="ph ph-youtube-logo"></i></a>
+            <a href="#" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" target="_blank"><i class="ph ph-behance-logo"></i></a>
+        </div>
+        <blockquote><q cite="#teste">Pessoas ignoram design que ignoram pessoas!</q></blockquote>
+        
     </aside>
 
     <header>
-        <a class="logo"><span class="sub-logo">Dener </span>Garcia </a>
+        <a class="logo">&lt;/ DenerGarcia &gt;</a>
         <div class="settings-ui">
             <i class="ph ph-person-arms-spread"></i>
             <button>Acessibilidade</button>
@@ -74,10 +77,10 @@
             </div>
         </div>
         <nav>
-            <a class="btn-primary" href="#">Inicio</a>
-            <a class="btn-primary" href="#">Projetos</a>
-            <a class="btn-primary" href="#">Contato</a>
-            <a class="btn-primary" href="#">Blog</a>
+            <a class="btn-primary" href="#home">Inicio</a>
+            <a class="btn-primary" href="#projects">Projetos</a>
+            <a class="btn-primary" href="#contact">Contato</a>
+            <a class="btn-primary" href="/src/pages/blog.html">Blog</a>
         </nav>
     </header>
     <main>
@@ -163,13 +166,15 @@
                 </div>
                 <div class="field">
                     <label for="fieldMessage">Como posso te ajudar?</label>
-                    <textarea id="fieldMessage" name="mensage" placeholder="Me conte sobre seu projeto, duvida ou mande um oi"></textarea>
+                    <textarea id="fieldMessage" name="message"
+                        placeholder="Me conte sobre seu projeto, duvida ou mande um oi"></textarea>
                     <legend></legend>
                 </div>
                 <input type="hidden" name="_captcha" value="false">
-          
-               
-                <button class="btn-primary" type="submit"> Enviar Mensagem <i class="ph ph-paper-plane-right"></i></button>
+
+
+                <button class="btn-primary" type="submit"> Enviar Mensagem <i
+                        class="ph ph-paper-plane-right"></i></button>
             </form>
 
         </section>
@@ -178,44 +183,50 @@
             <h2>Minhas certificações</h2>
             <div class="certificate-box">
                 <img src="./public/certificates/FEUX.png">
-                <details>        
-                    <summary>
-                        <button aria-label="Ver certificação do curso"></button><h4>Figma by FEUX Felipe Santada</h4> 
+                <details>
+                    <summary>Figma by FEUX Felipe Santana
                     </summary>
-                    <p>Realizar discovery, criar pesquisas, domínio de ferramentas como matrix CSD, declaração de problema, e definição de persona, estruturação de páginas e apps desenvolvimento de wireframes lo-fi e hi-fi e protótipos, realização de testes de usabilidade.</p>
-                    <a href='public/certificates/feux-figma.pdf' target="_blank">Ver certificado <i class="ph ph-file-arrow-down"></i></a>
+                    <p>Realizar discovery, criar pesquisas, domínio de ferramentas como matrix CSD, declaração de
+                        problema, e definição de persona, estruturação de páginas e apps desenvolvimento de wireframes
+                        lo-fi e hi-fi e protótipos, realização de testes de usabilidade.</p>
+                    <a href='public/certificates/feux-figma.pdf' target="_blank">Ver certificado <i
+                            class="ph ph-file-arrow-down"></i></a>
                 </details>
             </div>
             <div class="certificate-box">
                 <img src="./public/certificates/google.png">
-                <details>        
-                    <summary>
-                        <button aria-label="Ver certificação do curso"></button><h4>UX Design by Google</h4> 
+                <details>
+                    <summary> UX Design by Google
                     </summary>
-                    <p>Realizar discovery, criar pesquisas, domínio de ferramentas como matrix CSD, declaração de problema, e definição de persona, estruturação de páginas e apps desenvolvimento de wireframes lo-fi e hi-fi e protótipos, realização de testes de usabilidade.</p>
-                    <a href='public/certificates/feux-figma.pdf' target="_blank">Ver certificado <i class="ph ph-file-arrow-down"></i></a>
+                    <p>Realizar discovery, criar pesquisas, domínio de ferramentas como matrix CSD, declaração de
+                        problema, e definição de persona, estruturação de páginas e apps desenvolvimento de wireframes
+                        lo-fi e hi-fi e protótipos, realização de testes de usabilidade.</p>
+                    <a href='public/certificates/feux-figma.pdf' target="_blank">Ver certificado <i
+                            class="ph ph-file-arrow-down"></i></a>
                 </details>
             </div>
 
             <div class="certificate-box">
                 <img src="./public/certificates/Voitto.png">
                 <details>
-                    <summary>
-                        <button aria-label="Ver certificação do curso"></button><h4>Agile Scrum by Grupo Voitto</h4> 
+                    <summary>Agile Scrum by Grupo Voitto
                     </summary>
-                    <p>O principal framework de gerenciamento nos times de alto desempenho ele se baseia em times auto-organizáveis e interativos, com foco na entrega de valor ao cliente.</p>
-                    <a href='public/certificates/feux-figma.pdf' target="_blank">Ver certificado <i class="ph ph-file-arrow-down"></i></a>
+                    <p>O principal framework de gerenciamento nos times de alto desempenho ele se baseia em times
+                        auto-organizáveis e interativos, com foco na entrega de valor ao cliente.</p>
+                    <a href='public/certificates/feux-figma.pdf' target="_blank">Ver certificado <i
+                            class="ph ph-file-arrow-down"></i></a>
                 </details>
             </div>
 
             <div class="certificate-box">
                 <img src="./public/certificates/Fiap.png">
                 <details>
-                    <summary>
-                        <button aria-label="Ver certificação do curso"></button><h4>Design thinking by FIAP</h4> 
+                    <summary>Design thinking by FIAP
                     </summary>
-                    <p>Abordagem de solução de problemas centrada no usuário que enfatiza a empatia, a colaboração e a iteração para chegar a soluções inovadoras e viáveis.</p>
-                    <a href='public/certificates/feux-figma.pdf' target="_blank">Ver certificado <i class="ph ph-file-arrow-down"></i></a>
+                    <p>Abordagem de solução de problemas centrada no usuário que enfatiza a empatia, a colaboração e a
+                        iteração para chegar a soluções inovadoras e viáveis.</p>
+                    <a href='public/certificates/feux-figma.pdf' target="_blank">Ver certificado <i
+                            class="ph ph-file-arrow-down"></i></a>
                 </details>
             </div>
         </section>
