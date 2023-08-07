@@ -1,42 +1,56 @@
-.show-menu-mobile{
-  position: fixed;
-  z-index: 10;
-  right: $fs-16;
-  top: $fs-16;
-  width: $fs-40;
-  height: $fs-40;
-  border-radius: $fs-8;
-  background-color: var(--bg-primary);
-  box-shadow: $effect-shadow-default;
-  color: var(--bg-constrast-light);
+.show-menu-mobile {
+  display: none;
 
+  @media screen and (max-width: 959px) {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    right: $fs-16;
+    top: $fs-16;
+    width: $fs-40;
+    height: $fs-40;
+    border-radius: $fs-8;
+    background-color: var(--bg-primary);
+    box-shadow: $effect-shadow-default;
+    color: var(--bg-constrast-light);
+  }
 
-    span{
-      position: absolute;
-      width: 20px;
-      height: 4px;
-      left: 10px;
-      top: 8px;
-      background-color: var(--bg-constrast-light);
-      background-color: blue;
-      
-    }
+  span:nth-child(1) {
+    position: absolute;
+    width: 16px;
+    height: 4px;
+    left: 10px;
+    top: 10px;
+    border-radius: 5rem;
+    background-color: var(--bg-constrast-light);
+  }
 
-    span:nth-child(2){
-      position: absolute;
-      width: 20px;
-      height: 4px;
-      left: 10px;
-      top: 28px;
-      background-color: var(--bg-constrast-light);
-      
-    }
+  span:nth-child(2) {
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    left: 10px;
+    top: 18px;
+    border-radius: 5rem;
+    background-color: var(--bg-constrast-light);
+  }
+
+  span:nth-child(3) {
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    left: 10px;
+    top: 26px;
+    border-radius: 5rem;
+    background-color: var(--bg-constrast-light);
+  }
 }
 
 aside {
   display: none;
 
   @media screen and (max-width: 959px) {
+    position: fixed;
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -44,10 +58,11 @@ aside {
     background-color: var(--bg-primary);
     opacity: 0.3;
     transform: translateX(100%);
-    transition: 1s;
+    transition: 0.3s;
+    z-index: 1;
 
     nav {
-      margin-top: 56px;
+      margin-top: $sp-80;
       padding: 0 $sp-32;
 
       a {
@@ -56,7 +71,7 @@ aside {
     }
 
     .network {
-      margin-top: $sp-40;
+      margin-top: $sp-80;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -80,7 +95,7 @@ aside {
     }
 
     blockquote {
-      width: 70%;
+      width: 80%;
       height: $fs-128;
       margin: $sp-40 auto;
       display: flex;
@@ -89,6 +104,10 @@ aside {
       padding: 0 $sp-40;
       background-color: var(--bg-primary);
       box-shadow: $effect-shadow-default;
+
+      @media screen and (max-width: 959px) {
+        margin: $sp-80 auto;
+      }
 
       q {
         text-align: center;
@@ -110,16 +129,29 @@ header {
   justify-content: space-between;
   padding: $sp-24 $sp-8;
 
+  @media screen and (max-width: 959px) {
+    width: 80%;
+    margin: 0;
+    justify-content: space-around;
+  }
+
   a {
     font-family: 'Audiowide', sans-serif;
     font-size: $fs-20;
     color: var(--bg-constrast-light);
+
+    @media screen and (max-width: 959px) {
+      font-size: $fs-16;
+    }
   }
 
   nav {
     display: flex;
     gap: $sp-16;
 
+    @media screen and (max-width: 959px) {
+      display: none;
+    }
 
     a {
       font-family: 'Roboto', sans-serif;
@@ -134,7 +166,6 @@ header {
     gap: $sp-8;
     color: var(--bg-constrast-light);
 
-
     button {
       position: relative;
       display: flex;
@@ -143,6 +174,10 @@ header {
       background-color: var(--bg-primary);
       color: var(--bg-constrast-light);
       cursor: pointer;
+
+      @media screen and (max-width: 959px) {
+        font-size: $fs-14;
+      }
     }
 
     button::after {
@@ -216,6 +251,9 @@ header {
 
   i {
     font-size: $fs-20;
+    @media screen and (max-width: 959px) {
+      font-size: $fs-16;
+    }
   }
 }
 
@@ -224,11 +262,16 @@ header {
   width: 100%;
   height: auto;
   padding: 5rem 1.5rem;
+
 }
 
 .hero-section {
   display: flex;
   margin: auto;
+
+  @media screen and (max-width: 959px) {
+    flex-direction: column;
+  }
 
   .intro {
     width: auto;
@@ -254,10 +297,12 @@ header {
 
   .svg-container {
     width: 100%;
+
+    @media screen and (max-width: 959px) {
+      margin-top: $sp-40;
+    }
   }
 }
-
-
 
 .pipeline-section {
   margin: auto;
@@ -265,7 +310,11 @@ header {
   h2 {
     text-align: center;
     font-size: $fs-40;
-    color: var(--bg-constrast-light)
+    color: var(--bg-constrast-light);
+    
+    @media screen and (max-width: 959px) {
+      font-size: $fs-28;
+    }
   }
 
   h2::after {
@@ -278,6 +327,10 @@ header {
     height: $fs-8;
     border-radius: $fs-8;
     background-color: var(--cl-black-500);
+
+    @media screen and (max-width: 959px) {
+      width: 30%;
+    }
   }
 
   .text-box {
@@ -287,6 +340,10 @@ header {
     padding: $sp-16;
     background-color: var(--bg-primary);
     box-shadow: $effect-shadow-default;
+
+    @media screen and (max-width: 959px) {
+      width: 80%;
+    }
 
     i {
       position: absolute;
@@ -314,11 +371,21 @@ header {
   .text-box:nth-child(3),
   .text-box:nth-child(5) {
     margin-left: 50%;
+
+    @media screen and (max-width: 959px) {
+      margin-left: 0%;
+      width: 80%;
+    }
   }
 
   .text-box:nth-child(3) i,
   .text-box:nth-child(5) i {
     right: 105%;
+
+    @media screen and (max-width: 959px) {
+      position: absolute;
+      right: -20%;
+    }
   }
 }
 
@@ -328,7 +395,11 @@ header {
   h2 {
     text-align: center;
     font-size: $fs-40;
-    color: var(--bg-constrast-light)
+    color: var(--bg-constrast-light);
+
+    @media screen and (max-width: 959px) {
+      font-size: $fs-28;
+    }
   }
 
   h2::after {
@@ -341,6 +412,10 @@ header {
     height: $fs-8;
     border-radius: $fs-8;
     background-color: var(--cl-black-500);
+
+    @media screen and (max-width: 959px) {
+      width: 30%;
+    }
   }
 
   p {
@@ -403,7 +478,11 @@ header {
   h2 {
     text-align: center;
     font-size: $fs-40;
-    color: var(--bg-constrast-light)
+    color: var(--bg-constrast-light);
+
+    @media screen and (max-width: 959px) {
+      font-size: $fs-28;
+    }
   }
 
   h2::after {
@@ -416,6 +495,10 @@ header {
     height: $fs-8;
     border-radius: $fs-8;
     background-color: var(--cl-black-500);
+
+    @media screen and (max-width: 959px) {
+      width: 30%;
+    }
   }
 
   form {
@@ -426,6 +509,10 @@ header {
     background-color: var(--bg-primary);
     box-shadow: $effect-shadow-default;
     gap: $sp-24;
+
+    @media screen and (max-width: 959px) {
+      width: 100%;
+    }
 
     .field {
 
@@ -484,7 +571,11 @@ header {
   h2 {
     text-align: center;
     font-size: $fs-40;
-    color: var(--bg-constrast-light)
+    color: var(--bg-constrast-light);
+
+    @media screen and (max-width: 959px) {
+      font-size: $fs-28;
+    }
   }
 
   h2::after {
@@ -497,6 +588,10 @@ header {
     height: $fs-8;
     border-radius: $fs-8;
     background-color: var(--cl-black-500);
+
+    @media screen and (max-width: 959px) {
+      width: 30%;
+    }
   }
 
   .certificate-box {
@@ -510,6 +605,10 @@ header {
     box-shadow: $effect-shadow-default;
     gap: $sp-32;
     cursor: pointer;
+
+    @media screen and (max-width: 959px) {
+      width: 100%;
+    }
 
     img {
       width: 5rem;

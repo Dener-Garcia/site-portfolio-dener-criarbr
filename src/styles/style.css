@@ -1,30 +1,46 @@
 .show-menu-mobile {
-  position: fixed;
-  z-index: 10;
-  right: 1rem;
-  top: 1rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 0.5rem;
-  background-color: var(--bg-primary);
-  box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
-  color: var(--bg-constrast-light);
+  display: none;
 }
-.show-menu-mobile span {
+@media screen and (max-width: 959px) {
+  .show-menu-mobile {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    right: 1rem;
+    top: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--bg-primary);
+    box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
+    color: var(--bg-constrast-light);
+  }
+}
+.show-menu-mobile span:nth-child(1) {
   position: absolute;
-  width: 20px;
+  width: 16px;
   height: 4px;
   left: 10px;
-  top: 8px;
+  top: 10px;
+  border-radius: 5rem;
   background-color: var(--bg-constrast-light);
-  background-color: blue;
 }
 .show-menu-mobile span:nth-child(2) {
   position: absolute;
   width: 20px;
   height: 4px;
   left: 10px;
-  top: 28px;
+  top: 18px;
+  border-radius: 5rem;
+  background-color: var(--bg-constrast-light);
+}
+.show-menu-mobile span:nth-child(3) {
+  position: absolute;
+  width: 8px;
+  height: 4px;
+  left: 10px;
+  top: 26px;
+  border-radius: 5rem;
   background-color: var(--bg-constrast-light);
 }
 
@@ -33,6 +49,7 @@ aside {
 }
 @media screen and (max-width: 959px) {
   aside {
+    position: fixed;
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -40,17 +57,18 @@ aside {
     background-color: var(--bg-primary);
     opacity: 0.3;
     transform: translateX(100%);
-    transition: 1s;
+    transition: 0.3s;
+    z-index: 1;
   }
   aside nav {
-    margin-top: 56px;
+    margin-top: 5rem;
     padding: 0 2rem;
   }
   aside nav a {
     margin-top: 1.5rem;
   }
   aside .network {
-    margin-top: 2.5rem;
+    margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,7 +89,7 @@ aside {
     box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
   }
   aside blockquote {
-    width: 70%;
+    width: 80%;
     height: 8rem;
     margin: 2.5rem auto;
     display: flex;
@@ -81,6 +99,13 @@ aside {
     background-color: var(--bg-primary);
     box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
   }
+}
+@media screen and (max-width: 959px) and (max-width: 959px) {
+  aside blockquote {
+    margin: 5rem auto;
+  }
+}
+@media screen and (max-width: 959px) {
   aside blockquote q {
     text-align: center;
     font-style: italic;
@@ -98,14 +123,31 @@ header {
   justify-content: space-between;
   padding: 1.5rem 0.5rem;
 }
+@media screen and (max-width: 959px) {
+  header {
+    width: 80%;
+    margin: 0;
+    justify-content: space-around;
+  }
+}
 header a {
   font-family: "Audiowide", sans-serif;
   font-size: 1.25rem;
   color: var(--bg-constrast-light);
 }
+@media screen and (max-width: 959px) {
+  header a {
+    font-size: 1rem;
+  }
+}
 header nav {
   display: flex;
   gap: 1rem;
+}
+@media screen and (max-width: 959px) {
+  header nav {
+    display: none;
+  }
 }
 header nav a {
   font-family: "Roboto", sans-serif;
@@ -126,6 +168,11 @@ header .settings-ui button {
   background-color: var(--bg-primary);
   color: var(--bg-constrast-light);
   cursor: pointer;
+}
+@media screen and (max-width: 959px) {
+  header .settings-ui button {
+    font-size: 0.875rem;
+  }
 }
 header .settings-ui button::after {
   content: "";
@@ -189,6 +236,11 @@ header .ui-options .option input:checked::after {
 header i {
   font-size: 1.25rem;
 }
+@media screen and (max-width: 959px) {
+  header i {
+    font-size: 1rem;
+  }
+}
 
 .container {
   max-width: 72rem;
@@ -200,6 +252,11 @@ header i {
 .hero-section {
   display: flex;
   margin: auto;
+}
+@media screen and (max-width: 959px) {
+  .hero-section {
+    flex-direction: column;
+  }
 }
 .hero-section .intro {
   width: auto;
@@ -222,6 +279,11 @@ header i {
 .hero-section .svg-container {
   width: 100%;
 }
+@media screen and (max-width: 959px) {
+  .hero-section .svg-container {
+    margin-top: 2.5rem;
+  }
+}
 
 .pipeline-section {
   margin: auto;
@@ -230,6 +292,11 @@ header i {
   text-align: center;
   font-size: 2.5rem;
   color: var(--bg-constrast-light);
+}
+@media screen and (max-width: 959px) {
+  .pipeline-section h2 {
+    font-size: 1.75rem;
+  }
 }
 .pipeline-section h2::after {
   content: "";
@@ -242,6 +309,11 @@ header i {
   border-radius: 0.5rem;
   background-color: var(--cl-black-500);
 }
+@media screen and (max-width: 959px) {
+  .pipeline-section h2::after {
+    width: 30%;
+  }
+}
 .pipeline-section .text-box {
   position: relative;
   width: 40%;
@@ -249,6 +321,11 @@ header i {
   padding: 1rem;
   background-color: var(--bg-primary);
   box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
+}
+@media screen and (max-width: 959px) {
+  .pipeline-section .text-box {
+    width: 80%;
+  }
 }
 .pipeline-section .text-box i {
   position: absolute;
@@ -273,9 +350,23 @@ header i {
 .pipeline-section .text-box:nth-child(5) {
   margin-left: 50%;
 }
+@media screen and (max-width: 959px) {
+  .pipeline-section .text-box:nth-child(3),
+  .pipeline-section .text-box:nth-child(5) {
+    margin-left: 0%;
+    width: 80%;
+  }
+}
 .pipeline-section .text-box:nth-child(3) i,
 .pipeline-section .text-box:nth-child(5) i {
   right: 105%;
+}
+@media screen and (max-width: 959px) {
+  .pipeline-section .text-box:nth-child(3) i,
+  .pipeline-section .text-box:nth-child(5) i {
+    position: absolute;
+    right: -20%;
+  }
 }
 
 .projects {
@@ -285,6 +376,11 @@ header i {
   text-align: center;
   font-size: 2.5rem;
   color: var(--bg-constrast-light);
+}
+@media screen and (max-width: 959px) {
+  .projects h2 {
+    font-size: 1.75rem;
+  }
 }
 .projects h2::after {
   content: "";
@@ -296,6 +392,11 @@ header i {
   height: 0.5rem;
   border-radius: 0.5rem;
   background-color: var(--cl-black-500);
+}
+@media screen and (max-width: 959px) {
+  .projects h2::after {
+    width: 30%;
+  }
 }
 .projects p {
   margin-top: 2rem;
@@ -350,6 +451,11 @@ header i {
   font-size: 2.5rem;
   color: var(--bg-constrast-light);
 }
+@media screen and (max-width: 959px) {
+  .contact h2 {
+    font-size: 1.75rem;
+  }
+}
 .contact h2::after {
   content: "";
   margin: 2rem auto 0 auto;
@@ -361,6 +467,11 @@ header i {
   border-radius: 0.5rem;
   background-color: var(--cl-black-500);
 }
+@media screen and (max-width: 959px) {
+  .contact h2::after {
+    width: 30%;
+  }
+}
 .contact form {
   width: 60%;
   margin: 2.5rem auto;
@@ -369,6 +480,11 @@ header i {
   background-color: var(--bg-primary);
   box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
   gap: 1.5rem;
+}
+@media screen and (max-width: 959px) {
+  .contact form {
+    width: 100%;
+  }
 }
 .contact form .field label {
   font-weight: 500;
@@ -421,6 +537,11 @@ header i {
   font-size: 2.5rem;
   color: var(--bg-constrast-light);
 }
+@media screen and (max-width: 959px) {
+  .certificates h2 {
+    font-size: 1.75rem;
+  }
+}
 .certificates h2::after {
   content: "";
   margin: 2rem auto 0 auto;
@@ -431,6 +552,11 @@ header i {
   height: 0.5rem;
   border-radius: 0.5rem;
   background-color: var(--cl-black-500);
+}
+@media screen and (max-width: 959px) {
+  .certificates h2::after {
+    width: 30%;
+  }
 }
 .certificates .certificate-box {
   width: 60%;
@@ -443,6 +569,11 @@ header i {
   box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
   gap: 2rem;
   cursor: pointer;
+}
+@media screen and (max-width: 959px) {
+  .certificates .certificate-box {
+    width: 100%;
+  }
 }
 .certificates .certificate-box img {
   width: 5rem;
