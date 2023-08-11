@@ -6,19 +6,27 @@
     display: grid;
 }
 
-.menuMobileActive{
+.menuMobileActive {
     opacity: 1;
     transform: translateX(0);
-    
 }
 
-.btnRotateClosedJS {
-    background-color: var(--cl-feedback-info);
+
+
+.btnMobilePressed span:nth-child(1) {
+    width: 20px;
+    top: 18px;
+    transform: translateY(0px) rotate(45deg);
 }
 
-.btnRotateOpenJS {
-    transform: rotate(45deg);
-    background-color: var(--cl-feedback-error);
+.btnMobilePressed span:nth-child(2) {
+    width: 20px;
+    top: 18px;
+    transform: translateY(0px) rotate(-45deg);
+}
+
+.btnMobilePressed span:nth-child(3) {
+    transform: translateX(60px);
 }
 
 .inputInvalidJS {

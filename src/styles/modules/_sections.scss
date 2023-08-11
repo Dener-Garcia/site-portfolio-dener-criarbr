@@ -13,6 +13,7 @@
     background-color: var(--bg-primary);
     box-shadow: $effect-shadow-default;
     color: var(--bg-constrast-light);
+    overflow: hidden;
   }
 
   span:nth-child(1) {
@@ -23,6 +24,7 @@
     top: 10px;
     border-radius: 5rem;
     background-color: var(--bg-constrast-light);
+    transition: 0.2s ease-in-out
   }
 
   span:nth-child(2) {
@@ -33,6 +35,7 @@
     top: 18px;
     border-radius: 5rem;
     background-color: var(--bg-constrast-light);
+    transition: 0.2s ease-in-out
   }
 
   span:nth-child(3) {
@@ -43,6 +46,7 @@
     top: 26px;
     border-radius: 5rem;
     background-color: var(--bg-constrast-light);
+    transition: 0.2s ease-in-out
   }
 }
 
@@ -655,6 +659,24 @@ header {
         transform: scale(1.2);
         color: var(--cl-feedback-info)
       }
+    }
+  }
+}
+
+footer{
+  display: flex;
+  padding: $fs-16;
+  justify-content: center;
+  color: var(--cl-black-600);
+  font-size: $fs-16;
+  box-shadow: $effect-shadow-default;
+
+  a{
+    color: var(--cl-black-600);
+    transition: 0.2s ease-in-out;
+
+    &:hover{
+      color: var(--cl-feedback-info);
     }
   }
 }

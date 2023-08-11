@@ -16,7 +16,7 @@ const ShowBoxes = ()=>{
     });
 
     certificateBoxes.forEach(box => {
-        box.addEventListener("mouseleave", () => {
+        box.addEventListener("mouseEnter", () => {
 
             const detailsElement = box.querySelector("details");
 

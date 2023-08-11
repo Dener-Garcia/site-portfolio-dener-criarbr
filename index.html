@@ -47,19 +47,21 @@
             <a class="btn-primary" href="/src/pages/blog.html">Blog</a>
         </nav>
         <div class="network">
-            <a href="#" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
-            <a href="#" target="_blank"> <i class="ph ph-github-logo"></i></a>
-            <a href="#" target="_blank"> <i class="ph ph-envelope-simple"></i></a>
-            <a href="#" target="_blank"><i class="ph ph-youtube-logo"></i></a>
-            <a href="#" target="_blank"><i class="ph ph-instagram-logo"></i></a>
-            <a href="#" target="_blank"><i class="ph ph-behance-logo"></i></a>
+            <a href="https://www.linkedin.com/in/denergarcia/" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="https://github.com/Dener-Garcia" target="_blank"> <i class="ph ph-github-logo"></i></a>
+            <a href="mailto:dener.criarbr@gmail.com?cc=dener@criarbr.com&subject=Contato via site&body=Ola conheci seu site portfolio e gostaria de..."
+                target="_blank"> <i class="ph ph-envelope-simple"></i></a>
+            <a href="https://www.youtube.com/@dener.criarbr" target="_blank"><i class="ph ph-youtube-logo"></i></a>
+            <a href="https://www.instagram.com/dener.criarbr" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+            <a href="https://www.behance.net/dener-garcia" target="_blank"><i class="ph ph-behance-logo"></i></a>
         </div>
-        <blockquote><q cite="#teste">Pessoas ignoram design que ignoram pessoas!</q></blockquote>
-        
+        <blockquote><q cite="https://www.instagram.com/dener.criarbr">People ignore design that ignores people!</q>
+        </blockquote>
+
     </aside>
 
     <header>
-        <a class="logo">&lt;/ DenerGarcia &gt;</a>
+        <a href="#" class="logo">&lt; DenerGarcia /&gt;</a>
         <div class="settings-ui">
             <i class="ph ph-person-arms-spread"></i>
             <button>Acessibilidade</button>
@@ -87,19 +89,19 @@
         </nav>
     </header>
     <main>
-        <section class="container hero-section">
+        <section class="container hero-section" id="home">
             <div class="intro">
                 <h1>Titulo</h1>
                 <p>Um designer de UX/UI que escreve códigos, quero te ajudar a criar produtos que as pessoas queiram
                     usar!
                 </p>
-                <a class="btn-primary" href="#">Ver projetos</a>
+                <a class="btn-primary" href="#">Ver Projetos</a>
             </div>
             <div class="svg-container"><my-svg></my-svg></div>
         </section>
 
         <section class="container pipeline-section">
-            <h2>O que faço como um...</h2>
+            <h2>O que eu faço como um:</h2>
             <div class="text-box">
                 <i class="ph ph-sketch-logo"></i>
                 <h3>UX Designer</h3>
@@ -124,7 +126,7 @@
 
             <div class="text-box">
                 <i class="ph ph-code"></i>
-                <h3>Front end Developeder</h3>
+                <h3>Desenvolvedor Front-end</h3>
                 <p>
                     Trazer ao mundo um projeto que impacte as pessoas de forma positiva, no desenvolvimento para a web
                     moderna toda aplicação deve ser pensada para ser performatica e ao mesmo tempo acessivel para
@@ -145,7 +147,7 @@
 
         </section>
 
-        <section class="container projects">
+        <section class="container projects" id="projects">
             <h2>Meus projetos</h2>
             <p>
                 Veja alguns dos projetos em que tive o prazer de trabalhar.
@@ -154,7 +156,7 @@
             </div>
         </section>
 
-        <section class="container contact">
+        <section class="container contact" id="contact">
             <h2>Vamos criar algo juntos?</h2>
             <form>
                 <div class="field">
@@ -237,11 +239,52 @@
 
     <footer>
         <div class="madeFor">
-            <span>Feito por <a href="https://em3de.com/" target="_blank">em3de</a> | Designer
-                <a href="https://denergarcia.em3de.com/" target="_blank">Dener Garcia</a>
+            <span>Feito por <a href="https://denergarcia.em3de.com/" target="_blank">Dener Garcia</a>
             </span>
         </div>
     </footer>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script>
+      /**
+       * Sample JavaScript code for youtube.playlists.list
+       * See instructions for running APIs Explorer code samples locally:
+       * https://developers.google.com/explorer-help/code-samples#javascript
+       */
+    
+      function authenticate() {
+        return gapi.auth2.getAuthInstance()
+            .signIn({scope: "https://www.googleapis.com/auth/youtube.readonly"})
+            .then(function() { console.log("Sign-in successful"); },
+                  function(err) { console.error("Error signing in", err); });
+      }
+      function loadClient() {
+        gapi.client.setApiKey("AIzaSyBFnd91l4uzbnW5ZA4wK-4HNp4MZUV6NHU");
+        return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
+            .then(function() { console.log("GAPI client loaded for API"); },
+                  function(err) { console.error("Error loading GAPI client for API", err); });
+      }
+      // Make sure the client is loaded and sign-in is complete before calling this method.
+      function execute() {
+        return gapi.client.youtube.playlists.list({
+          "part": [
+            "snippet,contentDetails"
+          ],
+          "channelId": "UCTt8-o-ya6n25WtuYTj0hBw",
+          "maxResults": 25
+        })
+            .then(function(response) {
+                    // Handle the results here (response.result has the parsed body).
+                    console.log("Response", response.result);
+                  },
+                  function(err) { console.error("Execute error", err); });
+      }
+      gapi.load("client:auth2", function() {
+        gapi.auth2.init({client_id: "YOUR_CLIENT_ID"});
+      });
+    </script>
+    <button class="btn-primary" onclick="authenticate().then(loadClient)">authorize and load</button>
+    <button class="btn-primary" onclick="execute()">execute</button>
+    
 </body>
 
 </html>
