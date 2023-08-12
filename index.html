@@ -235,6 +235,8 @@
                 </details>
             </div>
         </section>
+        <div class="grid-cards"></div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4Tbm_3ecuOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </main>
 
     <footer>
@@ -243,48 +245,6 @@
             </span>
         </div>
     </footer>
-    <script src="https://apis.google.com/js/api.js"></script>
-    <script>
-      /**
-       * Sample JavaScript code for youtube.playlists.list
-       * See instructions for running APIs Explorer code samples locally:
-       * https://developers.google.com/explorer-help/code-samples#javascript
-       */
-    
-      function authenticate() {
-        return gapi.auth2.getAuthInstance()
-            .signIn({scope: "https://www.googleapis.com/auth/youtube.readonly"})
-            .then(function() { console.log("Sign-in successful"); },
-                  function(err) { console.error("Error signing in", err); });
-      }
-      function loadClient() {
-        gapi.client.setApiKey("AIzaSyBFnd91l4uzbnW5ZA4wK-4HNp4MZUV6NHU");
-        return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
-            .then(function() { console.log("GAPI client loaded for API"); },
-                  function(err) { console.error("Error loading GAPI client for API", err); });
-      }
-      // Make sure the client is loaded and sign-in is complete before calling this method.
-      function execute() {
-        return gapi.client.youtube.playlists.list({
-          "part": [
-            "snippet,contentDetails"
-          ],
-          "channelId": "UCTt8-o-ya6n25WtuYTj0hBw",
-          "maxResults": 25
-        })
-            .then(function(response) {
-                    // Handle the results here (response.result has the parsed body).
-                    console.log("Response", response.result);
-                  },
-                  function(err) { console.error("Execute error", err); });
-      }
-      gapi.load("client:auth2", function() {
-        gapi.auth2.init({client_id: "YOUR_CLIENT_ID"});
-      });
-    </script>
-    <button class="btn-primary" onclick="authenticate().then(loadClient)">authorize and load</button>
-    <button class="btn-primary" onclick="execute()">execute</button>
-    
 </body>
 
 </html>

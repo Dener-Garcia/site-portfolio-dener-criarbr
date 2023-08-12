@@ -100,11 +100,42 @@ const jsonRead = async ()=>{
 
  jsonRead()
 
+const playListItems = "https://www.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&channelId=UCTt8-o-ya6n25WtuYTj0hBw&maxResults=25&key=AIzaSyBFnd91l4uzbnW5ZA4wK-4HNp4MZUV6NHU"
 
+const videosInPLayList = "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=25&playlistId=PLhlu-GBEnLHijtft11MJmlhErK2cbl-4D&key=AIzaSyBFnd91l4uzbnW5ZA4wK-4HNp4MZUV6NHU"
 
+fetch(videosInPLayList)
+.then((res) => res.json())
+.then((youtubeData) =>{
+    console.log("mostrando dados", youtubeData.items)
+    const youtubeVideos = youtubeData.items
 
+    const videoGrid = document.querySelector("grid-cards")
 
+    for (let i = 0; i < youtubeVideos.length; i++) {
+        const content = youtubeVideos[i];
 
+        const videoCard = document.createElement("div")
+
+        const videoFrame = document.createElement("iframe")
+        videoFrame.src = `https://www.youtube.com/embed/${content.contentDetails.videoId}`
+        videoFrame.title = "YouTube video player"
+        videoFrame.frameborder = "0"
+        videoFrame.allow = "accelerometer"
+        videoFrame.autoplay = ""
+        console.log("pegando video id", content.snippet)
+        console.log("dentro array", videoFrame.src, content.contentDetails.videoId)
+        
+        videoCard.appendChild(videoFrame)
+        videoGrid.innerHTML(videoCard)
+    
+        console.log("final", videoCard)
+    }
+    
+
+})
+
+//<iframe width="560" height="315" src="https://www.youtube.com/embed/4Tbm_3ecuOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 // // pegando dados de um arquivo .json local, tambem pode usar uma url de api porem com async await
    
@@ -168,5 +199,4 @@ const jsonRead = async ()=>{
 
 //     })
 //     .catch((error) => console.error("Erro na requisição:", error));
-
 
