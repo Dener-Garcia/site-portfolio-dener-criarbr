@@ -680,3 +680,63 @@ footer{
     }
   }
 }
+
+.tutorials{
+  margin: auto;
+
+  h1 {
+    text-align: center;
+    font-size: $fs-40;
+    color: var(--bg-constrast-light);
+
+    @media screen and (max-width: 959px) {
+      font-size: $fs-28;
+    }
+  }
+
+  h1::after {
+    content: "";
+    margin: $sp-32 auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: $fs-8;
+    border-radius: $fs-8;
+    background-color: var(--cl-black-500);
+
+    @media screen and (max-width: 959px) {
+      width: 30%;
+    }
+  }
+
+  p {
+    margin-top: $sp-32;
+    text-align: center;
+    font-size: $fs-20;
+    color: var(--cl-black-300)
+  }
+
+  .grid-cards {
+    display: grid;
+    justify-content: center;
+    gap: $sp-32;
+    grid-template-columns: 2fr 1fr;
+  
+    .card-video {
+      width: auto;
+      height: auto;
+      margin-top: $sp-32;
+      display: flex;
+      flex-direction: column;
+      padding: $sp-24;
+      background-color: var(--bg-primary);
+      box-shadow: $effect-shadow-default;
+
+      p{
+        background-color: red;
+      }
+  }
+  }
+}
+

@@ -633,6 +633,61 @@ footer a:hover {
   color: var(--cl-feedback-info);
 }
 
+.tutorials {
+  margin: auto;
+}
+.tutorials h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--bg-constrast-light);
+}
+@media screen and (max-width: 959px) {
+  .tutorials h1 {
+    font-size: 1.75rem;
+  }
+}
+.tutorials h1::after {
+  content: "";
+  margin: 2rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--cl-black-500);
+}
+@media screen and (max-width: 959px) {
+  .tutorials h1::after {
+    width: 30%;
+  }
+}
+.tutorials p {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--cl-black-300);
+}
+.tutorials .grid-cards {
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+  grid-template-columns: 2fr 1fr;
+}
+.tutorials .grid-cards .card-video {
+  width: auto;
+  height: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: var(--bg-primary);
+  box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
+}
+.tutorials .grid-cards .card-video p {
+  background-color: red;
+}
+
 html {
   --bg-primary: #EEF0F4;
   --bg-constrast-light: #0F0F0F;
