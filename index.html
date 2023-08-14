@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-BR" ui-theme="light">
+<html lang="pt_BR" ui-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daniel Bergholz is a Senior Frontend Engineer and Content Creator">
+    <meta name="description" content="Dener Garcia é um UX Engineer que cria interfaces e aplicações incriveis, conheça meu portfolio de UX/UI Designer, Desenvolvedor Front-end e Mobile">
+    <meta name="robots" content="index">
 
-    <meta property=”og:title” content=”Designer UX melhor que voce ja viu“>
+    <meta property=”og:title” content=”Portifólio de Dener Garcia | UX Engineer“>
     <meta property="og:type" content="website">
-    <meta property="og:desctiption" content="descreva seu conteudo de forma convicente apra gerar mais clicque">
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="https://adhamdannaway.com/" />
-    <meta property="og:image"
-        content="https://adhamdannaway.com/wp-content/uploads/2021/02/adham-dannaway-designer-coder.jpg" />
-    <meta property="og:image:width" content="1040" />
-    <meta property="og:image:height" content="600" />
+    <meta property="og:desctiption" content="Profissional que atua na interseção entre design de interface de usuário (UI) e desenvolvimento de front-end, focando em criar experiências digitais eficazes e agradáveis para os usuários.">
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="https://dener.criarbr.com/" />
+    <meta property="og:image" content="https://dener.criarbr.com/public/assets/dener-garcia.opti.jpg" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="800" />
 
-    <link rel="canonical" href="https://bergdaniel.com.br/">
-    <link rel="sitemap" href="/sitemap-index.xml">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="canonical" href="https://dener.criarbr.com/">
+    <link rel="sitemap" href="sitemap.xml">
+    <link rel="icon" type="image/svg+xml" href="public/assets/avatar.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap&family=Audiowide&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap&family=Audiowide&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="/src/styles/style.css" />
 
     <script src="app.js" type="module" defer></script>
@@ -34,7 +33,7 @@
 
 <body>
 
-    <button class="show-menu-mobile">
+    <button class="show-menu-mobile" aria-label="Menu do site">
         <span></span>
         <span></span>
         <span></span>
@@ -47,17 +46,16 @@
             <a class="btn-primary" href="/src/pages/blog.html">Blog</a>
         </nav>
         <div class="network">
-            <a href="https://www.linkedin.com/in/denergarcia/" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
-            <a href="https://github.com/Dener-Garcia" target="_blank"> <i class="ph ph-github-logo"></i></a>
+            <a href="https://www.linkedin.com/in/denergarcia/" target="_blank" aria-label="Perfil no Linkedin"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="https://github.com/Dener-Garcia" target="_blank" aria-label="Perfil no Github"> <i class="ph ph-github-logo"></i></a>
             <a href="mailto:dener.criarbr@gmail.com?cc=dener@criarbr.com&subject=Contato via site&body=Ola conheci seu site portfolio e gostaria de..."
-                target="_blank"> <i class="ph ph-envelope-simple"></i></a>
-            <a href="https://www.youtube.com/@dener.criarbr" target="_blank"><i class="ph ph-youtube-logo"></i></a>
-            <a href="https://www.instagram.com/dener.criarbr" target="_blank"><i class="ph ph-instagram-logo"></i></a>
-            <a href="https://www.behance.net/dener-garcia" target="_blank"><i class="ph ph-behance-logo"></i></a>
+                target="_blank" aria-label="Enviar um e-mail"> <i class="ph ph-envelope-simple"></i></a>
+            <a href="https://www.youtube.com/@dener.criarbr" target="_blank" aria-label="Canal no Youtube"><i class="ph ph-youtube-logo"></i></a>
+            <a href="https://www.instagram.com/dener.criarbr" target="_blank" aria-label="Perfil no Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="https://www.behance.net/dener-garcia" target="_blank" aria-label="Perfil no Behance"><i class="ph ph-behance-logo"></i></a>
         </div>
         <blockquote><q cite="https://www.instagram.com/dener.criarbr">People ignore design that ignores people!</q>
         </blockquote>
-
     </aside>
 
     <header>
@@ -91,11 +89,11 @@
     <main>
         <section class="container hero-section" id="home">
             <div class="intro">
-                <h1>Titulo</h1>
+                <h1>Design and Code</h1>
                 <p>Um designer de UX/UI que escreve códigos, quero te ajudar a criar produtos que as pessoas queiram
                     usar!
                 </p>
-                <a class="btn-primary" href="#">Ver Projetos</a>
+                <a class="btn-primary" href="#projects">Ver Projetos</a>
             </div>
             <div class="svg-container"><my-svg></my-svg></div>
         </section>

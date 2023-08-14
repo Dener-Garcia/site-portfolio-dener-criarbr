@@ -321,7 +321,7 @@ header i {
 .pipeline-section .text-box {
   position: relative;
   width: 40%;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   padding: 1rem;
   background-color: var(--bg-primary);
   box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
@@ -438,7 +438,7 @@ header i {
   color: var(--bg-constrast-light);
 }
 .projects .card-project p {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   text-align: left;
   font-size: 1rem;
   color: var(--cl-black-300);
@@ -478,7 +478,7 @@ header i {
 }
 .contact form {
   width: 60%;
-  margin: 2.5rem auto;
+  margin: 2rem auto;
   display: grid;
   padding: 2.5rem;
   background-color: var(--bg-primary);
@@ -672,7 +672,7 @@ footer a:hover {
   display: grid;
   justify-content: center;
   gap: 2rem;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 }
 .tutorials .grid-cards .card-video {
   width: auto;
@@ -684,8 +684,32 @@ footer a:hover {
   background-color: var(--bg-primary);
   box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
 }
+.tutorials .grid-cards .card-video iframe {
+  min-width: 16rem;
+  aspect-ratio: 4/3;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
+}
+.tutorials .grid-cards .card-video h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--bg-constrast-light);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .tutorials .grid-cards .card-video p {
-  background-color: red;
+  margin-top: 0.5rem;
+  text-align: left;
+  font-size: 1rem;
+  color: var(--cl-black-300);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 html {

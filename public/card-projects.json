@@ -1,6 +1,7 @@
 {
     "contentCard": [
         {
+            "name": "Pop Cinema",
             "imgLink": "/public/assets/projects/pop-cinema/pop-cinema-card.jpg",
             "alt-img": "texto alternativo img1",
             "title": "Titulo 1",
@@ -8,6 +9,15 @@
             "btn-link": "./fff.html"
         },
         {
+            "name": "Landing Page",
+            "imgLink": "/caminhi/img.jpg",
+            "alt-img": "texto alternativo img1",
+            "title": "Titulo 4",
+            "description": "Projeto 4 desenvolvido por mim Dener Garcia afim de aplicar conceitos memoraveis",
+            "btn-link": "./asdf.html"
+        },
+        {
+            "name": "Landing Page lit",
             "imgLink": "/caminhi/img.jpg",
             "alt-img": "texto alternativo img1",
             "title": "Titulo 2",
@@ -15,6 +25,7 @@
             "btn-link": "./teste.html"
         },
         {
+            "name": "BAT e-Docs",
             "imgLink": "/caminhi/img.jpg",
             "alt-img": "texto alternativo img1",
             "title": "Titulo 3",
@@ -22,6 +33,15 @@
             "btn-link": "./blog.html"
         },
         {
+            "name": "Colaboracao dev",
+            "imgLink": "/caminhi/img.jpg",
+            "alt-img": "texto alternativo img1",
+            "title": "Titulo 4",
+            "description": "Projeto 4 desenvolvido por mim Dener Garcia afim de aplicar conceitos memoraveis",
+            "btn-link": "./asdf.html"
+        },
+        {
+            "name": "Company Geradores",
             "imgLink": "/caminhi/img.jpg",
             "alt-img": "texto alternativo img1",
             "title": "Titulo 4",
