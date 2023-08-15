@@ -849,6 +849,60 @@ body {
   box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
 }
 
+.btn-return {
+  display: block;
+  position: relative;
+  z-index: 10;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--bg-primary);
+  box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
+  color: var(--bg-constrast-light);
+  overflow: hidden;
+  cursor: pointer;
+}
+@media screen and (max-width: 959px) {
+  .btn-return {
+    position: fixed;
+  }
+}
+.btn-return span:nth-child(1) {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  left: 10px;
+  top: 18px;
+  border-radius: 5rem;
+  background-color: var(--bg-constrast-light);
+  transform: translateY(0px) rotate(45deg);
+  transition: 0.2s;
+}
+.btn-return span:nth-child(2) {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  left: 10px;
+  top: 18px;
+  border-radius: 5rem;
+  background-color: var(--bg-constrast-light);
+  transform: translateY(0px) rotate(-45deg);
+  transition: 0.2s;
+}
+
+.btn-return:hover span:nth-child(1),
+.btn-return:focus span:nth-child(1) {
+  transform: translateY(0px) rotate(45deg) scale(1.3);
+  background-color: var(--cl-feedback-error);
+}
+
+.btn-return:hover span:nth-child(2),
+.btn-return:focus span:nth-child(2) {
+  transform: translateY(0px) rotate(-45deg) scale(1.3);
+  background-color: var(--cl-feedback-error);
+}
+
 @keyframes blinkEyes {
   0% {
     opacity: 1;

@@ -1,3 +1,15 @@
+import Acessibility from "../acessibility-menu/acessibility-menu.mjs";
+
+Acessibility();
+
+import ChangeTheme from "../change-ui-theme/change-theme.mjs";
+
+ChangeTheme();
+
+import ShowMenu from "../mobile-menu/show-menu.mjs";
+
+ShowMenu()
+
 const FigmaTutorials = () => {
   const youTubeCode = "AIzaSyBFnd91l4uzbnW5ZA4wK-4HNp4MZUV6NHU";
 
@@ -49,4 +61,4 @@ const FigmaTutorials = () => {
     .catch((error) => console.error("Erro na requisição:", error));
 };
 
-export default FigmaTutorials;
+FigmaTutorials()

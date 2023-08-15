@@ -15,6 +15,10 @@ import ChangeTheme from "./src/functions/change-ui-theme/change-theme.mjs";
 
 ChangeTheme();
 
+import ShowMenu from "./src/functions/mobile-menu/show-menu.mjs";
+
+ShowMenu()
+
 import myForm from "./src/functions/form/custom-form.mjs";
 
 myForm();
@@ -23,30 +27,12 @@ import ShowBoxes from "./src/functions/certificate-boxes/show-boxes.mjs";
 
 ShowBoxes();
 
-import FigmaTutorials from "./src/functions/youtube-call/figma-tutorials.mjs";
-
-FigmaTutorials();
 
 const olhos2 = document
   .querySelector("my-svg")
   .shadowRoot.querySelector("#olho-esq-dag");
 
-const btnShowMobile = document.querySelector(".show-menu-mobile");
 
-btnShowMobile.addEventListener("click", () => {
-  const menuMobile = document.querySelector(".menu-mobile");
-  menuMobile.classList.toggle("menuMobileActive");
-  btnShowMobile.classList.toggle("btnMobilePressed");
-
-  const linksMobile = document.querySelectorAll(".menu-mobile nav a");
-
-  linksMobile.forEach((e) => {
-    e.addEventListener("click", () => {
-      menuMobile.classList.remove("menuMobileActive");
-      btnShowMobile.classList.remove("btnMobilePressed");
-    });
-  });
-});
 
 // criando uma async function
 const jsonRead = async () => {
