@@ -1,7 +1,128 @@
-nav {
-  display: flex;
-  gap: $sp-16;
+.show-menu-mobile {
+  display: none;
+
+  @media screen and (max-width: 959px) {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    right: $fs-16;
+    top: $fs-16;
+    width: $fs-40;
+    height: $fs-40;
+    border-radius: $fs-8;
+    background-color: var(--bg-primary);
+    box-shadow: $effect-shadow-default;
+    color: var(--bg-constrast-light);
+    overflow: hidden;
+  }
+
+  span:nth-child(1) {
+    position: absolute;
+    width: 16px;
+    height: 4px;
+    left: 10px;
+    top: 10px;
+    border-radius: 5rem;
+    background-color: var(--bg-constrast-light);
+    transition: 0.2s ease-in-out
+  }
+
+  span:nth-child(2) {
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    left: 10px;
+    top: 18px;
+    border-radius: 5rem;
+    background-color: var(--bg-constrast-light);
+    transition: 0.2s ease-in-out
+  }
+
+  span:nth-child(3) {
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    left: 10px;
+    top: 26px;
+    border-radius: 5rem;
+    background-color: var(--bg-constrast-light);
+    transition: 0.2s ease-in-out
+  }
 }
+
+aside {
+  display: none;
+
+  @media screen and (max-width: 959px) {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--bg-primary);
+    opacity: 0.3;
+    transform: translateX(100%);
+    transition: 0.3s;
+    z-index: 1;
+
+    nav {
+      margin-top: $sp-80;
+      padding: 0 $sp-32;
+
+      a {
+        margin-top: $sp-24;
+      }
+    }
+
+    .network {
+      margin-top: $sp-80;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 $sp-32;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $fs-28;
+        padding: $sp-8;
+        border-radius: 50px;
+        background-color: var(--bg-primary);
+        color: var(--bg-constrast-light);
+        box-shadow: $effect-shadow-default;
+
+        &:focus {
+          box-shadow: $effect-shadow-active;
+        }
+      }
+    }
+
+    blockquote {
+      width: 80%;
+      height: $fs-128;
+      margin: $sp-40 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 $sp-40;
+      background-color: var(--bg-primary);
+      box-shadow: $effect-shadow-default;
+
+      @media screen and (max-width: 959px) {
+        margin: $sp-80 auto;
+      }
+
+      q {
+        text-align: center;
+        font-style: italic;
+        font-weight: $fw-light;
+        font-size: $fs-18;
+      }
+    }
+  }
+}
+
 
 header {
   max-width: 72rem;
@@ -11,6 +132,35 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: $sp-24 $sp-8;
+
+  @media screen and (max-width: 959px) {
+    width: 80%;
+    margin: 0;
+    justify-content: space-around;
+  }
+
+  a {
+    font-family: 'Audiowide', sans-serif;
+    font-size: $fs-20;
+    color: var(--bg-constrast-light);
+
+    @media screen and (max-width: 959px) {
+      font-size: $fs-16;
+    }
+  }
+
+  nav {
+    display: flex;
+    gap: $sp-16;
+
+    @media screen and (max-width: 959px) {
+      display: none;
+    }
+
+    a {
+      font-family: 'Roboto', sans-serif;
+    }
+  }
 
   .settings-ui {
     position: relative;
@@ -27,6 +177,11 @@ header {
       font-size: $fs-16;
       background-color: var(--bg-primary);
       color: var(--bg-constrast-light);
+      cursor: pointer;
+
+      @media screen and (max-width: 959px) {
+        font-size: $fs-14;
+      }
     }
 
     button::after {
@@ -100,6 +255,10 @@ header {
 
   i {
     font-size: $fs-20;
+
+    @media screen and (max-width: 959px) {
+      font-size: $fs-16;
+    }
   }
 }
 
@@ -108,11 +267,16 @@ header {
   width: 100%;
   height: auto;
   padding: 5rem 1.5rem;
+
 }
 
 .hero-section {
   display: flex;
   margin: auto;
+
+  @media screen and (max-width: 959px) {
+    flex-direction: column;
+  }
 
   .intro {
     width: auto;
@@ -138,10 +302,12 @@ header {
 
   .svg-container {
     width: 100%;
+
+    @media screen and (max-width: 959px) {
+      margin-top: $sp-40;
+    }
   }
 }
-
-
 
 .pipeline-section {
   margin: auto;
@@ -149,7 +315,11 @@ header {
   h2 {
     text-align: center;
     font-size: $fs-40;
-    color: var(--bg-constrast-light)
+    color: var(--bg-constrast-light);
+
+    @media screen and (max-width: 959px) {
+      font-size: $fs-28;
+    }
   }
 
   h2::after {
@@ -162,17 +332,25 @@ header {
     height: $fs-8;
     border-radius: $fs-8;
     background-color: var(--cl-black-500);
+
+    @media screen and (max-width: 959px) {
+      width: 30%;
+    }
   }
 
-  .text-box{
+  .text-box {
     position: relative;
     width: 40%;
-    margin-top: $sp-40;
+    margin-top: $sp-32;
     padding: $sp-16;
     background-color: var(--bg-primary);
     box-shadow: $effect-shadow-default;
 
-    i{
+    @media screen and (max-width: 959px) {
+      width: 80%;
+    }
+
+    i {
       position: absolute;
       right: -20%;
       top: 33%;
@@ -184,35 +362,49 @@ header {
       box-shadow: $effect-shadow-hover;
     }
 
-    h3{
+    h3 {
       font-size: $fs-20;
       color: var(--bg-constrast-light);
     }
 
-    p{
+    p {
       color: var(--cl-black-300);
       margin-top: $sp-16;
     }
-  } 
+  }
 
   .text-box:nth-child(3),
-  .text-box:nth-child(5){
+  .text-box:nth-child(5) {
     margin-left: 50%;
+
+    @media screen and (max-width: 959px) {
+      margin-left: 0%;
+      width: 80%;
+    }
   }
 
   .text-box:nth-child(3) i,
-  .text-box:nth-child(5) i{
+  .text-box:nth-child(5) i {
     right: 105%;
+
+    @media screen and (max-width: 959px) {
+      position: absolute;
+      right: -20%;
+    }
   }
 }
 
-.projects{
+.projects {
   margin: auto;
 
   h2 {
     text-align: center;
     font-size: $fs-40;
-    color: var(--bg-constrast-light)
+    color: var(--bg-constrast-light);
+
+    @media screen and (max-width: 959px) {
+      font-size: $fs-28;
+    }
   }
 
   h2::after {
@@ -225,23 +417,27 @@ header {
     height: $fs-8;
     border-radius: $fs-8;
     background-color: var(--cl-black-500);
+
+    @media screen and (max-width: 959px) {
+      width: 30%;
+    }
   }
 
-  p{
+  p {
     margin-top: $sp-32;
     text-align: center;
     font-size: $fs-20;
     color: var(--cl-black-300)
   }
 
-  .grid-projects{
+  .grid-projects {
     display: grid;
     justify-content: center;
     gap: $sp-32;
-    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   }
 
-  .card-project{
+  .card-project {
     width: 300px;
     height: auto;
     margin-top: $sp-32;
@@ -250,8 +446,8 @@ header {
     padding: $sp-24;
     background-color: var(--bg-primary);
     box-shadow: $effect-shadow-default;
-  
-    img{
+
+    img {
       max-width: 20rem;
       height: 10rem;
       padding: $sp-16;
@@ -259,35 +455,39 @@ header {
       box-shadow: $effect-shadow-active;
     }
 
-    h3{
+    h3 {
       margin-top: $sp-16;
       font-size: $fs-20;
       font-weight: $fw-medium;
       color: var(--bg-constrast-light);
     }
-    
-    p{
-      margin-top: $sp-16;
+
+    p {
+      margin-top: $sp-8;
       text-align: left;
       font-size: $fs-16;
       color: var(--cl-black-300)
     }
 
-    a{
+    a {
       margin-top: $sp-24;
     }
   }
 
-  
+
 }
 
-.contact{
+.contact {
   margin: auto;
 
   h2 {
     text-align: center;
     font-size: $fs-40;
-    color: var(--bg-constrast-light)
+    color: var(--bg-constrast-light);
+
+    @media screen and (max-width: 959px) {
+      font-size: $fs-28;
+    }
   }
 
   h2::after {
@@ -300,29 +500,37 @@ header {
     height: $fs-8;
     border-radius: $fs-8;
     background-color: var(--cl-black-500);
+
+    @media screen and (max-width: 959px) {
+      width: 30%;
+    }
   }
 
-  form{
+  form {
     width: 60%;
-    margin: $sp-40 auto;
+    margin: $sp-32 auto;
     display: grid;
     padding: $sp-40;
     background-color: var(--bg-primary);
     box-shadow: $effect-shadow-default;
     gap: $sp-24;
 
-    .field{
+    @media screen and (max-width: 959px) {
+      width: 100%;
+    }
 
-      label{
+    .field {
+
+      label {
         font-weight: $fw-medium;
         color: var(--bg-constrast-light);
       }
-  
+
       input,
-      textarea{
+      textarea {
         width: 100%;
         margin-top: $sp-8;
-        padding:  $sp-8 $sp-16;
+        padding: $sp-8 $sp-16;
         font-size: $fs-16;
         border-radius: $sp-8;
         color: var(--bg-constrast-light);
@@ -331,44 +539,48 @@ header {
         transition: 0.2s;
       }
 
-      input:focus, 
-      textarea:focus{
+      input:focus,
+      textarea:focus {
         font-size: $fs-18;
       }
 
-      ::placeholder{
+      ::placeholder {
         color: var(--cl-black-500);
         opacity: 1;
       }
 
-      legend{
+      legend {
         margin-top: $sp-8;
         font-size: $fs-14;
         color: var(--cl-feedback-error);
       }
     }
 
-    button{
+    button {
       margin-top: $sp-8;
       font-size: $fs-18;
       font-weight: $fw-medium;
       gap: $fs-16;
 
-    i{
-      font-size: $fs-24;
-    }
+      i {
+        font-size: $fs-24;
+      }
     }
 
   }
 }
 
-.certificates{
+.certificates {
   margin: auto;
 
   h2 {
     text-align: center;
     font-size: $fs-40;
-    color: var(--bg-constrast-light)
+    color: var(--bg-constrast-light);
+
+    @media screen and (max-width: 959px) {
+      font-size: $fs-28;
+    }
   }
 
   h2::after {
@@ -381,9 +593,13 @@ header {
     height: $fs-8;
     border-radius: $fs-8;
     background-color: var(--cl-black-500);
+
+    @media screen and (max-width: 959px) {
+      width: 30%;
+    }
   }
 
-  .certificate-box{
+  .certificate-box {
     width: 60%;
     margin: auto;
     margin-top: $sp-32;
@@ -395,7 +611,11 @@ header {
     gap: $sp-32;
     cursor: pointer;
 
-    img{
+    @media screen and (max-width: 959px) {
+      width: 100%;
+    }
+
+    img {
       width: 5rem;
       background-color: var(--bg-primary);
       box-shadow: $effect-shadow-active;
@@ -404,86 +624,145 @@ header {
       fill: var(--bg-constrast-light);
     }
 
-    details{
+    details {
 
-      summary{
+      summary {
         width: 100%;
-        display: flex;
-        align-items: center;
-        gap: $sp-24;
-        list-style: none;
-        color: var(--bg-constrast-light);
-      }
-      
-      h4{
         font-size: $fs-20;
         font-weight: $fw-normal;
+        color: var(--bg-constrast-light);
       }
 
-      button{
-        position: relative;
-        width: $fs-4;
-        height: $fs-20;
-        background-color: var(--cl-feedback-info);
-        border-radius: 1rem;
-        transition: 0.2s;
-        cursor: pointer;
-
-        &:focus{
-          outline: none;
-          scale: (1.3);
-        }
-      }
-
-
-      button::after{
-        content: "";
-        top: 0;
-        left: 0;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: var(--cl-feedback-info);
-        border-radius: 1rem;
-        transform: rotate(90deg); 
-      }
-
-      summary:hover button,
-      summary:focus button{
-        transform: rotate(45deg);
-        background-color: var(--cl-feedback-error);
-      }
-
-      summary:hover button::after,
-      summary:focus button::after{
-        background-color: var(--cl-feedback-error);
-      }
-      
-      p{
+      p {
         margin-top: $sp-16;
         margin-bottom: $sp-24;
         font-size: $fs-16;
         color: var(--cl-black-300)
       }
 
-      a{
+      a {
         display: flex;
         align-items: center;
         justify-content: end;
         font-size: $fs-16;
         font-weight: $fw-medium;
         color: var(--bg-constrast-light);
-        
 
-        i{
+
+        i {
           margin-left: $sp-8;
           font-size: $fs-24;
-          transition: 0.3s;
+          transition: 0.2s;
         }
       }
-      a:hover i{
+
+      a:hover i {
         transform: scale(1.2);
         color: var(--cl-feedback-info)
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  padding: $fs-16;
+  justify-content: center;
+  color: var(--cl-black-600);
+  font-size: $fs-16;
+  box-shadow: $effect-shadow-default;
+
+  a {
+    color: var(--cl-black-600);
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--cl-feedback-info);
+    }
+  }
+}
+
+.tutorials {
+  margin: auto;
+
+  h1 {
+    text-align: center;
+    font-size: $fs-40;
+    color: var(--bg-constrast-light);
+
+    @media screen and (max-width: 959px) {
+      font-size: $fs-28;
+    }
+  }
+
+  h1::after {
+    content: "";
+    margin: $sp-32 auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: $fs-8;
+    border-radius: $fs-8;
+    background-color: var(--cl-black-500);
+
+    @media screen and (max-width: 959px) {
+      width: 30%;
+    }
+  }
+
+  p {
+    margin-top: $sp-32;
+    text-align: center;
+    font-size: $fs-20;
+    color: var(--cl-black-300)
+  }
+
+  .grid-cards {
+    display: grid;
+    justify-content: center;
+    gap: $sp-32;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+
+
+    .card-video {
+      width: auto;
+      height: auto;
+      margin-top: $sp-32;
+      display: flex;
+      flex-direction: column;
+      padding: $sp-24;
+      background-color: var(--bg-primary);
+      box-shadow: $effect-shadow-default;
+
+      iframe {
+        min-width: 16rem;
+        aspect-ratio: 4/3;
+        padding: $sp-16;
+        border-radius: $fs-8;
+        box-shadow: $effect-shadow-active;
+      }
+
+      h3 {
+        margin-top: $sp-16;
+        font-size: $fs-20;
+        font-weight: $fw-medium;
+        color: var(--bg-constrast-light);
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      p {
+        margin-top: $sp-8;
+        text-align: left;
+        font-size: $fs-16;
+        color: var(--cl-black-300);
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
     }
   }

@@ -3,9 +3,26 @@ const ShowBoxes = ()=>{
 
     certificateBoxes.forEach(box => {
         box.addEventListener("mouseenter", () => {
+
             const detailsElement = box.querySelector("details");
+
             if (detailsElement.hasAttribute("open")) {
                 detailsElement.removeAttribute("open");
+         
+            } else {
+                detailsElement.setAttribute("open", "");
+            }
+        });
+    });
+
+    certificateBoxes.forEach(box => {
+        box.addEventListener("mouseEnter", () => {
+
+            const detailsElement = box.querySelector("details");
+
+            if (detailsElement.hasAttribute("open")) {
+                detailsElement.removeAttribute("open");
+         
             } else {
                 detailsElement.setAttribute("open", "");
             }

@@ -24,3 +24,7 @@ body{
     transition-property: background-color;
     transition-duration: 0.3s;
 }
+
+:focus{
+    outline: solid var(--cl-feedback-info) $fs-2;
+}

@@ -2,7 +2,7 @@
     0%{
       opacity: 1;
     }
-    50%{
+    70%{
       opacity: 1;
     }  
     80%{
@@ -17,6 +17,6 @@
   } 
 
   .blinkEye{
-    animation: blinkEyes 4s ease 6s infinite;
+    animation: blinkEyes 4s ease 4s infinite;
   }
   

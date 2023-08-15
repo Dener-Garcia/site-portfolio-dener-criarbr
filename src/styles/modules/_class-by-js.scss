@@ -1,20 +1,38 @@
-.d-none{
+.d-none {
     display: none;
 }
 
-.d-grid{
+.d-grid {
     display: grid;
 }
 
-.btnRotateJS{
-    transform: translateX(20px);
-    transform: scale(2);
+.menuMobileActive {
+    opacity: 1;
+    transform: translateX(0);
 }
 
-.inputInvalidJS{
-    outline: solid $fs-2 var(--cl-feedback-error);
-   }
 
-   .inputValidJS{
+
+.btnMobilePressed span:nth-child(1) {
+    width: 20px;
+    top: 18px;
+    transform: translateY(0px) rotate(45deg);
+}
+
+.btnMobilePressed span:nth-child(2) {
+    width: 20px;
+    top: 18px;
+    transform: translateY(0px) rotate(-45deg);
+}
+
+.btnMobilePressed span:nth-child(3) {
+    transform: translateX(60px);
+}
+
+.inputInvalidJS {
+    outline: solid $fs-2 var(--cl-feedback-error);
+}
+
+.inputValidJS {
     outline: solid $fs-2 var(--cl-feedback-sucess);
-   }
+}
