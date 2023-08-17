@@ -6,26 +6,17 @@ import ChangeTheme from "../change-ui-theme/change-theme.mjs";
 
 ChangeTheme()
 
-var testes = window.innerHeight
+const btnReturn = document.querySelector(".btn-return")
 
-window.addEventListener("scroll", ()=>{
-   const btnReturn = document.querySelector(".btn-return")
-
-
-   if (testes > 155){
-    console.log(btnReturn)
-    btnReturn.style.position = "fixed"
-    console.log("entrou if")
+const mainTitle = document.querySelector("h1")
+function fixedMobileMenu(){
+   if (mainTitle.getBoundingClientRect().top < -200){
+   btnReturn.style.position = "fixed"
    }
    else{
-    btnReturn.style.position = "relative"
-    console.log("saiu do if")
+    btnReturn.style.position = ""
    }
+}
 
-   //  console.log(btnReturn.offsetTop)
-  //   console.log(window.pageYOffset)
-
-})
-console.log("vendo", testes)
-console.log("console")
+window.addEventListener("scroll", fixedMobileMenu)
 
