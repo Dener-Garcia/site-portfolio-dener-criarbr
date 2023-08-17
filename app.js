@@ -85,7 +85,13 @@ const jsonRead = async () => {
 
 jsonRead();
 
-//<iframe width="560" height="315" src="https://www.youtube.com/embed/4Tbm_3ecuOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+const nameProjectLink = document.querySelectorAll(".cardDiv a")
+
+nameProjectLink.forEach((e)=>{
+  let name = e.getAttribute(href)
+  console.log(name)
+  localStorage.setItem("name-link", name)
+})
 
 // // pegando dados de um arquivo .json local, tambem pode usar uma url de api porem com async await
 

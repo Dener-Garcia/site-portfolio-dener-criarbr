@@ -6,6 +6,10 @@
     display: grid;
 }
 
+.ps-absolute{
+    position: absolute;
+}
+
 .menuMobileActive {
     opacity: 1;
     transform: translateX(0);
