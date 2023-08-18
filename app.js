@@ -73,7 +73,8 @@ const jsonRead = async () => {
       const btnShowProject = document.createElement("a");
       btnShowProject.classList.add("btn-primary");
       btnShowProject.textContent = "Veja mais";
-      btnShowProject.href = cardValues["btn-link"];
+      btnShowProject.href = "/src/pages/study-case.html";
+      btnShowProject.setAttribute("data", cardValues.name)
       card.appendChild(btnShowProject);
 
       gridCards.appendChild(card);
@@ -85,13 +86,15 @@ const jsonRead = async () => {
 
 jsonRead();
 
-const nameProjectLink = document.querySelectorAll(".cardDiv a")
+import StoreLinkName from "./src/functions/store-projects-name/store-project-name.mjs";
 
-nameProjectLink.forEach((e)=>{
-  let name = e.getAttribute(href)
-  console.log(name)
-  localStorage.setItem("name-link", name)
-})
+StoreLinkName()
+
+
+
+
+
+
 
 // // pegando dados de um arquivo .json local, tambem pode usar uma url de api porem com async await
 

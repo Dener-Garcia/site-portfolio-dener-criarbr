@@ -20,7 +20,7 @@
 
     <link rel="canonical" href="https://dener.criarbr.com/">
     <link rel="sitemap" href="sitemap.xml">
-    <link rel="icon" type="image/svg+xml" href="public/assets/avatar.ico">
+    <link rel="icon" type="image/svg+xml" href="../public/assets/avatar.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,46 +29,16 @@
         rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="/src/styles/style.css" />
 
-    <script src="app.js" type="module" defer></script>
+    <script src="/src/functions/projects-features/projects-features.js" type="module" defer></script>
     <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
 
-    <title>Dener Garcia | UX Engineer</title>
+    <title>Dener Garcia | Blog</title>
 </head>
 
 <body>
 
-    <button class="show-menu-mobile" aria-label="Menu do site">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    <aside class="menu-mobile">
-        <nav>
-            <a class="btn-primary" href="#home">Inicio</a>
-            <a class="btn-primary" href="#projects">Projetos</a>
-            <a class="btn-primary" href="#contact">Contato</a>
-            <a class="btn-primary" href="/src/pages/blog.html">Blog</a>
-        </nav>
-        <div class="network">
-            <a href="https://www.linkedin.com/in/denergarcia/" target="_blank" aria-label="Perfil no Linkedin"><i
-                    class="ph ph-linkedin-logo"></i></a>
-            <a href="https://github.com/Dener-Garcia" target="_blank" aria-label="Perfil no Github"> <i
-                    class="ph ph-github-logo"></i></a>
-            <a href="mailto:dener.criarbr@gmail.com?cc=dener@criarbr.com&subject=Contato via site&body=Ola conheci seu site portfolio e gostaria de..."
-                target="_blank" aria-label="Enviar um e-mail"> <i class="ph ph-envelope-simple"></i></a>
-            <a href="https://www.youtube.com/@dener.criarbr" target="_blank" aria-label="Canal no Youtube"><i
-                    class="ph ph-youtube-logo"></i></a>
-            <a href="https://www.instagram.com/dener.criarbr" target="_blank" aria-label="Perfil no Instagram"><i
-                    class="ph ph-instagram-logo"></i></a>
-            <a href="https://www.behance.net/dener-garcia" target="_blank" aria-label="Perfil no Behance"><i
-                    class="ph ph-behance-logo"></i></a>
-        </div>
-        <blockquote><q cite="https://www.instagram.com/dener.criarbr">People ignore design that ignores people!</q>
-        </blockquote>
-    </aside>
-
     <header>
-        <a href="#" class="logo">&lt; DenerGarcia /&gt;</a>
+        <a href="/index.html" class="logo">&lt; DenerGarcia /&gt;</a>
         <div class="settings-ui">
             <i class="ph ph-person-arms-spread"></i>
             <button>Acessibilidade</button>
@@ -88,13 +58,44 @@
                 </div>
             </div>
         </div>
-        <nav>
-            <a class="btn-primary" href="#home">Inicio</a>
-            <a class="btn-primary" href="#projects">Projetos</a>
-            <a class="btn-primary" href="#contact">Contato</a>
-            <a class="btn-primary" href="/src/pages/blog.html">Blog</a>
-        </nav>
+        <a href="/index.html#projects" class="btn-return" aria-label="Voltar para pagina de inicio">
+            <span></span>
+            <span></span>
+        </a>
     </header>
+
+    <main>
+        <section class="container case">
+            <h1>Projeto e estudo de caso</h1>
+            <div class="presentation">
+                <h2>Breve apresentacao</h2>
+                <div class="customer">
+                    <span>Cliente</span>
+                    <p>Google</p>
+                    <span>Entregaveis</span>
+                    <p>Aplicativo no figma</p>
+                    <time pubdate>FEV-2023</time>
+                </div>
+            </div>
+            <div class="links">
+                <a href="#">Visite Aplicação</a>
+                <a href="#">Layout Figma</a>
+                <a href="#">Codigo Github</a>
+            </div>
+            <img src="../../public/assets/projects/pop-cinema/Components.jpg">
+
+            <article class="infos">
+                <div class="title-description">
+                    <h3>Descricao titulo</h3>
+                    <div class="descritpion">
+                    <h4>Objetivo</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam eos adipisci neque molestias fuga. Error autem placeat expedita. Incidunt veniam et iure natus praesentium reiciendis laudantium sint ut itaque rerum?</p>
+                </div>
+                </div>
+                <img src="../../public/assets/projects/pop-cinema/Colors.jpg">
+            </article>
+        </section>
+    </main>
 
     <footer>
         <div class="madeFor">

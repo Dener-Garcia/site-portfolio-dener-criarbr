@@ -20,19 +20,28 @@ function fixedMobileMenu(){
 
 window.addEventListener("scroll", fixedMobileMenu)
 
-const loadProjectByLink = localStorage.getitem("link-name")
+const loadProjectByLink = localStorage.getItem("name-link")
+let urlProject = ""
+console.log("projeto a ser mostrado", loadProjectByLink)
 
 switch (loadProjectByLink) {
    case "pop-cinema":
       console.log(loadProjectByLink, "clicou no pop cinema")
+      urlProject = "case-pop-cinema"
       break;
 
    default:
       break;
 }
 
-async function loadProjectInfo(){
-   const data = await fetch(/public/assets/projects/study-cases.json)
-data = await data.json()
-console.log(data, "resultado await")
+const url = `/public/assets/projects/${urlProject}.json`
+console.log("nossa url ###", url)
+
+const loadCase = async ()=>{
+   console.log("dentro da funcao async")
+   const data = await fetch(url)
+   const contentData = await data.json()
+   console.log(contentData)
 }
+
+loadCase()

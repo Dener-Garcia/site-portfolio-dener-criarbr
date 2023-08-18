@@ -767,3 +767,67 @@ footer {
     }
   }
 }
+
+.case{
+  margin: auto;
+
+  img{
+    margin-top: $sp-32;
+    width: 100%;
+    padding: $sp-16;
+    border-radius: $fs-8;
+    box-shadow: $effect-shadow-active;
+    background-color: var(--bg-primary);
+  }
+
+  h1 {
+    text-align: center;
+    font-size: $fs-40;
+    color: var(--bg-constrast-light);
+
+    @media screen and (max-width: 959px) {
+      font-size: $fs-28;
+    }
+  }
+
+  h1::after {
+    content: "";
+    margin: $sp-32 auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: $fs-8;
+    border-radius: $fs-8;
+    background-color: var(--cl-black-500);
+
+    @media screen and (max-width: 959px) {
+      width: 30%;
+    }
+  }
+
+  .presentation{
+    margin-top: $sp-32;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .links{
+    display: flex;
+    justify-content: center;
+    gap: $sp-24;
+    background-color: red;
+  }
+
+  .infos{
+    margin-top: $sp-32;
+  }
+
+  .title-description{
+      display: flex;
+      
+    .descritpion{
+      background-color: blue;
+    }
+  }
+}

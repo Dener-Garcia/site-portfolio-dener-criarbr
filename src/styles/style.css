@@ -712,6 +712,64 @@ footer a:hover {
   overflow: hidden;
 }
 
+.case {
+  margin: auto;
+}
+.case img {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
+  background-color: var(--bg-primary);
+}
+.case h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--bg-constrast-light);
+}
+@media screen and (max-width: 959px) {
+  .case h1 {
+    font-size: 1.75rem;
+  }
+}
+.case h1::after {
+  content: "";
+  margin: 2rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--cl-black-500);
+}
+@media screen and (max-width: 959px) {
+  .case h1::after {
+    width: 30%;
+  }
+}
+.case .presentation {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.case .links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: red;
+}
+.case .infos {
+  margin-top: 2rem;
+}
+.case .title-description {
+  display: flex;
+}
+.case .title-description .descritpion {
+  background-color: blue;
+}
+
 html {
   --bg-primary: #EEF0F4;
   --bg-constrast-light: #0F0F0F;
@@ -795,6 +853,10 @@ body {
 
 .d-grid {
   display: grid;
+}
+
+.ps-absolute {
+  position: absolute;
 }
 
 .menuMobileActive {
