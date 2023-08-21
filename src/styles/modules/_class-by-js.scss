@@ -10,6 +10,14 @@
     position: absolute;
 }
 
+.ps-fixed{
+    position: fixed;
+}
+
+.z-1{
+    z-index: 1;
+}
+
 .menuMobileActive {
     opacity: 1;
     transform: translateX(0);
@@ -37,4 +45,8 @@
 
 .inputValidJS {
     outline: solid $fs-2 var(--cl-feedback-sucess);
+}
+
+.btnReturnPosition{
+    right: $fs-16;
 }

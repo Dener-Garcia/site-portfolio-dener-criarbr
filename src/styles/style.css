@@ -78,20 +78,6 @@ aside {
     justify-content: space-between;
     padding: 0 2rem;
   }
-  aside .network a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.75rem;
-    padding: 0.5rem;
-    border-radius: 50px;
-    background-color: var(--bg-primary);
-    color: var(--bg-constrast-light);
-    box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
-  }
-  aside .network a:focus {
-    box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
-  }
   aside blockquote {
     width: 80%;
     height: 8rem;
@@ -115,6 +101,7 @@ aside {
     font-style: italic;
     font-weight: 300;
     font-size: 1.125rem;
+    color: var(--cl-black-300);
   }
 }
 
@@ -716,7 +703,7 @@ footer a:hover {
   margin: auto;
 }
 .case img {
-  margin-top: 2rem;
+  margin: 1rem 0;
   width: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -754,20 +741,49 @@ footer a:hover {
   display: flex;
   justify-content: space-around;
 }
+.case .presentation h2 {
+  font-size: 1.75rem;
+  color: var(--cl-black-300);
+  padding: 0 1rem;
+}
+.case .presentation .customer span {
+  font-weight: 500;
+  color: var(--bg-constrast-light);
+}
+.case .presentation .customer p {
+  color: var(--bg-constrast-light);
+  margin-bottom: 0.5rem;
+}
 .case .links {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  background-color: red;
 }
 .case .infos {
   margin-top: 2rem;
 }
-.case .title-description {
+.case .infos .title-description {
+  margin: 5rem 0;
   display: flex;
+  justify-content: space-between;
 }
-.case .title-description .descritpion {
-  background-color: blue;
+.case .infos .title-description h3 {
+  width: 70%;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: var(--bg-constrast-light);
+}
+.case .infos .title-description .description {
+  width: 100%;
+}
+.case .infos .title-description .description h4 {
+  font-size: 1.125rem;
+  color: var(--bg-constrast-light);
+}
+.case .infos .title-description .description p {
+  margin-top: 0.5rem;
+  color: var(--cl-black-300);
 }
 
 html {
@@ -859,6 +875,14 @@ body {
   position: absolute;
 }
 
+.ps-fixed {
+  position: fixed;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
 .menuMobileActive {
   opacity: 1;
   transform: translateX(0);
@@ -888,6 +912,10 @@ body {
   outline: solid 0.125rem var(--cl-feedback-sucess);
 }
 
+.btnReturnPosition {
+  right: 1rem;
+}
+
 .btn-primary {
   min-width: 8rem;
   width: 100%;
@@ -908,6 +936,40 @@ body {
   box-shadow: 8px 8px 14px #c2cad6, inset -8px -8px 14px #c2cad6;
 }
 .btn-primary:focus {
+  box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  padding: 0.5rem;
+  border-radius: 50px;
+  background-color: var(--bg-primary);
+  color: var(--bg-constrast-light);
+  box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
+}
+.btn-icon:focus {
+  box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
+}
+
+.btn-to-top {
+  bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  padding: 0.5rem;
+  border-radius: 50px;
+  background-color: var(--bg-primary);
+  color: var(--bg-constrast-light);
+  box-shadow: -8px -8px 14px #fff, 8px 8px 14px #d9dade;
+}
+.btn-to-top:hover {
+  box-shadow: 8px 8px 14px #c2cad6, inset -8px -8px 14px #c2cad6;
+}
+.btn-to-top:focus {
   box-shadow: inset -8px -8px 14px #fff, inset 8px 8px 14px #c2cad6;
 }
 

@@ -1,7 +1,7 @@
 {
-    "study-case": [
+    "studyCase": [
         {
-            "short-presentation": "Breve apresentacao",
+            "shortPresentation": "Breve apresentacao",
             "customer": "Nome do cliente",
             "handoff": "Aplicativo no Figma, e web site",
             "data": "FEV-2023",

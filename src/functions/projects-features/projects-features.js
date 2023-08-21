@@ -8,40 +8,39 @@ ChangeTheme()
 
 const btnReturn = document.querySelector(".btn-return")
 const mainTitle = document.querySelector("h1")
+const btnToTop = document.querySelector("#btn-to-top")
 
 function fixedMobileMenu(){
-   if (mainTitle.getBoundingClientRect().top < -200){
-   btnReturn.classList.add(".ps-absolute")
+   if (mainTitle.getBoundingClientRect().top < -600){
+   btnReturn.style.position = "fixed"
+   btnToTop.style.display = "flex"
+   btnToTop.classList.add("ps-fixed")
+   btnToTop.classList.add("btnReturnPosition")
    }
    else{
-    btnReturn.classList.remove(".ps-absolute")
+      btnReturn.style.position = "relative"
+      btnToTop.style.display = "none"
+      btnToTop.classList.remove("btnReturnPosition")
    }
 }
+
+
 
 window.addEventListener("scroll", fixedMobileMenu)
 
-const loadProjectByLink = localStorage.getItem("name-link")
-let urlProject = ""
-console.log("projeto a ser mostrado", loadProjectByLink)
+// const loadProjectByLink = localStorage.getItem("name-link")
+// let urlProject = ""
+// console.log("projeto a ser mostrado", loadProjectByLink)
 
-switch (loadProjectByLink) {
-   case "pop-cinema":
-      console.log(loadProjectByLink, "clicou no pop cinema")
-      urlProject = "case-pop-cinema"
-      break;
+// switch (loadProjectByLink) {
+//    case "pop-cinema":
+//       console.log(loadProjectByLink, "clicou no pop cinema")
+//       urlProject = "case-pop-cinema"
+//       break;
 
-   default:
-      break;
-}
+//    default:
+//       break;
+// }
 
-const url = `/public/assets/projects/${urlProject}.json`
-console.log("nossa url ###", url)
 
-const loadCase = async ()=>{
-   console.log("dentro da funcao async")
-   const data = await fetch(url)
-   const contentData = await data.json()
-   console.log(contentData)
-}
 
-loadCase()

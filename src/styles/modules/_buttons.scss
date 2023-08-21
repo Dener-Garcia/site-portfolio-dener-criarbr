@@ -23,12 +23,48 @@
   }
 }
 
+.btn-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $fs-28;
+    padding: $sp-8;
+    border-radius: 50px;
+    background-color: var(--bg-primary);
+    color: var(--bg-constrast-light);
+    box-shadow: $effect-shadow-default;
+
+    &:focus {
+      box-shadow: $effect-shadow-active;
+    }
+}
+
+.btn-to-top{
+    bottom: $fs-40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $fs-28;
+    padding: $sp-8;
+    border-radius: 50px;
+    background-color: var(--bg-primary);
+    color: var(--bg-constrast-light);
+    box-shadow: $effect-shadow-default;
+
+    &:hover{
+      box-shadow: $effect-shadow-hover;
+    }
+    
+    &:focus {
+      box-shadow: $effect-shadow-active;
+    }
+}
+
 .btn-return {
   display: block;
   position: relative;
   z-index: 10;
   right: $fs-16;
-
   width: $fs-40;
   height: $fs-40;
   border-radius: $fs-8;
@@ -41,6 +77,7 @@
   @media screen and (max-width: 959px) {
     position: fixed;
   }
+  
 
   span:nth-child(1) {
     position: absolute;

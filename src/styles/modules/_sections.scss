@@ -80,22 +80,6 @@ aside {
       align-items: center;
       justify-content: space-between;
       padding: 0 $sp-32;
-
-      a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: $fs-28;
-        padding: $sp-8;
-        border-radius: 50px;
-        background-color: var(--bg-primary);
-        color: var(--bg-constrast-light);
-        box-shadow: $effect-shadow-default;
-
-        &:focus {
-          box-shadow: $effect-shadow-active;
-        }
-      }
     }
 
     blockquote {
@@ -118,6 +102,7 @@ aside {
         font-style: italic;
         font-weight: $fw-light;
         font-size: $fs-18;
+        color: var(--cl-black-300);
       }
     }
   }
@@ -768,11 +753,11 @@ footer {
   }
 }
 
-.case{
+.case {
   margin: auto;
 
-  img{
-    margin-top: $sp-32;
+  img {
+    margin: $sp-16 0;
     width: 100%;
     padding: $sp-16;
     border-radius: $fs-8;
@@ -806,28 +791,65 @@ footer {
     }
   }
 
-  .presentation{
+  .presentation {
     margin-top: $sp-32;
     display: flex;
     justify-content: space-around;
+
+    h2 {
+      font-size: $fs-28;
+      color: var(--cl-black-300);
+      padding: 0 $sp-16;
+    }
+
+    .customer {
+        span {
+        font-weight: $fw-medium;
+        color: var(--bg-constrast-light);
+      }
+
+      p {
+        color: var(--bg-constrast-light);
+        margin-bottom: $sp-8;
+      }
+    }
   }
 
-  .links{
+  .links {
+    margin-top: $sp-32;
     display: flex;
     justify-content: center;
     gap: $sp-24;
-    background-color: red;
   }
 
-  .infos{
+  .infos {
     margin-top: $sp-32;
-  }
 
-  .title-description{
+    .title-description {
+      margin: $sp-80 0;
       display: flex;
-      
-    .descritpion{
-      background-color: blue;
+      justify-content: space-between;
+
+      h3 {
+        width: 70%;
+        padding: 0 $sp-16;
+        font-size: $fs-24;
+        color: var(--bg-constrast-light);
+      }
+
+      .description {
+        width: 100%;
+
+        h4 {
+          font-size: $fs-18;
+          color: var(--bg-constrast-light);
+        }
+
+        p {
+          margin-top: $sp-8;
+          color: var(--cl-black-300);
+        }
+      }
     }
   }
 }
