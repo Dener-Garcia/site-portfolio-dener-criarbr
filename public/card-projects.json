@@ -2,6 +2,7 @@
     "contentCard": [
         {
             "name": "pop-cinema",
+            "linkPage": "/src/pages/pop-cinema.html",
             "imgLink": "/public/assets/projects/pop-cinema/cover-card.jpg",
             "alt-img": "texto alternativo img1",
             "title": "Aplicativo Pop Cinema",
@@ -9,7 +10,8 @@
         },
         {
             "name": "Lit academy",
-            "imgLink": "/caminhi/img.jpg",
+            "linkPage": "/src/pages/lit-academy.html",
+            "imgLink": "/public/assets/projects/lit-academy/cover-card.jpg",
             "alt-img": "texto alternativo img1",
             "title": "Landing page Lit Academy",
             "description": "Um desafio lançado na comunidade de design da Lit Academy onde iremos explorar o mundo das IAs"

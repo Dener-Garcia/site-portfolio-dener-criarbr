@@ -8,6 +8,9 @@ html{
     --cl-white-pure: #{$cl-white-pure};
     --cl-black-pure: #{$cl-black-pure};
 
+    --cl-shadow-effect-default: #{$cl-shadow-effect-default-white};
+    --cl-shadow-effect-hover: #{$cl-shadow-effect-hover-white};
+
     --cl-black-100: #{$cl-black-100};
     --cl-black-200: #{$cl-black-200};
     --cl-black-300: #{$cl-black-300};
@@ -20,9 +23,6 @@ html{
     --cl-black-900: #{$cl-black-900};
     --cl-black-950: #{$cl-black-950};
     --cl-black-1000: #{$cl-black-1000};
-
-    --cl-sky-gray-800: #{$cl-sky-gray-800};
-    --cl-sky-gray-900: #{$cl-sky-gray-900};
 
     --cl-feedback-status: #{$cl-feedback-status};
     --cl-feedback-info: #{$cl-feedback-info};
@@ -38,8 +38,10 @@ html[ui-theme='dark']{
     --bg-constrast-light: #{$bg-contrast-dark};
     --bg-contrast-dark: #($bg-contrast-light);
 
-    --cl-white-pure: #{$cl-black-pure};
-    --cl-black-pure: #{$cl-white-pure};
+    --cl-white-pure: #{$cl-black-300};
+
+    --cl-shadow-effect-default: #{$cl-black-pure};
+    --cl-shadow-effect-hover: #{$cl-black-pure};
 
     --cl-black-100: #{$cl-black-1000};
     --cl-black-200: #{$cl-black-950};
@@ -54,13 +56,31 @@ html[ui-theme='dark']{
     --cl-black-950: #{$cl-black-200};
     --cl-black-1000: #{$cl-black-100};
 
-    --cl-sky-gray-900: #{$cl-sky-gray-300};
-    --cl-sky-gray-800: #{$cl-sky-gray-200};
 };
 
 
 html[ui-theme='high-contrast']{
 
-    --bg-primary: #{$bg-primary-high-contrast};
-    --bg-constrast-light: #{$bg-contrast-dark};
+    --bg-primary: #{$cl-black-pure};
+
+    --bg-constrast-light: #{$cl-white-pure};
+    --bg-contrast-dark: #($bg-contrast-light);
+
+    --cl-white-pure: #{$cl-black-800};
+
+    --cl-shadow-effect-default: #{$cl-black-600};
+    --cl-shadow-effect-hover: #{$cl-black-600};
+
+    --cl-black-100: #{$cl-black-1000};
+    --cl-black-200: #{$cl-black-1000};
+    --cl-black-300:#{$cl-black-1000};
+    --cl-black-400: #{$cl-black-1000};
+    --cl-black-500: #{$cl-black-1000};
+    --cl-black-600: #{$cl-black-1000};
+    --cl-black-700: #{$cl-black-1000};
+    --cl-black-800: #{$cl-black-1000};
+    --cl-black-850: #{$cl-black-1000};
+    --cl-black-900: #{$cl-black-1000};
+    --cl-black-950: #{$cl-black-1000};
+    --cl-black-1000: #{$cl-black-1000};
 }

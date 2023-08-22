@@ -12,7 +12,7 @@
     height: 2.5rem;
     border-radius: 0.5rem;
     background-color: var(--bg-primary);
-    box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-sky-gray-900);
+    box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
     color: var(--bg-constrast-light);
     overflow: hidden;
   }
@@ -87,7 +87,7 @@ aside {
     justify-content: center;
     padding: 0 2.5rem;
     background-color: var(--bg-primary);
-    box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-sky-gray-900);
+    box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
   }
 }
 @media screen and (max-width: 959px) and (max-width: 959px) {
@@ -191,7 +191,7 @@ header .ui-options {
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: var(--bg-primary);
-  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-sky-gray-900);
+  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
 }
 header .ui-options .option {
   display: flex;
@@ -219,10 +219,10 @@ header .ui-options .option input::after {
   height: 1.5rem;
   border-radius: 50%;
   background-color: var(--bg-primary);
-  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-sky-gray-800);
+  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
 }
 header .ui-options .option input:checked::after {
-  box-shadow: 8px 8px 14px var(--cl-sky-gray-800), inset -8px -8px 14px var(--cl-sky-gray-800);
+  box-shadow: 8px 8px 14px var(--cl-shadow-effect-hover), inset -8px -8px 14px var(--cl-shadow-effect-hover);
 }
 header i {
   font-size: 1.25rem;
@@ -311,7 +311,7 @@ header i {
   margin-top: 2rem;
   padding: 1rem;
   background-color: var(--bg-primary);
-  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-sky-gray-900);
+  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
 }
 @media screen and (max-width: 959px) {
   .pipeline-section .text-box {
@@ -327,7 +327,7 @@ header i {
   border-radius: 50px;
   background-color: var(--bg-primary);
   color: var(--bg-constrast-light);
-  box-shadow: 8px 8px 14px var(--cl-sky-gray-800), inset -8px -8px 14px var(--cl-sky-gray-800);
+  box-shadow: 8px 8px 14px var(--cl-shadow-effect-hover), inset -8px -8px 14px var(--cl-shadow-effect-hover);
 }
 .pipeline-section .text-box h3 {
   font-size: 1.25rem;
@@ -335,7 +335,7 @@ header i {
 }
 .pipeline-section .text-box p {
   color: var(--cl-black-300);
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .pipeline-section .text-box:nth-child(3),
 .pipeline-section .text-box:nth-child(5) {
@@ -409,14 +409,14 @@ header i {
   flex-direction: column;
   padding: 1.5rem;
   background-color: var(--bg-primary);
-  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-sky-gray-900);
+  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
 }
 .projects .card-project img {
   max-width: 20rem;
   height: 10rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-sky-gray-800);
+  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
 }
 .projects .card-project h3 {
   margin-top: 1rem;
@@ -469,7 +469,7 @@ header i {
   display: grid;
   padding: 2.5rem;
   background-color: var(--bg-primary);
-  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-sky-gray-900);
+  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
   gap: 1.5rem;
 }
 @media screen and (max-width: 959px) {
@@ -490,7 +490,7 @@ header i {
   border-radius: 0.5rem;
   color: var(--bg-constrast-light);
   background-color: var(--bg-primary);
-  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-sky-gray-800);
+  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
   transition: 0.2s;
 }
 .contact form .field input:focus,
@@ -557,7 +557,7 @@ header i {
   align-items: center;
   padding: 1.5rem;
   background-color: var(--bg-primary);
-  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-sky-gray-900);
+  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
   gap: 2rem;
   cursor: pointer;
 }
@@ -569,7 +569,7 @@ header i {
 .certificates .certificate-box img {
   width: 5rem;
   background-color: var(--bg-primary);
-  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-sky-gray-800);
+  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
   padding: 0.5rem;
   border-radius: 0.5rem;
   fill: var(--bg-constrast-light);
@@ -610,7 +610,7 @@ footer {
   justify-content: center;
   color: var(--cl-black-600);
   font-size: 1rem;
-  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-sky-gray-900);
+  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
 }
 footer a {
   color: var(--cl-black-600);
@@ -669,14 +669,14 @@ footer a:hover {
   flex-direction: column;
   padding: 1.5rem;
   background-color: var(--bg-primary);
-  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-sky-gray-900);
+  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
 }
 .tutorials .grid-cards .card-video iframe {
   min-width: 16rem;
   aspect-ratio: 4/3;
   padding: 1rem;
   border-radius: 0.5rem;
-  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-sky-gray-800);
+  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
 }
 .tutorials .grid-cards .card-video h3 {
   margin-top: 1rem;
@@ -707,7 +707,7 @@ footer a:hover {
   width: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
-  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-sky-gray-800);
+  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
   background-color: var(--bg-primary);
 }
 .case h1 {
@@ -792,6 +792,8 @@ html {
   --bg-contrast-dark: #($bg-contrast-dark);
   --cl-white-pure: #fff;
   --cl-black-pure: #000;
+  --cl-shadow-effect-default: #D9DADE;
+  --cl-shadow-effect-hover: #C2CAD6;
   --cl-black-100: #141414;
   --cl-black-200: #292929;
   --cl-black-300: #3d3d3d;
@@ -804,8 +806,6 @@ html {
   --cl-black-900: #cccccc;
   --cl-black-950: #e0e0e0;
   --cl-black-1000: #f5f5f5;
-  --cl-sky-gray-800: #C2CAD6;
-  --cl-sky-gray-900: #D9DADE;
   --cl-feedback-status: #e5f2fa;
   --cl-feedback-info: #3498db;
   --cl-feedback-warning: #f1c40f;
@@ -814,11 +814,12 @@ html {
 }
 
 html[ui-theme=dark] {
-  --bg-primary: #696969;
+  --bg-primary: #26262B;
   --bg-constrast-light: #F6F9FE;
   --bg-contrast-dark: #($bg-contrast-light);
-  --cl-white-pure: #000;
-  --cl-black-pure: #fff;
+  --cl-white-pure: #3d3d3d;
+  --cl-shadow-effect-default: #000;
+  --cl-shadow-effect-hover: #000;
   --cl-black-100: #f5f5f5;
   --cl-black-200: #e0e0e0;
   --cl-black-300: #cccccc;
@@ -831,13 +832,27 @@ html[ui-theme=dark] {
   --cl-black-900: #3d3d3d;
   --cl-black-950: #292929;
   --cl-black-1000: #141414;
-  --cl-sky-gray-900: #131316;
-  --cl-sky-gray-800: #0C0C0D;
 }
 
 html[ui-theme=high-contrast] {
-  --bg-primary: #141415;
-  --bg-constrast-light: #F6F9FE;
+  --bg-primary: #000;
+  --bg-constrast-light: #fff;
+  --bg-contrast-dark: #($bg-contrast-light);
+  --cl-white-pure: #a3a3a3;
+  --cl-shadow-effect-default: #7a7a7a;
+  --cl-shadow-effect-hover: #7a7a7a;
+  --cl-black-100: #f5f5f5;
+  --cl-black-200: #f5f5f5;
+  --cl-black-300:#f5f5f5;
+  --cl-black-400: #f5f5f5;
+  --cl-black-500: #f5f5f5;
+  --cl-black-600: #f5f5f5;
+  --cl-black-700: #f5f5f5;
+  --cl-black-800: #f5f5f5;
+  --cl-black-850: #f5f5f5;
+  --cl-black-900: #f5f5f5;
+  --cl-black-950: #f5f5f5;
+  --cl-black-1000: #f5f5f5;
 }
 
 * {
@@ -884,14 +899,14 @@ body {
   font-weight: 500;
   background-color: var(--bg-primary);
   color: var(--bg-constrast-light);
-  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-sky-gray-900);
+  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
   cursor: pointer;
 }
 .btn-primary:hover {
-  box-shadow: 8px 8px 14px var(--cl-sky-gray-800), inset -8px -8px 14px var(--cl-sky-gray-800);
+  box-shadow: 8px 8px 14px var(--cl-shadow-effect-hover), inset -8px -8px 14px var(--cl-shadow-effect-hover);
 }
 .btn-primary:focus {
-  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-sky-gray-800);
+  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
 }
 
 .btn-icon {
@@ -903,10 +918,10 @@ body {
   border-radius: 50px;
   background-color: var(--bg-primary);
   color: var(--bg-constrast-light);
-  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-sky-gray-900);
+  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
 }
 .btn-icon:focus {
-  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-sky-gray-800);
+  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
 }
 
 .btn-to-top {
@@ -919,13 +934,13 @@ body {
   border-radius: 50px;
   background-color: var(--bg-primary);
   color: var(--bg-constrast-light);
-  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-sky-gray-900);
+  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
 }
 .btn-to-top:hover {
-  box-shadow: 8px 8px 14px var(--cl-sky-gray-800), inset -8px -8px 14px var(--cl-sky-gray-800);
+  box-shadow: 8px 8px 14px var(--cl-shadow-effect-hover), inset -8px -8px 14px var(--cl-shadow-effect-hover);
 }
 .btn-to-top:focus {
-  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-sky-gray-800);
+  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
 }
 
 .btn-return {
@@ -937,7 +952,7 @@ body {
   height: 2.5rem;
   border-radius: 0.5rem;
   background-color: var(--bg-primary);
-  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-sky-gray-900);
+  box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
   color: var(--bg-constrast-light);
   overflow: hidden;
   cursor: pointer;

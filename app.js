@@ -73,7 +73,7 @@ const jsonRead = async () => {
       const btnShowProject = document.createElement("a");
       btnShowProject.classList.add("btn-primary");
       btnShowProject.textContent = "Veja mais";
-      btnShowProject.href = "/src/pages/study-case.html";
+      btnShowProject.href = cardValues.linkPage;
       btnShowProject.setAttribute("data", cardValues.name)
       card.appendChild(btnShowProject);
 
