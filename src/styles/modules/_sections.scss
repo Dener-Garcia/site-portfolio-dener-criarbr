@@ -798,7 +798,7 @@ footer {
 
     h2 {
       font-size: $fs-28;
-      color: var(--cl-black-300);
+      color: var(--cl-black-200);
       padding: 0 $sp-16;
     }
 
@@ -833,20 +833,21 @@ footer {
       h3 {
         width: 70%;
         padding: 0 $sp-16;
-        font-size: $fs-24;
-        color: var(--bg-constrast-light);
+        font-size: $fs-28;
+        color: var(--cl-black-200);
       }
 
       .description {
         width: 100%;
 
         h4 {
-          font-size: $fs-18;
+          font-size: $fs-20;
           color: var(--bg-constrast-light);
         }
 
         p {
           margin-top: $sp-8;
+          font-size: $fs-18;
           color: var(--cl-black-300);
         }
       }
