@@ -1,48 +1,52 @@
 {
-    "project": [
+    "studyCase": [
         {
-            "title": "breve descricao",
-            "client": "para que foi feito",
-            "link-figma": "",
-            "link-github": "",
-            "link-aplication": "",
-            "img-cover": "",
+            "shortPresentation": "Breve apresentacao",
+            "customer": "Nome do cliente",
+            "handoff": "Aplicativo no Figma, e web site",
+            "data": "FEV-2023",
+            "link-aplication": "endereco site",
+            "link-figma": "endereco figma",
+            "link-github": "codigo-github",
+            "path-cover": "/src/public/assets/",
+            
+            "description-title": "descricao titulo",
+            "sub-title": "objetivo",
+            "description": "lorem ipsum dolor, site amet cosectetur",
 
-            "description-project": "",
-            "goal-project": "",
+            "img-1": "src da imagem 1",
+            "img-2": "src da imagem 1",
+            "img-3": "src da imagem 1",
+            "img-4": "src da imagem 1",
+            "img-5": "src da imagem 1",
 
-            "link-iframe-figma-mobile": "",
-            "link-iframe-figma-desktop": "",
+            "process-title": "descricao titulo",
+            "process-sub-title": "objetivo",
+            "process-description": "lorem ipsum dolor, site amet cosectetur",
 
-            "study-case-process": "como fez para quem porque",
-            "img-case-1": "",
-            "img-case-2": "",
-            "img-case-3": "",
-            "img-case-4": "",
-            "img-case-5": "",
-            "img-case-6": "",
-            "img-case-7": "",
-            "img-case-8": "",
-            "img-case-9": "",
-            "img-case-10": "",
-            "img-case-11": "",
-            "img-case-12": "",
+            "img-6": "src da imagem 1",
+            "img-61": "src da imagem 1",
+            "img-62": "src da imagem 1",
 
-            "style-guide-process": "",
-            "img-style-guide-1": "",
-            "img-style-guide-2": "",
-            "img-style-guide-3": "",
-            "img-style-guide-4": "",
-            "img-style-guide-5": "",
+            "style-title": "descricao titulo",
+            "style-sub-title": "objetivo",
+            "style-description": "lorem ipsum dolor, site amet cosectetur",
 
-            "mockups-process": "descricao telas depois prontas",
-            "img-mockup-1": "",
-            "img-mockup-2": "",
-            "img-mockup-3": "",
-            "img-mockup-4": "",
+            "img-7": "src da imagem 1",
+            "img-8": "src da imagem 1",
+            "img-9": "src da imagem 1",
 
-            "chanllenge-process": ""
-
+            "mockup-title": "descricao titulo",
+            "mockup-sub-title": "objetivo",
+            "mockup-descritpion": "acesibilidadjlfja fj akdjf;a",
+        
+            "img-10": "src da imagem 1",
+            "img-11": "src da imagem 1",
+            "img-12": "src da imagem 1",
+            
+            "goal-title": "Desafios",
+            "goal-sub-title": "l;akljdfkjal;fa",
+            "goal-description": "lkfjak;dljfa;kjfd;afj"
         }
-]
+    ]
 }

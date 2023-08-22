@@ -1,8 +1,12 @@
 html{
 
     --bg-primary: #{$bg-primary-light};
+
     --bg-constrast-light: #{$bg-contrast-light};
     --bg-contrast-dark: #($bg-contrast-dark);
+
+    --cl-white-pure: #{$cl-white-pure};
+    --cl-black-pure: #{$cl-black-pure};
 
     --cl-black-100: #{$cl-black-100};
     --cl-black-200: #{$cl-black-200};
@@ -16,6 +20,9 @@ html{
     --cl-black-900: #{$cl-black-900};
     --cl-black-950: #{$cl-black-950};
     --cl-black-1000: #{$cl-black-1000};
+
+    --cl-sky-gray-800: #{$cl-sky-gray-800};
+    --cl-sky-gray-900: #{$cl-sky-gray-900};
 
     --cl-feedback-status: #{$cl-feedback-status};
     --cl-feedback-info: #{$cl-feedback-info};
@@ -31,6 +38,9 @@ html[ui-theme='dark']{
     --bg-constrast-light: #{$bg-contrast-dark};
     --bg-contrast-dark: #($bg-contrast-light);
 
+    --cl-white-pure: #{$cl-black-pure};
+    --cl-black-pure: #{$cl-white-pure};
+
     --cl-black-100: #{$cl-black-1000};
     --cl-black-200: #{$cl-black-950};
     --cl-black-300: #{$cl-black-900};
@@ -43,11 +53,14 @@ html[ui-theme='dark']{
     --cl-black-900: #{$cl-black-300};
     --cl-black-950: #{$cl-black-200};
     --cl-black-1000: #{$cl-black-100};
+
+    --cl-sky-gray-900: #{$cl-sky-gray-300};
+    --cl-sky-gray-800: #{$cl-sky-gray-200};
 };
 
 
 html[ui-theme='high-contrast']{
 
     --bg-primary: #{$bg-primary-high-contrast};
-    --bg-constrast-light: #{$bg-contrast-high};
+    --bg-constrast-light: #{$bg-contrast-dark};
 }

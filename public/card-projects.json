@@ -2,17 +2,17 @@
     "contentCard": [
         {
             "name": "pop-cinema",
-            "imgLink": "/public/assets/projects/pop-cinema/pop-cinema-card.jpg",
+            "imgLink": "/public/assets/projects/pop-cinema/cover-card.jpg",
             "alt-img": "texto alternativo img1",
-            "title": "Titulo 1",
-            "description": "projeto 1 loren ipxun abacaxi nao faz xixi vamos embora que atrave vem gente"
+            "title": "Aplicativo Pop Cinema",
+            "description": "Criar uma solução com base nos conhecimentos adquiridos durante os seis meses do curso de UX do Google"
         },
         {
-            "name": "Landing Page",
+            "name": "Lit academy",
             "imgLink": "/caminhi/img.jpg",
             "alt-img": "texto alternativo img1",
-            "title": "Titulo 4",
-            "description": "Projeto 4 desenvolvido por mim Dener Garcia afim de aplicar conceitos memoraveis"
+            "title": "Landing page Lit Academy",
+            "description": "Um desafio lançado na comunidade de design da Lit Academy onde iremos explorar o mundo das IAs"
         },
         {
             "name": "bat-e-docs",

@@ -12,13 +12,13 @@ const btnToTop = document.querySelector("#btn-to-top")
 
 function fixedMobileMenu(){
    if (mainTitle.getBoundingClientRect().top < -600){
-   btnReturn.style.position = "fixed"
+   btnReturn.classList.add("ps-fixed")
    btnToTop.style.display = "flex"
    btnToTop.classList.add("ps-fixed")
    btnToTop.classList.add("btnReturnPosition")
    }
    else{
-      btnReturn.style.position = "relative"
+      btnReturn.classList.remove("ps-fixed")
       btnToTop.style.display = "none"
       btnToTop.classList.remove("btnReturnPosition")
    }
