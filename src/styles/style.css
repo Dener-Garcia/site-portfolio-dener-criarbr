@@ -839,9 +839,9 @@ html[ui-theme=high-contrast] {
   --bg-primary: #000;
   --bg-constrast-light: #fff;
   --bg-contrast-dark: #($bg-contrast-light);
-  --cl-white-pure: #a3a3a3;
+  --cl-white-pure: #7a7a7a;
   --cl-shadow-effect-default: #7a7a7a;
-  --cl-shadow-effect-hover: #7a7a7a;
+  --cl-shadow-effect-hover: #525252;
   --cl-black-100: #f5f5f5;
   --cl-black-200: #f5f5f5;
   --cl-black-300:#f5f5f5;
