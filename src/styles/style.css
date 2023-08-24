@@ -152,6 +152,7 @@ header .ui-options .option label {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 header .ui-options .option input {
   position: relative;
@@ -169,6 +170,7 @@ header .ui-options .option input::after {
   border-radius: 50%;
   background-color: var(--bg-primary);
   box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
+  cursor: pointer;
 }
 header .ui-options .option input:checked::after {
   box-shadow: 8px 8px 14px var(--cl-shadow-effect-hover), inset -8px -8px 14px var(--cl-shadow-effect-hover);
@@ -261,6 +263,7 @@ header i {
   padding: 1rem;
   background-color: var(--bg-primary);
   box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
+  transition: 0.5s;
 }
 @media screen and (max-width: 959px) {
   .pipeline-section .text-box {
@@ -362,7 +365,7 @@ header i {
 }
 .projects .card-project img {
   max-width: 20rem;
-  height: 10rem;
+  aspect-ratio: 3/2;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
@@ -512,6 +515,7 @@ header i {
   box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
   gap: 2rem;
   cursor: pointer;
+  transition: 0.5s;
 }
 @media screen and (max-width: 959px) {
   .certificates .certificate-box {
@@ -520,6 +524,7 @@ header i {
 }
 .certificates .certificate-box img {
   width: 5rem;
+  height: 5rem;
   background-color: var(--bg-primary);
   box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
   padding: 0.5rem;
@@ -561,12 +566,12 @@ footer {
   display: flex;
   padding: 1rem;
   justify-content: center;
-  color: var(--cl-black-600);
+  color: var(--cl-black-400);
   font-size: 1rem;
   box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
 }
 footer a {
-  color: var(--cl-black-600);
+  color: var(--cl-black-400);
   transition: 0.2s ease-in-out;
 }
 footer a:hover {
@@ -1021,6 +1026,11 @@ body {
 }
 .blinkEye {
   animation: blinkEyes 4s ease 4s infinite;
+}
+
+.reveral-up {
+  transform: translateY(300px) scale(0.1);
+  opacity: 0;
 }
 
 .d-none {

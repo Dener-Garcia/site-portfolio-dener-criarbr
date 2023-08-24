@@ -1,10 +1,12 @@
 import Acessibility from "../acessibility-menu/acessibility-menu.mjs";
+import ReveralUp from "../animations/animation-reveral.mjs";
 
 Acessibility();
 
 import ChangeTheme from "../change-ui-theme/change-theme.mjs";
 
 ChangeTheme()
+
 
 const btnReturn = document.querySelector(".btn-return")
 const mainTitle = document.querySelector("h1")

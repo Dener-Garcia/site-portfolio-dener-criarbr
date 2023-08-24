@@ -152,12 +152,15 @@ header {
       display: flex;
       justify-content: space-between;
 
+
       label {
         width: 100%;
         height: $fs-32;
         display: flex;
         align-items: center;
         gap: $sp-8;
+        cursor: pointer;
+        
       }
 
       input {
@@ -177,6 +180,7 @@ header {
         border-radius: 50%;
         background-color: var(--bg-primary);
         box-shadow: $effect-shadow-active;
+        cursor: pointer;
       }
 
       input:checked::after{
@@ -277,6 +281,7 @@ header {
     padding: $sp-16;
     background-color: var(--bg-primary);
     box-shadow: $effect-shadow-default;
+    transition: 0.5s;
 
     @media screen and (max-width: 959px) {
       width: 80%;
@@ -381,7 +386,7 @@ header {
 
     img {
       max-width: 20rem;
-      height: 10rem;
+      aspect-ratio:  3/2;
       padding: $sp-16;
       border-radius: $fs-8;
       box-shadow: $effect-shadow-active;
@@ -546,6 +551,7 @@ header {
     box-shadow: $effect-shadow-default;
     gap: $sp-32;
     cursor: pointer;
+    transition: 0.5s;
 
     @media screen and (max-width: 959px) {
       width: 100%;
@@ -553,6 +559,7 @@ header {
 
     img {
       width: 5rem;
+      height: 5rem;
       background-color: var(--bg-primary);
       box-shadow: $effect-shadow-active;
       padding: $sp-8;
@@ -605,12 +612,12 @@ footer {
   display: flex;
   padding: $fs-16;
   justify-content: center;
-  color: var(--cl-black-600);
+  color: var(--cl-black-400);
   font-size: $fs-16;
   box-shadow: $effect-shadow-default;
 
   a {
-    color: var(--cl-black-600);
+    color: var(--cl-black-400);
     transition: 0.2s ease-in-out;
 
     &:hover {

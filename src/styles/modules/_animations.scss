@@ -19,4 +19,9 @@
   .blinkEye{
     animation: blinkEyes 4s ease 4s infinite;
   }
+
+  .reveral-up{
+    transform: translateY(300px) scale(0.1);
+    opacity: 0;
+  }
   

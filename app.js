@@ -35,6 +35,10 @@ import StoreLinkName from "./src/functions/store-projects-name/store-project-nam
 
 StoreLinkName()
 
+import ReveralUp from "./src/functions/animations/animation-reveral.mjs";
+
+ReveralUp()
+
 const olhos2 = document
   .querySelector("my-svg")
   .shadowRoot.querySelector("#olho-esq-dag");

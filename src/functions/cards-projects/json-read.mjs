@@ -36,7 +36,7 @@ const JsonRead = async () => {
   
         const btnShowProject = document.createElement("a");
         btnShowProject.classList.add("btn-primary");
-        btnShowProject.textContent = "Veja mais";
+        btnShowProject.textContent = "Ver Projeto";
         btnShowProject.href = cardValues.linkPage;
         btnShowProject.setAttribute("data", cardValues.name)
         card.appendChild(btnShowProject);
