@@ -1,55 +1,3 @@
-.show-menu-mobile {
-  display: none;
-
-  @media screen and (max-width: 959px) {
-    display: block;
-    position: fixed;
-    z-index: 10;
-    right: $fs-16;
-    top: $fs-16;
-    width: $fs-40;
-    height: $fs-40;
-    border-radius: $fs-8;
-    background-color: var(--bg-primary);
-    box-shadow: $effect-shadow-default;
-    color: var(--bg-constrast-light);
-    overflow: hidden;
-  }
-
-  span:nth-child(1) {
-    position: absolute;
-    width: 16px;
-    height: 4px;
-    left: 10px;
-    top: 10px;
-    border-radius: 5rem;
-    background-color: var(--bg-constrast-light);
-    transition: 0.2s ease-in-out
-  }
-
-  span:nth-child(2) {
-    position: absolute;
-    width: 20px;
-    height: 4px;
-    left: 10px;
-    top: 18px;
-    border-radius: 5rem;
-    background-color: var(--bg-constrast-light);
-    transition: 0.2s ease-in-out
-  }
-
-  span:nth-child(3) {
-    position: absolute;
-    width: 8px;
-    height: 4px;
-    left: 10px;
-    top: 26px;
-    border-radius: 5rem;
-    background-color: var(--bg-constrast-light);
-    transition: 0.2s ease-in-out
-  }
-}
-
 aside {
   display: none;
 
@@ -84,12 +32,11 @@ aside {
 
     blockquote {
       width: 80%;
-      height: $fs-128;
       margin: $sp-40 auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 0 $sp-40;
+      padding: $sp-24;
       background-color: var(--bg-primary);
       box-shadow: $effect-shadow-default;
 
@@ -232,12 +179,12 @@ header {
         box-shadow: $effect-shadow-active;
       }
 
-      input:checked::after {
+      input:checked::after{
         box-shadow: $effect-shadow-hover;
       }
     }
   }
-
+ 
   i {
     font-size: $fs-20;
 
@@ -524,6 +471,10 @@ header {
         transition: 0.2s;
       }
 
+      textarea {
+        resize: vertical;
+      }
+
       input:focus,
       textarea:focus {
         font-size: $fs-18;
@@ -626,6 +577,7 @@ header {
       }
 
       a {
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: end;
