@@ -38,7 +38,7 @@ StoreLinkName()
 import ReveralUp from "./src/functions/animations/animation-reveral.mjs";
 const certificateBoxes = document.querySelectorAll(".certificate-box")
 
-ReveralUp(certificateBoxes)
+ReveralUp(certificateBoxes, -100)
 
 import ReveralLeft from "./src/functions/animations/animation-reveral-left.mjs";
 const skillsTextLeft = document.querySelectorAll(".left")

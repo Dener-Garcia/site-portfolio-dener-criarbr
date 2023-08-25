@@ -9,7 +9,7 @@ ChangeTheme()
 
 const images = document.querySelectorAll("img")
 
-ReveralUp(images)
+ReveralUp(images, -300)
 
 
 const btnReturn = document.querySelector(".btn-return")
