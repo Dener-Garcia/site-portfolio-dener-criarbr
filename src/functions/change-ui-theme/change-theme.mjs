@@ -13,7 +13,22 @@ function setTheme(themeName, nrInput) {
   localStorage.setItem("nr-input", nrInput);
 }
 
-console.log(uiTheme)
+const btns = document.querySelectorAll("button")
+const links = document.querySelectorAll("a")
+
+function addHighLight(element, operation){
+  element.forEach((e)=>{
+    operation(e.classList)
+   })
+}
+
+function addClass(className) {
+  className.add("highLight");
+}
+
+function removeClass(className){
+className.remove("highLight");
+}
 
   for (let option of uiTheme) {
     
@@ -26,14 +41,20 @@ console.log(uiTheme)
 
         case "light-theme":
           setTheme((themeName = "light"), (nrInput = 0));
+          addHighLight(links, removeClass)
+          addHighLight(btns, removeClass)
           break;
 
         case "dark-theme":
           setTheme((themeName = "dark"), (nrInput = 1));
+          addHighLight(links, removeClass)
+          addHighLight(btns, removeClass)
           break;
           
         case "high-contrast":
           setTheme((themeName = "high-contrast"), (nrInput = 2));
+          addHighLight(links, addClass)
+          addHighLight(btns, addClass)
           break;
       }
     });

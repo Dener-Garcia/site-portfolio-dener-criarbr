@@ -6,12 +6,22 @@
     display: grid;
 }
 
+.ps-absolute{
+    position: absolute;
+}
+
+.ps-fixed{
+    position: fixed;
+}
+
+.z-1{
+    z-index: 1;
+}
+
 .menuMobileActive {
     opacity: 1;
     transform: translateX(0);
 }
-
-
 
 .btnMobilePressed span:nth-child(1) {
     width: 20px;
@@ -35,4 +45,13 @@
 
 .inputValidJS {
     outline: solid $fs-2 var(--cl-feedback-sucess);
+}
+
+.btnReturnPosition{
+    right: $fs-16;
+}
+
+.highLight{
+    box-shadow: 0px 0px 4px #fff;
+    outline: $fs-2 solid #fff;
 }

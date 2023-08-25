@@ -15,6 +15,10 @@ import ChangeTheme from "./src/functions/change-ui-theme/change-theme.mjs";
 
 ChangeTheme();
 
+import ShowMenu from "./src/functions/mobile-menu/show-menu.mjs";
+
+ShowMenu()
+
 import myForm from "./src/functions/form/custom-form.mjs";
 
 myForm();
@@ -23,83 +27,43 @@ import ShowBoxes from "./src/functions/certificate-boxes/show-boxes.mjs";
 
 ShowBoxes();
 
-import FigmaTutorials from "./src/functions/youtube-call/figma-tutorials.mjs";
+import JsonRead from "./src/functions/cards-projects/json-read.mjs";
 
-FigmaTutorials();
+JsonRead()
+
+import StoreLinkName from "./src/functions/store-projects-name/store-project-name.mjs";
+
+StoreLinkName()
+
+import ReveralUp from "./src/functions/animations/animation-reveral.mjs";
+const certificateBoxes = document.querySelectorAll(".certificate-box")
+
+ReveralUp(certificateBoxes, -100)
+
+import ReveralLeft from "./src/functions/animations/animation-reveral-left.mjs";
+const skillsTextLeft = document.querySelectorAll(".left")
+
+ReveralLeft(skillsTextLeft)
+
+import ReveralRight from "./src/functions/animations/animation-reveral-right.mjs";
+const skillsTextRight = document.querySelectorAll(".right")
+
+ReveralRight(skillsTextRight)
+
+
 
 const olhos2 = document
   .querySelector("my-svg")
   .shadowRoot.querySelector("#olho-esq-dag");
 
-const btnShowMobile = document.querySelector(".show-menu-mobile");
 
-btnShowMobile.addEventListener("click", () => {
-  const menuMobile = document.querySelector(".menu-mobile");
-  menuMobile.classList.toggle("menuMobileActive");
-  btnShowMobile.classList.toggle("btnMobilePressed");
 
-  const linksMobile = document.querySelectorAll(".menu-mobile nav a");
 
-  linksMobile.forEach((e) => {
-    e.addEventListener("click", () => {
-      menuMobile.classList.remove("menuMobileActive");
-      btnShowMobile.classList.remove("btnMobilePressed");
-    });
-  });
-});
 
-// criando uma async function
-const jsonRead = async () => {
-  try {
-    // atribuindo uma promise await fetch para a variavel data
-    const data = await fetch("/public/card-projects.json");
 
-    // console.log("resultado do fetch", data)
 
-    // convertendo resultado do fetch em .json, essa promisse espera o resposta da anterior
-    const dataConverted = await data.json();
 
-    //console.log("dados ja convertidos em .json", dataConverted)
 
-    const gridCards = document.querySelector(".grid-projects");
-
-    dataConverted.contentCard.map((singleValues) => {
-      //     console.log("conteudo", conteudo)
-
-      const cardValues = singleValues;
-
-      const card = document.createElement("div");
-      card.classList.add("card-project");
-
-      const imageCard = document.createElement("img");
-      imageCard.src = cardValues.imgLink;
-      imageCard.alt = cardValues["alt-img"];
-      card.appendChild(imageCard);
-
-      const title = document.createElement("h3");
-      title.textContent = cardValues.title;
-      card.appendChild(title);
-
-      const textProject = document.createElement("p");
-      textProject.textContent = cardValues.description;
-      card.appendChild(textProject);
-
-      const btnShowProject = document.createElement("a");
-      btnShowProject.classList.add("btn-primary");
-      btnShowProject.textContent = "Veja mais";
-      btnShowProject.href = cardValues["btn-link"];
-      card.appendChild(btnShowProject);
-
-      gridCards.appendChild(card);
-    });
-  } catch (error) {
-    console.error("Erro na requisição:", error);
-  }
-};
-
-jsonRead();
-
-//<iframe width="560" height="315" src="https://www.youtube.com/embed/4Tbm_3ecuOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 // // pegando dados de um arquivo .json local, tambem pode usar uma url de api porem com async await
 
