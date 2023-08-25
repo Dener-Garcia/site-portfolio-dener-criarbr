@@ -36,8 +36,21 @@ import StoreLinkName from "./src/functions/store-projects-name/store-project-nam
 StoreLinkName()
 
 import ReveralUp from "./src/functions/animations/animation-reveral.mjs";
+const certificateBoxes = document.querySelectorAll(".certificate-box")
 
-ReveralUp()
+ReveralUp(certificateBoxes)
+
+import ReveralLeft from "./src/functions/animations/animation-reveral-left.mjs";
+const skillsTextLeft = document.querySelectorAll(".left")
+
+ReveralLeft(skillsTextLeft)
+
+import ReveralRight from "./src/functions/animations/animation-reveral-right.mjs";
+const skillsTextRight = document.querySelectorAll(".right")
+
+ReveralRight(skillsTextRight)
+
+
 
 const olhos2 = document
   .querySelector("my-svg")

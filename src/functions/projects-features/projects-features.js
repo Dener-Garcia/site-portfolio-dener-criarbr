@@ -7,6 +7,10 @@ import ChangeTheme from "../change-ui-theme/change-theme.mjs";
 
 ChangeTheme()
 
+const images = document.querySelectorAll("img")
+
+ReveralUp(images)
+
 
 const btnReturn = document.querySelector(".btn-return")
 const mainTitle = document.querySelector("h1")
@@ -25,8 +29,6 @@ function fixedMobileMenu(){
       btnToTop.classList.remove("btnReturnPosition")
    }
 }
-
-
 
 window.addEventListener("scroll", fixedMobileMenu)
 

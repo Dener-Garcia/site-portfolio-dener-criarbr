@@ -247,7 +247,7 @@ header {
 
 .pipeline-section {
   margin: auto;
-
+overflow: hidden;
   h2 {
     text-align: center;
     font-size: $fs-40;
@@ -722,6 +722,7 @@ footer {
     border-radius: $fs-8;
     box-shadow: $effect-shadow-active;
     background-color: var(--bg-primary);
+    transition: 0.5s;
   }
 
   h1 {

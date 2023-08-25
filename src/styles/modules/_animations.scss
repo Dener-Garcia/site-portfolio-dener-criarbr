@@ -24,4 +24,14 @@
     transform: translateY(300px) scale(0.1);
     opacity: 0;
   }
+
+  .reveral-left{
+    transform: translateX(-400px) scale(0.1);
+    opacity: 0;
+  }
+
+  .reveral-right{
+    transform: translateX(400px) scale(0.1);
+    opacity: 0;
+  }
   

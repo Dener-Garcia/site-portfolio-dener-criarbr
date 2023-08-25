@@ -229,6 +229,7 @@ header i {
 
 .pipeline-section {
   margin: auto;
+  overflow: hidden;
 }
 .pipeline-section h2 {
   text-align: center;
@@ -667,6 +668,7 @@ footer a:hover {
   border-radius: 0.5rem;
   box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
   background-color: var(--bg-primary);
+  transition: 0.5s;
 }
 .case h1 {
   text-align: center;
@@ -1030,6 +1032,16 @@ body {
 
 .reveral-up {
   transform: translateY(300px) scale(0.1);
+  opacity: 0;
+}
+
+.reveral-left {
+  transform: translateX(-400px) scale(0.1);
+  opacity: 0;
+}
+
+.reveral-right {
+  transform: translateX(400px) scale(0.1);
   opacity: 0;
 }
 
