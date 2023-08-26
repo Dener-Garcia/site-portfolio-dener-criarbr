@@ -1,11 +1,11 @@
-const ReveralLeft = (elName) => {
+const ReveralLeft = (elName, offsetValue) => {
     const elReveralLeft = elName;
   
     document.addEventListener("scroll", () => {
       elReveralLeft.forEach((e) => {
         let screenSize = window.innerHeight;
         let myElements = e.getBoundingClientRect().top;
-        let offset = -100;
+        let offset = offsetValue;
   
         if (myElements < (screenSize - offset)) {
           e.classList.remove("reveral-left");

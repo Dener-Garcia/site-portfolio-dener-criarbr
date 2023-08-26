@@ -43,13 +43,12 @@ ReveralUp(certificateBoxes, -100)
 import ReveralLeft from "./src/functions/animations/animation-reveral-left.mjs";
 const skillsTextLeft = document.querySelectorAll(".left")
 
-ReveralLeft(skillsTextLeft)
+ReveralLeft(skillsTextLeft, 200)
 
 import ReveralRight from "./src/functions/animations/animation-reveral-right.mjs";
 const skillsTextRight = document.querySelectorAll(".right")
 
-ReveralRight(skillsTextRight)
-
+ReveralRight(skillsTextRight, 200)
 
 
 const olhos2 = document
