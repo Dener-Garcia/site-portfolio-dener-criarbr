@@ -1,13 +1,13 @@
 # Site portifólio
 
-Meu portifólio de UX Enginner responsivo com foco em acessibilidade e design. 
+Meu portifólio de UX Engineer responsivo com foco em acessibilidade e design minimalista. 
 
 
 🖥️ Versão web                                                   |  📱 Versão Mobile
 :----------:                                                    |  :--------------:
 <img src="public/assets/screenshot-desktop.jpg" width="100%"/>  |  <img src="public/assets/screenshot-mobile.jpg" width="100%"/>
 
-## 🔥 Funções do projeto
+## 🔥 Funcionalidades
 - ✅ Navegação por teclado
 - ✅ Troca de tema da interface para acessibilidade
 - ✅ Design Responsivo
@@ -38,7 +38,7 @@ Meu portifólio de UX Enginner responsivo com foco em acessibilidade e design.
 </div>
 
 ## 🤔 Aprendizados
-Trabalhar com modules do JavaScript Vanilla, entender sobre import export e como criar funções que são aproveitadas por varios elementos afim de otimizar o código foi bem desafiador.
+Trabalhar com modules do JavaScript Vanilla, entender sobre import export e como criar funções que são aproveitadas por vários elementos afim de otimizar o código foi bem desafiador.
 
 ## 🖧 Vamos nos conectar?
 

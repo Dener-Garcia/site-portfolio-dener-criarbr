@@ -16,7 +16,7 @@ import ChangeTheme from "./src/functions/change-ui-theme/change-theme.mjs";
 ChangeTheme();
 
 import ShowMenu from "./src/functions/mobile-menu/show-menu.mjs";
-
+import HighConstrastSelected from "./src/functions/high-contrast-acessibility/high-contrast-selected.mjs";
 ShowMenu()
 
 import myForm from "./src/functions/form/custom-form.mjs";
