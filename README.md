@@ -22,6 +22,7 @@ Meu portifólio de UX Engineer responsivo com foco em acessibilidade e design mi
 1. Clone esse repositório ou faça o download dos arquivos para sua máquina.
 2. Abra o VS Code dentro da pasta do projeto
 3. Instale no VS Code a extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+4. Inicie o live server e pronto
 
 ## 🖥️ Tecnologías Utilizadas:
 
