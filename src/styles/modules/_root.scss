@@ -66,10 +66,10 @@ html[ui-theme='high-contrast']{
     --bg-constrast-light: #{$cl-white-pure};
     --bg-contrast-dark: #($bg-contrast-light);
 
-    --cl-white-pure: #{$cl-black-100};
+    --cl-white-pure: #{$cl-black-300};
 
     --cl-shadow-effect-default: #{$cl-black-100};
-    --cl-shadow-effect-hover: #{$cl-black-200};
+    --cl-shadow-effect-hover: #{$cl-black-400};
 
     --cl-black-100: #{$cl-black-1000};
     --cl-black-200: #{$cl-black-1000};

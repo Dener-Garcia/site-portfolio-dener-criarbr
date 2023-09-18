@@ -2,7 +2,10 @@ import Mysvg from "./src/components/illustration-svg/illustration.mjs";
 
 //import MyBtn from "./src/components/web-components/btn-big.mjs";
 
-window.customElements.define("my-svg", Mysvg);
+window.addEventListener("load", ()=>{
+  window.customElements.define("my-svg", Mysvg);
+})
+
 
 //window.customElements.define('my-btn', MyBtn)
 // no html <my-btn ><span slot="texto">Props com slot</span></my-btn>
@@ -51,9 +54,9 @@ const skillsTextRight = document.querySelectorAll(".right")
 ReveralRight(skillsTextRight, 200)
 
 
-const olhos2 = document
-  .querySelector("my-svg")
-  .shadowRoot.querySelector("#olho-esq-dag");
+// const olhos2 = document
+//   .querySelector("my-svg")
+//   .shadowRoot.querySelector("#olho-esq-dag");
 
 
 

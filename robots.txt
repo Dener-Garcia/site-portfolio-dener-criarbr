@@ -1,5 +1,3 @@
-User-agent: Googlebot
 User-agent: *
-Disallow: /nogooglebot/
 Allow: /
 Sitemap: https://dener.criarbr.com/sitemap.xml

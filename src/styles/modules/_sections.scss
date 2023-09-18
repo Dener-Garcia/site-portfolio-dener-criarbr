@@ -72,7 +72,7 @@ header {
   }
 
   a {
-    font-family: 'Audiowide', sans-serif;
+    font-family: 'Nova Mono', monospace;
     font-size: $fs-20;
     color: var(--bg-constrast-light);
 
@@ -160,7 +160,6 @@ header {
         align-items: center;
         gap: $sp-8;
         cursor: pointer;
-        
       }
 
       input {
@@ -185,6 +184,7 @@ header {
 
       input:checked::after{
         box-shadow: $effect-shadow-hover;
+        outline: inset 1px var(--cl-feedback-info)
       }
     }
   }
@@ -386,7 +386,7 @@ overflow: hidden;
 
     img {
       max-width: 20rem;
-      aspect-ratio:  3/2;
+      height: 11rem;
       padding: $sp-16;
       border-radius: $fs-8;
       box-shadow: $effect-shadow-active;

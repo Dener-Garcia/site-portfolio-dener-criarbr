@@ -10,6 +10,7 @@ Meu portifólio de UX Engineer responsivo com foco em acessibilidade e design mi
 ## 🔥 Funcionalidades
 - ✅ Navegação por teclado
 - ✅ Troca de tema da interface para acessibilidade
+- ✅ Uso do local storage para salver o tema escolhido
 - ✅ Design Responsivo
 - ✅ Animação com SVG
 - ✅ Micro interações com Vanilla JS

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,700&display=swap");
 aside {
   display: none;
 }
@@ -71,7 +72,7 @@ header {
   }
 }
 header a {
-  font-family: "Audiowide", sans-serif;
+  font-family: "Nova Mono", monospace;
   font-size: 1.25rem;
   color: var(--bg-constrast-light);
 }
@@ -174,6 +175,7 @@ header .ui-options .option input::after {
 }
 header .ui-options .option input:checked::after {
   box-shadow: 8px 8px 14px var(--cl-shadow-effect-hover), inset -8px -8px 14px var(--cl-shadow-effect-hover);
+  outline: inset 1px var(--cl-feedback-info);
 }
 header i {
   font-size: 1.25rem;
@@ -366,7 +368,7 @@ header i {
 }
 .projects .card-project img {
   max-width: 20rem;
-  aspect-ratio: 3/2;
+  height: 11rem;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
@@ -799,9 +801,9 @@ html[ui-theme=high-contrast] {
   --bg-primary: #000;
   --bg-constrast-light: #fff;
   --bg-contrast-dark: #($bg-contrast-light);
-  --cl-white-pure: #141414;
+  --cl-white-pure: #3d3d3d;
   --cl-shadow-effect-default: #141414;
-  --cl-shadow-effect-hover: #292929;
+  --cl-shadow-effect-hover: #525252;
   --cl-black-100: #f5f5f5;
   --cl-black-200: #f5f5f5;
   --cl-black-300:#f5f5f5;

@@ -33,7 +33,7 @@ const myForm = () => {
       message: fieldMessage.value,
     };
 
-    fetch("http://localhost:3000/enviar-email", {
+    fetch("https://apisendmail.criarbr.com/enviar-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json", // Indica que os dados são enviados em formato JSON
