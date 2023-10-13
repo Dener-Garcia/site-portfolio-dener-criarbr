@@ -6,6 +6,10 @@ import ChangeTheme from "../change-ui-theme/change-theme.mjs";
 
 ChangeTheme();
 
+import scaleText from "../acessibility/scale-text.mjs";
+
+scaleText()
+
 import ShowMenu from "../mobile-menu/show-menu.mjs";
 
 ShowMenu()

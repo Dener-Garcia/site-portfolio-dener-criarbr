@@ -7,6 +7,10 @@ import ChangeTheme from "../change-ui-theme/change-theme.mjs";
 
 ChangeTheme()
 
+import scaleText from "../acessibility/scale-text.mjs";
+
+scaleText()
+
 const images = document.querySelectorAll("img")
 
 ReveralUp(images, -300)

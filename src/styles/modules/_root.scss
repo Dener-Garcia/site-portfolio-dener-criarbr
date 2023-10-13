@@ -38,7 +38,7 @@ html[ui-theme='dark']{
     --bg-constrast-light: #{$bg-contrast-dark};
     --bg-contrast-dark: #($bg-contrast-light);
 
-    --cl-white-pure: #{$cl-black-300};
+    --cl-white-pure: #{$cl-black-100};
 
     --cl-shadow-effect-default: #{$cl-black-pure};
     --cl-shadow-effect-hover: #{$cl-black-pure};

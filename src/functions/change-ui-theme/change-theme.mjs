@@ -38,7 +38,7 @@ const ChangeTheme = () => {
 
         case "high-contrast":
           setTheme((themeName = "high-contrast"), (nrInput = 2));
-        HighConstrastSelected()
+          HighConstrastSelected()
           break;
       }
     });

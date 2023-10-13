@@ -18,6 +18,10 @@ import ChangeTheme from "./src/functions/change-ui-theme/change-theme.mjs";
 
 ChangeTheme();
 
+import scaleText from "./src/functions/acessibility/scale-text.mjs";
+
+scaleText()
+
 import ShowMenu from "./src/functions/mobile-menu/show-menu.mjs";
 import HighConstrastSelected from "./src/functions/high-contrast-acessibility/high-contrast-selected.mjs";
 ShowMenu()

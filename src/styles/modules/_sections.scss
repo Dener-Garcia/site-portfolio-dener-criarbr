@@ -141,7 +141,7 @@ header {
     position: absolute;
     top: $sp-24;
     left: -33%;
-    width: 14rem;
+    min-width: 16rem;
     gap: $sp-8;
     padding: $sp-16;
     border-radius: $sp-8;
@@ -182,13 +182,13 @@ header {
         cursor: pointer;
       }
 
-      input:checked::after{
+      input:checked::after {
         box-shadow: $effect-shadow-hover;
         outline: inset 1px var(--cl-feedback-info)
       }
     }
   }
- 
+
   i {
     font-size: $fs-20;
 
@@ -203,7 +203,6 @@ header {
   width: 100%;
   height: auto;
   padding: 5rem 1.5rem;
-
 }
 
 .hero-section {
@@ -247,7 +246,8 @@ header {
 
 .pipeline-section {
   margin: auto;
-overflow: hidden;
+  overflow: hidden;
+
   h2 {
     text-align: center;
     font-size: $fs-40;
@@ -608,6 +608,144 @@ overflow: hidden;
   }
 }
 
+.about {
+  margin: auto;
+
+  h2 {
+    text-align: center;
+    font-size: $fs-40;
+    color: var(--bg-constrast-light);
+
+    @media screen and (max-width: 959px) {
+      font-size: $fs-28;
+    }
+  }
+
+  h2::after {
+    content: "";
+    margin: $sp-32 auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: $fs-8;
+    border-radius: $fs-8;
+    background-color: var(--cl-black-500);
+
+    @media screen and (max-width: 959px) {
+      width: 30%;
+    }
+  }
+
+  p {
+    margin-top: $sp-32;
+    text-align: start;
+    font-size: $fs-20;
+    color: var(--cl-black-300)
+  }
+
+  p:nth-child(3) {
+    margin-top: $sp-8;
+  }
+
+  .about-me {
+    margin-top: $sp-32;
+    display: flex;
+
+    @media screen and (max-width: 959px) {
+      flex-direction: column-reverse;
+    }
+
+    .stacks {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h4 {
+        text-align: center;
+        font-size: $fs-20;
+        color: var(--bg-constrast-light);
+      }
+
+      .stack-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+        padding: $sp-24;
+        gap: $sp-40;
+        overflow: hidden;
+
+        @media screen and (max-width: 959px) {
+          grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+        }
+
+        .stack {
+          width: auto;
+          display: flex;
+          align-items: center;
+          gap: $sp-16;
+          transition: 0.5s;
+
+          i {
+            width: auto;
+            font-size: $fs-28;
+            padding: $sp-8;
+            border-radius: 50px;
+            background-color: var(--bg-primary);
+            color: var(--bg-constrast-light);
+            box-shadow: $effect-shadow-hover;
+          }
+
+          h5 {
+            color: var(--cl-black-300);
+          }
+        }
+      }
+
+      .social-icons {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+        padding: $sp-24;
+        gap: $sp-40;
+
+        @media screen and (max-width: 959px) {
+          margin-top: $sp-32;
+        }
+      }
+
+      .social-icons a {
+        min-width: 1rem;
+        width: auto;
+        margin: auto;
+        padding: 0.75rem;
+        font-size: $fs-32;
+      }
+    }
+
+    .about-photo {
+      width: auto;
+      padding: $sp-24;
+      background-color: var(--bg-primary);
+      box-shadow: $effect-shadow-default;
+
+      @media screen and (max-width: 959px) {
+        margin-bottom: $sp-40;
+      }
+
+
+      img {
+        width: 100%;
+        padding: $sp-16;
+        border-radius: $fs-8;
+        box-shadow: $effect-shadow-active;
+        background-color: var(--bg-primary);
+      }
+    }
+  }
+}
+
 footer {
   display: flex;
   padding: $fs-16;
@@ -763,7 +901,7 @@ footer {
     }
 
     .customer {
-        span {
+      span {
         font-weight: $fw-medium;
         color: var(--bg-constrast-light);
       }
