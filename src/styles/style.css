@@ -2,7 +2,7 @@
 aside {
   display: none;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   aside {
     position: fixed;
     display: flex;
@@ -40,12 +40,12 @@ aside {
     box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
   }
 }
-@media screen and (max-width: 959px) and (max-width: 959px) {
+@media screen and (max-width: 60rem) and (max-width: 60rem) {
   aside blockquote {
     margin: 5rem auto;
   }
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   aside blockquote q {
     text-align: center;
     font-style: italic;
@@ -64,7 +64,7 @@ header {
   justify-content: space-between;
   padding: 1.5rem 0.5rem;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   header {
     width: 80%;
     margin: 0;
@@ -75,8 +75,9 @@ header a {
   font-family: "Nova Mono", monospace;
   font-size: 1.25rem;
   color: var(--bg-constrast-light);
+  border-radius: 0.25rem;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   header a {
     font-size: 1rem;
   }
@@ -85,7 +86,7 @@ header nav {
   display: flex;
   gap: 1rem;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   header nav {
     display: none;
   }
@@ -106,11 +107,12 @@ header .settings-ui button {
   display: flex;
   align-items: center;
   font-size: 1rem;
+  border-radius: 0.25rem;
   background-color: var(--bg-primary);
   color: var(--bg-constrast-light);
   cursor: pointer;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   header .settings-ui button {
     font-size: 0.875rem;
   }
@@ -121,10 +123,10 @@ header .settings-ui button::after {
   right: -20%;
   bottom: 33%;
   border: solid var(--bg-constrast-light);
-  border-width: 0 2px 2px 0;
+  border-width: 0 0.125rem 0.125rem 0;
   display: block;
   margin: auto;
-  padding: 4px;
+  padding: 0.25rem;
   transform: rotate(45deg);
   transition: 0.3s;
 }
@@ -175,12 +177,27 @@ header .ui-options .option input::after {
 }
 header .ui-options .option input:checked::after {
   box-shadow: 8px 8px 14px var(--cl-shadow-effect-hover), inset -8px -8px 14px var(--cl-shadow-effect-hover);
-  outline: inset 1px var(--cl-feedback-info);
+  outline: inset 0.063rem var(--cl-feedback-info);
+}
+header .ui-options .option input[type=checkbox]::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--bg-primary);
+  box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
+  cursor: pointer;
+}
+header .ui-options .option input[type=checkbox]:checked::after {
+  box-shadow: 8px 8px 14px var(--cl-shadow-effect-hover), inset -8px -8px 14px var(--cl-shadow-effect-hover);
+  outline: inset 0.063rem var(--cl-feedback-info);
 }
 header i {
   font-size: 1.25rem;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   header i {
     font-size: 1rem;
   }
@@ -197,7 +214,7 @@ header i {
   display: flex;
   margin: auto;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .hero-section {
     flex-direction: column;
   }
@@ -223,7 +240,7 @@ header i {
 .hero-section .svg-container {
   width: 100%;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .hero-section .svg-container {
     margin-top: 2.5rem;
   }
@@ -235,10 +252,10 @@ header i {
 }
 .pipeline-section h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--bg-constrast-light);
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .pipeline-section h2 {
     font-size: 1.75rem;
   }
@@ -254,7 +271,7 @@ header i {
   border-radius: 0.5rem;
   background-color: var(--cl-black-500);
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .pipeline-section h2::after {
     width: 30%;
   }
@@ -268,7 +285,7 @@ header i {
   box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
   transition: 0.5s;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .pipeline-section .text-box {
     width: 80%;
   }
@@ -279,7 +296,7 @@ header i {
   top: 33%;
   font-size: 1.75rem;
   padding: 0.5rem;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   background-color: var(--bg-primary);
   color: var(--bg-constrast-light);
   box-shadow: 8px 8px 14px var(--cl-shadow-effect-hover), inset -8px -8px 14px var(--cl-shadow-effect-hover);
@@ -296,7 +313,7 @@ header i {
 .pipeline-section .text-box:nth-child(5) {
   margin-left: 50%;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .pipeline-section .text-box:nth-child(3),
   .pipeline-section .text-box:nth-child(5) {
     margin-left: 0%;
@@ -307,7 +324,7 @@ header i {
 .pipeline-section .text-box:nth-child(5) i {
   right: 105%;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .pipeline-section .text-box:nth-child(3) i,
   .pipeline-section .text-box:nth-child(5) i {
     position: absolute;
@@ -320,10 +337,10 @@ header i {
 }
 .projects h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--bg-constrast-light);
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .projects h2 {
     font-size: 1.75rem;
   }
@@ -339,7 +356,7 @@ header i {
   border-radius: 0.5rem;
   background-color: var(--cl-black-500);
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .projects h2::after {
     width: 30%;
   }
@@ -354,10 +371,10 @@ header i {
   display: grid;
   justify-content: center;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, auto));
 }
 .projects .card-project {
-  width: 300px;
+  width: 18.75rem;
   height: auto;
   margin-top: 2rem;
   display: flex;
@@ -368,7 +385,6 @@ header i {
 }
 .projects .card-project img {
   max-width: 20rem;
-  height: 11rem;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
@@ -394,10 +410,10 @@ header i {
 }
 .contact h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--bg-constrast-light);
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .contact h2 {
     font-size: 1.75rem;
   }
@@ -413,7 +429,7 @@ header i {
   border-radius: 0.5rem;
   background-color: var(--cl-black-500);
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .contact h2::after {
     width: 30%;
   }
@@ -427,7 +443,7 @@ header i {
   box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
   gap: 1.5rem;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .contact form {
     width: 100%;
   }
@@ -483,10 +499,10 @@ header i {
 }
 .certificates h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--bg-constrast-light);
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .certificates h2 {
     font-size: 1.75rem;
   }
@@ -502,7 +518,7 @@ header i {
   border-radius: 0.5rem;
   background-color: var(--cl-black-500);
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .certificates h2::after {
     width: 30%;
   }
@@ -520,7 +536,7 @@ header i {
   cursor: pointer;
   transition: 0.5s;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .certificates .certificate-box {
     width: 100%;
   }
@@ -570,10 +586,10 @@ header i {
 }
 .about h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--bg-constrast-light);
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .about h2 {
     font-size: 1.75rem;
   }
@@ -589,7 +605,7 @@ header i {
   border-radius: 0.5rem;
   background-color: var(--cl-black-500);
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .about h2::after {
     width: 30%;
   }
@@ -607,7 +623,7 @@ header i {
   margin-top: 2rem;
   display: flex;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .about .about-me {
     flex-direction: column-reverse;
   }
@@ -626,14 +642,14 @@ header i {
 .about .about-me .stacks .stack-container {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(6.25rem, auto));
   padding: 1.5rem;
   gap: 2.5rem;
   overflow: hidden;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .about .about-me .stacks .stack-container {
-    grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, auto));
   }
 }
 .about .about-me .stacks .stack-container .stack {
@@ -647,7 +663,7 @@ header i {
   width: auto;
   font-size: 1.75rem;
   padding: 0.5rem;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   background-color: var(--bg-primary);
   color: var(--bg-constrast-light);
   box-shadow: 8px 8px 14px var(--cl-shadow-effect-hover), inset -8px -8px 14px var(--cl-shadow-effect-hover);
@@ -658,11 +674,11 @@ header i {
 .about .about-me .stacks .social-icons {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(6.25rem, auto));
   padding: 1.5rem;
   gap: 2.5rem;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .about .about-me .stacks .social-icons {
     margin-top: 2rem;
   }
@@ -680,7 +696,7 @@ header i {
   background-color: var(--bg-primary);
   box-shadow: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var(--cl-shadow-effect-default);
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .about .about-me .about-photo {
     margin-bottom: 2.5rem;
   }
@@ -703,6 +719,7 @@ footer {
 }
 footer a {
   color: var(--cl-black-400);
+  border-radius: 0.25rem;
   transition: 0.2s ease-in-out;
 }
 footer a:hover {
@@ -717,7 +734,7 @@ footer a:hover {
   font-size: 2.5rem;
   color: var(--bg-constrast-light);
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .tutorials h1 {
     font-size: 1.75rem;
   }
@@ -733,7 +750,7 @@ footer a:hover {
   border-radius: 0.5rem;
   background-color: var(--cl-black-500);
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .tutorials h1::after {
     width: 30%;
   }
@@ -748,7 +765,7 @@ footer a:hover {
   display: grid;
   justify-content: center;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, auto));
 }
 .tutorials .grid-cards .card-video {
   width: auto;
@@ -805,7 +822,7 @@ footer a:hover {
   font-size: 2.5rem;
   color: var(--bg-constrast-light);
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .case h1 {
     font-size: 1.75rem;
   }
@@ -821,7 +838,7 @@ footer a:hover {
   border-radius: 0.5rem;
   background-color: var(--cl-black-500);
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 60rem) {
   .case h1::after {
     width: 30%;
   }
@@ -1235,5 +1252,5 @@ body {
 }
 
 .scaleFont {
-  font-size: 120%;
+  font-size: 140% !important;
 }/*# sourceMappingURL=style.css.map */
