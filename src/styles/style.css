@@ -678,11 +678,6 @@ header i {
   padding: 1.5rem;
   gap: 2.5rem;
 }
-@media screen and (max-width: 60rem) {
-  .about .about-me .stacks .social-icons {
-    margin-top: 2rem;
-  }
-}
 .about .about-me .stacks .social-icons a {
   min-width: 1rem;
   width: auto;
