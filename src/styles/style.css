@@ -634,7 +634,7 @@ header i {
   flex-direction: column;
   justify-content: center;
 }
-.about .about-me .stacks h4 {
+.about .about-me .stacks h4, .about .about-me .stacks h5 {
   text-align: center;
   font-size: 1.25rem;
   color: var(--bg-constrast-light);
