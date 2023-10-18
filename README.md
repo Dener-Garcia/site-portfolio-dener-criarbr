@@ -60,4 +60,7 @@ Trabalhar com modules do JavaScript Vanilla, entender sobre import export e como
   <a href="https://www.behance.net/dener-garcia" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/behance/default.svg" width="52" height="40" alt="behance logo"  />
   </a>
+   <a href="https://www.behance.net/dener-garcia" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/behance/default.svg" width="52" height="40" alt="behance logo"  />
+  </a>
 </div>
