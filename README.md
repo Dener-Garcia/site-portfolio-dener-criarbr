@@ -3,7 +3,7 @@
 Meu portifólio de UX Engineer responsivo com foco em acessibilidade e design minimalista. 
 
 
-🖥️ Versão web                                                   |  📱 Versão Mobile
+🖥️ Versão web                                                    |  📱 Versão Mobile
 :----------:                                                    |  :--------------:
 <img src="public/assets/screenshot-desktop.jpg" width="100%"/>  |  <img src="public/assets/screenshot-mobile.jpg" width="100%"/>
 
@@ -18,6 +18,7 @@ Meu portifólio de UX Engineer responsivo com foco em acessibilidade e design mi
 - ✅ Componentização com Vanilla JS
 - ✅ Consumo de API do YouTube
 - ✅ Uso de API própria para envio de e-mails pelo formulário
+- ✅ HTML semântico
 
 ## ⬇️ Rodando o projeto
 
