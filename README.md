@@ -8,14 +8,15 @@ Meu portifólio de UX Engineer responsivo com foco em acessibilidade e design mi
 <img src="public/assets/screenshot-desktop.jpg" width="100%"/>  |  <img src="public/assets/screenshot-mobile.jpg" width="100%"/>
 
 ## 🔥 Funcionalidades
+- ✅ Seleção de tema da interface para acessibilidade
+- ✅ Seleção de texto grande para acessibilidade
 - ✅ Navegação por teclado
-- ✅ Troca de tema da interface para acessibilidade
 - ✅ Uso do local storage para salver o tema escolhido
 - ✅ Design Responsivo
 - ✅ Animação com SVG
 - ✅ Micro interações com Vanilla JS
 - ✅ Componentização com Vanilla JS
-- ✅ Consumo da API YouTube
+- ✅ Consumo de API do YouTube
 - ✅ Uso de API própria para envio de e-mails pelo formulário
 
 ## ⬇️ Rodando o projeto
