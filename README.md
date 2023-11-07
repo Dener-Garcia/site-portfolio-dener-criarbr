@@ -5,7 +5,7 @@ Meu portifólio de UX Engineer responsivo com foco em acessibilidade e design mi
 
 🖥️ Versão web                                                    |  📱 Versão Mobile
 :----------:                                                    |  :--------------:
-<img src="public/assets/screenshot-desktop.png" width="100%"/>  |  <img src="public/assets/screenshot-mobile.png" width="100%"/>
+<img src="public/assets/screenshot-desktop.jpg" width="100%"/>  |  <img src="public/assets/screenshot-mobile.jpg" width="100%"/>
 
 ## 🔥 Funcionalidades
 - ✅ Seleção de tema da interface para acessibilidade
