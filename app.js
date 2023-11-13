@@ -23,7 +23,7 @@ import scaleText from "./src/functions/acessibility/scale-text.mjs";
 scaleText()
 
 import ShowMenu from "./src/functions/mobile-menu/show-menu.mjs";
-import HighConstrastSelected from "./src/functions/high-contrast-acessibility/high-contrast-selected.mjs";
+
 ShowMenu()
 
 import myForm from "./src/functions/form/custom-form.mjs";
@@ -50,26 +50,17 @@ ReveralUp(certificateBoxes, -100)
 import ReveralLeft from "./src/functions/animations/animation-reveral-left.mjs";
 const skillsTextLeft = document.querySelectorAll(".left")
 
-ReveralLeft(skillsTextLeft, 200)
+ReveralLeft(skillsTextLeft, 50)
 
 import ReveralRight from "./src/functions/animations/animation-reveral-right.mjs";
 const skillsTextRight = document.querySelectorAll(".right")
 
-ReveralRight(skillsTextRight, 200)
+ReveralRight(skillsTextRight, 50)
 
 
 // const olhos2 = document
 //   .querySelector("my-svg")
 //   .shadowRoot.querySelector("#olho-esq-dag");
-
-
-
-
-
-
-
-
-
 
 // // pegando dados de um arquivo .json local, tambem pode usar uma url de api porem com async await
 
