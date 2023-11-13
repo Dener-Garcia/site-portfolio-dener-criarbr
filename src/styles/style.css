@@ -212,12 +212,8 @@ header i {
 
 .hero-section {
   display: flex;
+  flex-direction: column;
   margin: auto;
-}
-@media screen and (max-width: 60rem) {
-  .hero-section {
-    flex-direction: column;
-  }
 }
 .hero-section .intro {
   width: auto;
@@ -233,12 +229,19 @@ header i {
   margin-top: 1rem;
   color: var(--bg-constrast-light);
 }
-.hero-section .intro a {
-  width: 16rem;
+.hero-section .intro .hero-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
   margin-top: 2rem;
 }
+.hero-section .intro .hero-links a {
+  width: 16rem;
+}
 .hero-section .svg-container {
-  width: 100%;
+  width: 60%;
+  margin: auto;
+  margin-top: 2.5rem;
 }
 @media screen and (max-width: 60rem) {
   .hero-section .svg-container {

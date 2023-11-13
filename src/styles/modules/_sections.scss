@@ -225,11 +225,8 @@ header {
 
 .hero-section {
   display: flex;
+  flex-direction: column;
   margin: auto;
-
-  @media screen and (max-width: 60rem) {
-    flex-direction: column;
-  }
 
   .intro {
     width: auto;
@@ -247,14 +244,24 @@ header {
       color: var(--bg-constrast-light);
     }
 
-    a {
-      width: $fs-256;
+    .hero-links{
+
+      display: flex;
+      align-items: center;
+      gap: $sp-24;
       margin-top: $sp-32;
+
+      a {
+        width: $fs-256;
+      }
     }
+
   }
 
   .svg-container {
-    width: 100%;
+    width: 60%;
+    margin: auto;
+    margin-top: $sp-40;
 
     @media screen and (max-width: 60rem) {
       margin-top: $sp-40;

@@ -1,7 +1,7 @@
 class Mysvg extends HTMLElement{
   constructor(){
       super()
-      console.log("criei um webcomponente")
+  //    console.log("criei um webcomponente")
 
       // o attachShadow mode open diz que posso receber alteracoes de fora da shadow dom, se fosse closed nao aceitaria
       this.attachShadow({mode: 'open'})
