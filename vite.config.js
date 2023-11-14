@@ -2,7 +2,8 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/site-portfolio-dener-criarbr',
+  // comment base line for deploy out github pages
+ base: '/site-portfolio-dener-criarbr',
   build: {
     rollupOptions: {
       input: {
