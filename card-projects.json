@@ -1,0 +1,28 @@
+{
+    "contentCard": [
+        {
+            "name": "pop-cinema",
+            "linkPage": "/src/pages/pop-cinema.html",
+            "imgLink": "/assets/projects/pop-cinema/cover-card.opti.webp",
+            "alt-img": "Capa projeto pop cinema",
+            "title": "Aplicativo Pop Cinema",
+            "description": "Criar uma solução com base nos conhecimentos adquiridos durante os seis meses do curso de UX do Google"
+        },
+        {
+            "name": "Lit academy",
+            "linkPage": "/src/pages/lit-academy.html",
+            "imgLink": "/assets/projects/lit-academy/cover-card.opti.webp",
+            "alt-img": "Capa projeto Lit academy",
+            "title": "Landing Page Lit Academy",
+            "description": "Um desafio lançado na comunidade de design da Lit Academy onde iremos explorar o mundo das IAs"
+        },
+        {
+            "name": "Company Geradores",
+            "linkPage": "/src/pages/company-geradores.html",
+            "imgLink": "/assets/projects/company-geradores/cover-card.opti.webp",
+            "alt-img": "Capa projeto Company Geradores",
+            "title": "Site Company Geradores",
+            "description": "Web site institucional para uma empresa prestadora de serviços e manutenção especializada em grupos geradores."
+        }
+    ]
+}
