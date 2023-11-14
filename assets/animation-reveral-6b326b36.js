@@ -1,0 +1,1 @@
+const a=(t,s)=>{const l=t;document.addEventListener("scroll",()=>{l.forEach(e=>{let n=window.innerHeight;e.getBoundingClientRect().top<n-s?e.classList.remove("reveral-up"):e.classList.add("reveral-up")})})};export{a as R};
