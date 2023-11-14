@@ -1,4 +1,4 @@
-import{A as f,C as p,s as y}from"./scale-text-1cccfb0a.js";import{S as g}from"./show-menu-7b28359c.js";import{R as C}from"./animation-reveral-6b326b36.js";class w extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"}),this.shadowRoot.innerHTML=`
+import{A as f,C as p,s as y}from"./scale-text-9d516087.js";import{S as g}from"./show-menu-7b28359c.js";import{R as C}from"./animation-reveral-6b326b36.js";class w extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"}),this.shadowRoot.innerHTML=`
 
       <style>
 
