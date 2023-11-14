@@ -1,9 +1,12 @@
 {
   "name": "site-portfolio-dener-criarbr",
+  "homepage": "https://dener-garcia.github.io/site-portfolio-dener-criarbr",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -11,5 +14,8 @@
   "devDependencies": {
     "sass": "^1.69.5",
     "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "gh-pages": "^6.0.0"
   }
 }

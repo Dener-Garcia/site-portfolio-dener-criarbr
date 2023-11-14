@@ -1,9 +1,13 @@
 # Site portifólio
 
-Meu portifólio de UX Engineer responsivo com foco em acessibilidade e design minimalista. 
+Meu portifólio de UX Engineer responsivo com foco em acessibilidade e design minimalista baseado em neomorphismo.
+
+__Você pode ver esse projeto bem [Aqui](https://www.dener.criarbr.com)__
+
+__Gosta de codar? então clic [Aqui](https://github.com/Dener-Garcia/site-portfolio-dener-criarbr)__
 
 
-🖥️ Versão web                                                    |  📱 Versão Mobile
+🖥️ Versão web                                                   |  📱 Versão Mobile
 :----------:                                                    |  :--------------:
 <img src="public/assets/screenshot-desktop.png" width="100%"/>  |  <img src="public/assets/screenshot-mobile.png" width="100%"/>
 
@@ -23,9 +27,10 @@ Meu portifólio de UX Engineer responsivo com foco em acessibilidade e design mi
 ## ⬇️ Rodando o projeto
 
 1. Clone esse repositório ou faça o download dos arquivos para sua máquina.
-2. Abra o VS Code dentro da pasta do projeto
-3. Instale no VS Code a extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-4. Inicie o live server e pronto
+2. Dentro da pasta do projeto rode os comandos abaixo
+3. > npm install
+4. > npm run dev
+5. Você deve ter o node instalado na sua máquina.
 
 ## 🖥️ Tecnologías Utilizadas:
 
@@ -38,11 +43,12 @@ Meu portifólio de UX Engineer responsivo com foco em acessibilidade e design mi
   <img width="24" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
   <img width="24" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
+  <img src="public/assets/vite.png" height="45" alt="vite logo"  />
 </div>
 
 ## 🤔 Aprendizados
 Trabalhar com modules do JavaScript Vanilla, entender sobre import export e como criar funções que são aproveitadas por vários elementos afim de otimizar o código foi bem desafiador.
+Adaptar os elementos do design para destacar itens que são clicáveis dos outros elementos mantendo a ideia de design minimalista porém acessível.
 
 ## 🖧 Vamos nos conectar?
 
