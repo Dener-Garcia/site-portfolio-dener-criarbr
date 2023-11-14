@@ -1,3 +1,5 @@
+import '../../styles/style.scss'
+
 import Acessibility from "../acessibility-menu/acessibility-menu.mjs";
 import ReveralUp from "../animations/animation-reveral.mjs";
 

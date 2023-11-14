@@ -1,3 +1,5 @@
+import './src/styles/style.scss'
+
 import Mysvg from "./src/components/illustration-svg/illustration.mjs";
 
 //import MyBtn from "./src/components/web-components/btn-big.mjs";
@@ -14,45 +16,45 @@ import Acessibility from "./src/functions/acessibility-menu/acessibility-menu.mj
 
 Acessibility();
 
-import ChangeTheme from "./src/functions/change-ui-theme/change-theme.mjs";
+import ChangeTheme from "/src/functions/change-ui-theme/change-theme.mjs";
 
 ChangeTheme();
 
-import scaleText from "./src/functions/acessibility/scale-text.mjs";
+import scaleText from "/src/functions/acessibility/scale-text.mjs";
 
 scaleText()
 
-import ShowMenu from "./src/functions/mobile-menu/show-menu.mjs";
+import ShowMenu from "/src/functions/mobile-menu/show-menu.mjs";
 
 ShowMenu()
 
-import myForm from "./src/functions/form/custom-form.mjs";
+import myForm from "/src/functions/form/custom-form.mjs";
 
 myForm();
 
-import ShowBoxes from "./src/functions/certificate-boxes/show-boxes.mjs";
+import ShowBoxes from "/src/functions/certificate-boxes/show-boxes.mjs";
 
 ShowBoxes();
 
-import JsonRead from "./src/functions/cards-projects/json-read.mjs";
+import JsonRead from "/src/functions/cards-projects/json-read.mjs";
 
 JsonRead()
 
-import StoreLinkName from "./src/functions/store-projects-name/store-project-name.mjs";
+import StoreLinkName from "/src/functions/store-projects-name/store-project-name.mjs";
 
 StoreLinkName()
 
-import ReveralUp from "./src/functions/animations/animation-reveral.mjs";
+import ReveralUp from "/src/functions/animations/animation-reveral.mjs";
 const certificateBoxes = document.querySelectorAll(".certificate-box")
 
 ReveralUp(certificateBoxes, -100)
 
-import ReveralLeft from "./src/functions/animations/animation-reveral-left.mjs";
+import ReveralLeft from "/src/functions/animations/animation-reveral-left.mjs";
 const skillsTextLeft = document.querySelectorAll(".left")
 
 ReveralLeft(skillsTextLeft, 50)
 
-import ReveralRight from "./src/functions/animations/animation-reveral-right.mjs";
+import ReveralRight from "/src/functions/animations/animation-reveral-right.mjs";
 const skillsTextRight = document.querySelectorAll(".right")
 
 ReveralRight(skillsTextRight, 50)
@@ -123,3 +125,4 @@ ReveralRight(skillsTextRight, 50)
 
 //     })
 //     .catch((error) => console.error("Erro na requisição:", error));
+

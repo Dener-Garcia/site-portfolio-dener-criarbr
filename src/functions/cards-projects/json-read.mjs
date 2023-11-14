@@ -2,7 +2,7 @@
 const JsonRead = async () => {
     try {
       // atribuindo uma promise await fetch para a variavel data
-      const data = await fetch("/public/card-projects.json");
+      const data = await fetch("/card-projects.json");
   
       // console.log("resultado do fetch", data)
   

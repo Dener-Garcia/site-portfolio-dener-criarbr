@@ -2,6 +2,7 @@ const ReveralLeft = (elName, offsetValue) => {
     const elReveralLeft = elName;
   
     document.addEventListener("scroll", () => {
+      console.log("chamo funcao")
       elReveralLeft.forEach((e) => {
         let screenSize = window.innerHeight;
         let myElements = e.getBoundingClientRect().top;

@@ -142,7 +142,7 @@ header {
   .ui-options {
     position: absolute;
     top: $sp-24;
-    left: -33%;
+    left: -50%;
     min-width: 16rem;
     gap: $sp-8;
     padding: $sp-16;
@@ -220,18 +220,22 @@ header {
   max-width: 72rem;
   width: 100%;
   height: auto;
-  padding: 5rem 1.5rem;
+  padding: 5rem 1.5rem ;
+
 }
 
 .hero-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   margin: auto;
+  padding: 2rem 1.5rem 5rem 1.5rem;
+
 
   .intro {
     width: auto;
     display: flex;
     flex-direction: column;
+    margin-top: $sp-40;
 
     h1 {
       font-size: $fs-64;
@@ -244,29 +248,32 @@ header {
       color: var(--bg-constrast-light);
     }
 
-    .hero-links{
-
-      display: flex;
-      align-items: center;
-      gap: $sp-24;
-      margin-top: $sp-32;
-
-      a {
-        width: $fs-256;
-      }
-    }
-
-  }
+   
 
   .svg-container {
-    width: 60%;
+    width: 80%;
     margin: auto;
     margin-top: $sp-40;
 
     @media screen and (max-width: 60rem) {
-      margin-top: $sp-40;
+      width: 100%;
     }
   }
+
+  .hero-links{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: $sp-24;
+    margin-top: $sp-40;
+
+    a {
+      width: $fs-256;
+    }
+  }
+
+}
 }
 
 .pipeline-section {
