@@ -243,7 +243,7 @@ header {
     }
 
     p {
-      width: 80%;
+      width: 60%;
       margin-top: $sp-16;
       font-size: $fs-20;
       color: var(--bg-constrast-light);
@@ -694,7 +694,7 @@ header {
       flex-direction: column;
       justify-content: center;
 
-      h4, h6 {
+      h4, h5 {
         text-align: center;
         font-size: $fs-20;
         color: var(--bg-constrast-light);
@@ -705,7 +705,7 @@ header {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(6.25rem, auto));
         padding: $sp-24;
-        gap: $sp-40;
+        gap: $sp-32;
         overflow: hidden;
 
         @media screen and (max-width: 60rem) {
@@ -729,7 +729,10 @@ header {
             box-shadow: $effect-shadow-hover;
           }
 
-          h5 {
+          p {
+            margin: 0;
+            font-size: $fs-14;
+            font-weight: $fw-bold;
             color: var(--cl-black-300);
           }
         }
