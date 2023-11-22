@@ -4,8 +4,6 @@ Meu portifólio de UX Engineer responsivo com foco em acessibilidade e design mi
 
 __Você pode ver esse projeto bem [Aqui](https://www.dener.criarbr.com)__
 
-__Gosta de codar? então clic [Aqui](https://github.com/Dener-Garcia/site-portfolio-dener-criarbr)__
-
 
 🖥️ Versão web                                                   |  📱 Versão Mobile
 :----------:                                                    |  :--------------:
